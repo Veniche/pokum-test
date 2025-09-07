@@ -1,4 +1,15 @@
-import { ArrowRight, ChevronDown, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, FileText } from "lucide-react";
+import { 
+  FileText, 
+  ArrowRight, 
+  ChevronDown, 
+  Mail, 
+  Phone, 
+  MapPin, 
+  Facebook, 
+  Twitter, 
+  Instagram, 
+  Linkedin 
+} from "lucide-react";
 import { useParams } from "react-router-dom";
 
 export default function ArticleDetail() {
@@ -43,55 +54,6 @@ export default function ArticleDetail() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="w-full bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center">
-              <a href="/" className="text-4xl font-bold text-[#3971E3] font-helvetica-world">pokum</a>
-              <div className="ml-8 flex items-center space-x-8">
-                <div className="flex items-center space-x-2">
-                  <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded opacity-80"></div>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded opacity-80"></div>
-                  </div>
-                </div>
-                <div className="bg-blue-50 px-6 py-3 rounded-full">
-                  <div className="flex items-center space-x-2">
-                    <FileText className="w-5 h-5 text-blue-600" />
-                    <span className="text-blue-600 font-bold font-helvetica-world">Blog</span>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded opacity-80"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <nav className="hidden md:flex items-center space-x-8">
-              <div className="flex items-center space-x-5">
-                <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Facebook className="w-4 h-4 text-blue-600" />
-                </div>
-                <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Twitter className="w-4 h-4 text-blue-600" />
-                </div>
-                <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Instagram className="w-4 h-4 text-blue-600" />
-                </div>
-                <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Linkedin className="w-4 h-4 text-blue-600" />
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
 
       {/* Background Text Effect */}
       <div className="relative bg-white py-16">
@@ -227,74 +189,6 @@ export default function ArticleDetail() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-[#0C0B0E] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28">
-          <div className="flex justify-between items-start">
-            <div className="space-y-7">
-              <div className="text-4xl font-bold text-[#3971E3] font-helvetica-world">
-                pokum
-              </div>
-              
-              <div className="space-y-6 max-w-md">
-                <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-white/70" />
-                  <span className="text-white/70 font-helvetica-world">pohonhukum.id@gmail.com</span>
-                </div>
-                
-                <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-white/70" />
-                  <span className="text-white/70 font-helvetica-world">+62 822-8386-3111</span>
-                </div>
-                
-                <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-white/70 mt-1 flex-shrink-0" />
-                  <div className="text-white/70 font-helvetica-world">
-                    PT Pohon Hukum Indonesia<br />
-                    Jl. Tawakal Raya 39C,<br />
-                    Grogol Petamburan, West Jakarta,<br />
-                    DKI Jakarta, Indonesia.
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="flex space-x-15">
-              <div className="space-y-6">
-                <div className="text-white/70 font-helvetica-world text-lg space-y-6">
-                  <div><a href="/about" className="hover:text-white transition-colors">About Us</a></div>
-                  <div><a href="/services" className="hover:text-white transition-colors">Services</a></div>
-                  <div><a href="/blog" className="hover:text-white transition-colors">Blog</a></div>
-                  <div><a href="/contact" className="hover:text-white transition-colors">Contact</a></div>
-                </div>
-              </div>
-              
-              <div className="space-y-6">
-                <div className="text-white/70 font-helvetica-world text-lg space-y-6">
-                  <div>Privacy Policy</div>
-                  <div>Terms Of Service</div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="flex items-center space-x-5">
-              <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                <Facebook className="w-4 h-4 text-blue-600" />
-              </div>
-              <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                <Twitter className="w-4 h-4 text-blue-600" />
-              </div>
-              <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                <Instagram className="w-4 h-4 text-blue-600" />
-              </div>
-              <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                <Linkedin className="w-4 h-4 text-blue-600" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

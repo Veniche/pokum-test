@@ -8,82 +8,12 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Home,
-  User,
-  Briefcase,
-  FileText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="w-full bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-24">
-            {/* Logo */}
-            <div className="text-3xl font-bold text-[#2556BA] font-helvetica-world">
-              pokum
-            </div>
-
-            {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <a
-                href="/"
-                className="flex items-center space-x-2 text-black/70 hover:text-black font-helvetica-world"
-              >
-                <Home className="h-5 w-5" />
-                <span>Home</span>
-              </a>
-              <a
-                href="/about"
-                className="flex items-center space-x-2 text-black/70 hover:text-black font-helvetica-world"
-              >
-                <User className="h-5 w-5" />
-                <span>About Us</span>
-              </a>
-              <a
-                href="/services"
-                className="flex items-center space-x-2 text-black/70 hover:text-black font-helvetica-world"
-              >
-                <Briefcase className="h-5 w-5" />
-                <span>Services</span>
-              </a>
-              <a
-                href="/blog"
-                className="flex items-center space-x-2 text-black/70 hover:text-black font-helvetica-world"
-              >
-                <FileText className="h-5 w-5" />
-                <span>Blog</span>
-              </a>
-              <a
-                href="/contact"
-                className="flex items-center space-x-2 text-black/70 hover:text-black font-helvetica-world"
-              >
-                <Phone className="h-5 w-5" />
-                <span>Contact</span>
-              </a>
-            </nav>
-
-            {/* Social Media Icons */}
-            <div className="flex items-center space-x-4">
-              <a href="#" className="text-[#2556BA] hover:text-blue-700">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-[#2556BA] hover:text-blue-700">
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-[#2556BA] hover:text-blue-700">
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-[#2556BA] hover:text-blue-700">
-                <Linkedin className="h-6 w-6" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="relative bg-white pt-12 pb-20">
@@ -620,82 +550,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-[#0C0B0E] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
-            {/* Logo and Contact */}
-            <div className="space-y-8">
-              <div className="text-4xl font-bold text-[#3971E3] font-helvetica-world">
-                pokum
-              </div>
-
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-white/70" />
-                  <span className="text-white/70 font-helvetica-world text-lg">
-                    pohonhukum.id@gmail.com
-                  </span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-white/70" />
-                  <span className="text-white/70 font-helvetica-world text-lg">
-                    +62 822-8386-3111
-                  </span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <MapPin className="h-5 w-5 text-white/70 mt-1" />
-                  <div className="text-white/70 font-helvetica-world text-lg leading-relaxed">
-                    PT Pohon Hukum Indonesia
-                    <br />
-                    Jl. Tawakal Raya 39C,
-                    <br />
-                    Grogol Petamburan, West Jakarta,
-                    <br />
-                    DKI Jakarta, Indonesia.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Navigation Links */}
-            <div className="space-y-6">
-              <div className="text-white/70 font-helvetica-world text-xl leading-relaxed">
-                About Us
-                <br />
-                Services
-                <br />
-                Contact
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <div className="text-white/70 font-helvetica-world text-xl leading-relaxed">
-                Privacy Policy
-                <br />
-                Terms Of Service
-              </div>
-            </div>
-
-            {/* Social Media */}
-            <div className="flex space-x-5">
-              <div className="w-6 h-6 bg-white/70 rounded-full flex items-center justify-center">
-                <Facebook className="h-4 w-4 text-black" />
-              </div>
-              <div className="w-6 h-6 bg-white/70 rounded-full flex items-center justify-center">
-                <Twitter className="h-4 w-4 text-black" />
-              </div>
-              <div className="w-6 h-6 bg-white/70 rounded-full flex items-center justify-center">
-                <Instagram className="h-4 w-4 text-black" />
-              </div>
-              <div className="w-6 h-6 bg-white/70 rounded-full flex items-center justify-center">
-                <Linkedin className="h-4 w-4 text-black" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
