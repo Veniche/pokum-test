@@ -1,103 +1,34 @@
+import React from 'react';
 import { FileText, ArrowRight, ChevronDown, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { articles } from "../data/articles";
 
-const articles = [
-  {
-    id: 1,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/b1470b78b193bfa6e77f8b8ddbf308cd52689e0a?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[680px]"
-  },
-  {
-    id: 2,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/5f4e7377f01bb3550599c4c4f6f873698dcc0468?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[584px]"
-  },
-  {
-    id: 3,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/0e47515af6adb21b1d833adb20a535c8c330caa6?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[356px]"
-  },
-  {
-    id: 4,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/ff1801e3358315b58032378004e1f8d21bf5cf49?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[364px]"
-  },
-  {
-    id: 5,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/d2afa3049c74e7e4c82397aa988ab9e6a8904898?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[424px]"
-  },
-  {
-    id: 6,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/e377661191bbda62fc641546a50428423c654fd6?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[284px]"
-  },
-  {
-    id: 7,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/a9420bce7f0334e6f7ed260e4b4ac9c59cec2c71?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[424px]"
-  },
-  {
-    id: 8,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/9a73eae2e299cfdb55e33e46aa4aa0e2316854eb?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[364px]"
-  },
-  {
-    id: 9,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/3ca4fa103d90db564a287bb3684a6dee8c6d2607?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Layanan PohonHukum.id",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[500px]"
-  },
-  {
-    id: 10,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/7a286e4c49312e452cf758bed406532bca3bcfd4?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[424px]"
-  },
-  {
-    id: 11,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/781ff4b985077c4e87e1d338afba66f03a88aadb?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[364px]"
-  },
-  {
-    id: 12,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/d1ccfddd7d1af85a7dc83f49f98aeae57d5d97f9?width=747",
-    category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan",
-    excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. Berikut ini adalah lima alasan utama mengapa Anda harus memanfaatkan layanan dari PohonHukum.id:",
-    height: "h-[424px]"
-  }
-];
+interface ArticleCardProps {
+  id: number;
+  image: string;
+  category: string;
+  title: string;
+  excerpt: string;
+  height: string;
+}
+
+const ArticleCard: React.FC<ArticleCardProps> = ({ id, image, category, title, excerpt, height }) => (
+  <div key={id} className={`relative rounded-2xl overflow-hidden ${height} group`}>
+    <img
+      src={image}
+      alt={title}
+      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+      <span className="text-white/80 text-sm font-medium">{category}</span>
+      <h3 className="text-white text-xl font-bold mt-1">{title}</h3>
+      <p className="text-white/80 text-sm mt-2 line-clamp-2">{excerpt}</p>
+      <button className="mt-4 flex items-center text-white text-sm font-medium">
+        Read More
+        <ArrowRight className="w-4 h-4 ml-2" />
+      </button>
+    </div>
+  </div>
+);
 
 export default function Blog() {
   return (
@@ -137,7 +68,7 @@ export default function Blog() {
                   className={`bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block ${article.height}`}
                 >
                   <article className="h-full flex flex-col">
-                    <div className="h-48 sm:h-64 lg:h-80 overflow-hidden">
+                    <div className={article.imageHeight ? article.imageHeight : 'h-48 sm:h-64 lg:h-80'}>
                       <img
                         src={article.image}
                         alt={article.title}
@@ -153,7 +84,7 @@ export default function Blog() {
                       <h2 className="text-2xl font-bold text-[#05060C] font-helvetica-world leading-tight mb-3 line-clamp-2">
                         {article.title}
                       </h2>
-                      <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-3 flex-1">
+                      <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-5 flex items-start">
                         {article.excerpt}
                       </p>
                     </div>
@@ -171,7 +102,7 @@ export default function Blog() {
                   className={`bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block ${article.height}`}
                 >
                   <article className="h-full flex flex-col">
-                    <div className="h-48 sm:h-64 lg:h-80 overflow-hidden">
+                    <div className={article.imageHeight ? article.imageHeight : 'h-48 sm:h-64 lg:h-80'}>
                       <img
                         src={article.image}
                         alt={article.title}
@@ -187,7 +118,7 @@ export default function Blog() {
                       <h2 className="text-2xl font-bold text-[#05060C] font-helvetica-world leading-tight mb-3 line-clamp-2">
                         {article.title}
                       </h2>
-                      <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-3 flex-1">
+                      <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-5 min-h-[140px] flex items-start">
                         {article.excerpt}
                       </p>
                     </div>
@@ -205,7 +136,7 @@ export default function Blog() {
                   className={`bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block ${article.height}`}
                 >
                   <article className="h-full flex flex-col">
-                    <div className="h-48 sm:h-64 lg:h-80 overflow-hidden">
+                    <div className={article.imageHeight ? article.imageHeight : 'h-48 sm:h-64 lg:h-80'}>
                       <img
                         src={article.image}
                         alt={article.title}
@@ -221,7 +152,7 @@ export default function Blog() {
                       <h2 className="text-2xl font-bold text-[#05060C] font-helvetica-world leading-tight mb-3 line-clamp-2">
                         {article.title}
                       </h2>
-                      <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-3 flex-1">
+                      <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-5 min-h-[140px] flex items-start">
                         {article.excerpt}
                       </p>
                     </div>
