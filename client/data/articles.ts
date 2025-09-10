@@ -94,7 +94,7 @@ export const articles: Article[] = [
     image: "https://api.builder.io/api/v1/image/assets/TEMP/5f4e7377f01bb3550599c4c4f6f873698dcc0468?width=747",
     category: "TIPS & TRICKS",
     title: "Pentingnya Mendirikan PT untuk Bisnis Anda: Persyaratan dan Dasar Hukumnya",
-    excerpt: "Mendirikan Perseroan Terbatas (PT) adalah langkah penting bagi Anda yang ingin mengembangkan bisnis secara profesional dan berkelanjutan. PT menawarkan banyak...",
+    excerpt: "Mendirikan Perseroan Terbatas (PT) adalah langkah penting bagi Anda yang ingin mengembangkan bisnis secara profesional dan berkelanjutan. PT...",
     height: "h-[655px]",
     imageHeight: "h-[240px] sm:h-[320px] lg:h-[400px]",
     content: `
@@ -205,7 +205,7 @@ export const articles: Article[] = [
     image: "https://api.builder.io/api/v1/image/assets/TEMP/0e47515af6adb21b1d833adb20a535c8c330caa6?width=747",
     category: "TIPS & TRICKS",
     title: "Cara Mendirikan PT Pedagang Aset Keuangan Digital (PAKD) termasuk Aset Kripto di Indonesia",
-    excerpt: "Dalam beberapa tahun terakhir, perdagangan aset keuangan digital, termasuk aset kripto, semakin berkembang di Indonesia...",
+    excerpt: "Dalam beberapa tahun terakhir, perdagangan aset keuangan digital, termasuk aset kripto, semakin...",
     height: "h-[467px]",
     imageHeight: "h-[144px] sm:h-[192px] lg:h-[240px]",
     content: `
@@ -389,7 +389,7 @@ export const articles: Article[] = [
     image: "https://api.builder.io/api/v1/image/assets/TEMP/ff1801e3358315b58032378004e1f8d21bf5cf49?width=747",
     category: "TIPS & TRICKS",
     title: "PT vs CV: Mana yang Lebih Cocok untuk Bisnis Anda?",
-    excerpt: "Saat memulai bisnis di Indonesia, salah satu keputusan penting yang harus diambil adalah menentukan...",
+    excerpt: "Saat memulai bisnis di Indonesia, salah satu keputusan penting yang harus...",
     height: "h-[439px]",
     imageHeight: "h-[144px] sm:h-[192px] lg:h-[240px]",
     content: `
@@ -398,10 +398,127 @@ export const articles: Article[] = [
           Saat memulai bisnis di Indonesia, salah satu keputusan penting yang harus diambil adalah menentukan bentuk badan usaha yang sesuai. Dua opsi yang paling umum digunakan adalah Perseroan Terbatas (PT) dan Commanditaire Vennootschap (CV). Keduanya memiliki kelebihan dan kekurangan masing-masing, tergantung pada kebutuhan dan tujuan bisnis Anda. Artikel ini akan membantu Anda memahami perbedaan utama antara PT dan CV serta menentukan mana yang lebih cocok untuk usaha Anda.
         </p>
         
-        <div class="space-y-8">
-          <p class="text-lg text-[#757575] leading-8">
-            Konten artikel akan segera tersedia. Silakan kunjungi kembali halaman ini untuk informasi lebih lanjut.
-          </p>
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">1. Pengertian PT dan CV</h2>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Perseroan Terbatas (PT)</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              PT adalah badan hukum yang terpisah dari pemiliknya. Artinya, perusahaan memiliki identitas hukum sendiri, termasuk hak dan kewajiban yang terpisah dari pemegang sahamnya. PT bisa berbentuk PT Perorangan (untuk usaha kecil) atau PT biasa yang memiliki minimal dua pemegang saham.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Commanditaire Vennootschap (CV)</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              CV adalah bentuk usaha kemitraan yang terdiri dari sekutu aktif dan sekutu pasif. Sekutu aktif bertanggung jawab dalam menjalankan usaha, sementara sekutu pasif hanya menyertakan modal dan tidak terlibat langsung dalam operasional perusahaan.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-6">2. Perbedaan Utama PT dan CV</h2>
+            <div class="overflow-x-auto">
+              <table class="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th class="px-6 py-3 text-left text-m font-medium text-gray-900 uppercase tracking-wider border-b border-gray-200">Aspek</th>
+                    <th class="px-6 py-3 text-left text-m font-medium text-gray-900 uppercase tracking-wider border-b border-gray-200">PT</th>
+                    <th class="px-6 py-3 text-left text-m font-medium text-gray-900 uppercase tracking-wider border-b border-gray-200">CV</th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Status Hukum</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Berbadan Hukum</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tidak berbadan Hukum</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Tanggung Jawab</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Terbatas pada modal yang disetor</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sekutu aktif bertanggung jawab penuh, sekutu pasif hanya sebesar modalnya</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Struktur Kepemilikan</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Minimal 2 pemegang saham (PT biasa) atau 1 pemilik (PT Perorangan)</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Minimal 2 orang (sekutu aktif dan sekutu pasif)</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Proses Pendirian</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Relatif lebih kompleks dan memerlukan pengesahan dari Kemenkumham</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Lebih sederhana, cukup dengan akta notaris</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Kemudahan Mendapat Pendanaan</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Lebih mudah menarik investor dan mendapatkan kredit bank</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Cenderung sulit karena bukan badan hukum</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Pajak</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Pajak badan usaha (PPh Badan) dan dividen dikenai pajak</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Pajak dikenakan pada masing-masing sekutu</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">3. Kapan Harus Memilih PT?</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              PT lebih cocok bagi bisnis yang ingin memiliki perlindungan hukum lebih kuat, menarik investor, atau memiliki rencana ekspansi besar. PT juga lebih kredibel di mata pelanggan dan mitra bisnis karena memiliki status badan hukum.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Pilih PT jika:</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Anda ingin bisnis yang lebih profesional dan kredibel.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Berencana menarik investor atau mendapatkan pinjaman bank.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Ingin memisahkan tanggung jawab pribadi dari bisnis.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Merencanakan bisnis skala menengah hingga besar.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">4. Kapan Harus Memilih CV?</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              CV lebih cocok bagi bisnis skala kecil hingga menengah yang ingin fleksibilitas lebih tinggi dalam operasional dan tidak ingin terlalu banyak birokrasi dalam pendiriannya.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Pilih CV jika:</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Anda ingin proses pendirian yang lebih mudah dan cepat.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Tidak keberatan dengan tanggung jawab pribadi terhadap utang usaha.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Bisnis masih dalam tahap awal dengan modal terbatas.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Tidak berencana mencari investor dalam waktu dekat.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">Kesimpulan</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Memilih antara PT dan CV bergantung pada kebutuhan dan tujuan bisnis Anda. Jika Anda ingin bisnis yang lebih profesional dan memiliki tanggung jawab terbatas, maka PT adalah pilihan terbaik. Namun, jika Anda ingin struktur bisnis yang lebih fleksibel dan mudah didirikan, CV bisa menjadi pilihan yang lebih praktis.
+            </p>
+            <p class="text-lg text-[#757575] leading-8">
+              <span class="font-semibold text-[#05060C]">💡 Masih bingung memilih PT atau CV? Konsultasikan dengan kami di PohonHukum.id untuk mendapatkan panduan terbaik sesuai kebutuhan bisnis Anda!</span>
+            </p>
+          </div>
         </div>
       </div>
     `
@@ -410,21 +527,128 @@ export const articles: Article[] = [
     id: 5,
     image: "https://api.builder.io/api/v1/image/assets/TEMP/d2afa3049c74e7e4c82397aa988ab9e6a8904898?width=747",
     category: "TIPS & TRICKS",
-    title: "Panduan Lengkap Layanan Hukum Digital",
-    excerpt: "Pelajari cara memanfaatkan layanan hukum digital untuk kebutuhan pribadi dan bisnis Anda.",
-    height: "h-[424px]",
+    title: "Pajak UMKM 2024: Ketentuan, Tarif, dan Cara Lapor",
+    excerpt: "Pajak merupakan kewajiban yang harus dipenuhi oleh setiap pelaku usaha...",
+    height: "h-[507px]",
+    imageHeight: "h-[192px] sm:h-[256px] lg:h-[320px]",
     content: `
       <div class="prose max-w-4xl mx-auto">
         <p class="text-lg sm:text-xl text-[#757575] leading-8 mb-6">
-          Layanan hukum digital telah mengubah cara kita mengakses dan menggunakan jasa hukum. 
-          Artikel ini akan memandu Anda melalui berbagai fitur dan manfaat yang ditawarkan.
+          Pajak merupakan kewajiban yang harus dipenuhi oleh setiap pelaku usaha, termasuk Usaha Mikro, Kecil, dan Menengah (UMKM). Pemerintah telah menetapkan kebijakan perpajakan khusus bagi UMKM untuk mendorong pertumbuhan bisnis kecil di Indonesia. Pada tahun 2024, terdapat beberapa ketentuan terbaru terkait pajak UMKM yang wajib dipahami oleh para pengusaha.
+          Artikel ini akan membahas secara lengkap mengenai ketentuan pajak UMKM, tarif yang berlaku, serta cara pelaporan pajaknya.
         </p>
         
-        <div class="space-y-8">
-          <p class="text-lg text-[#757575] leading-8">
-            Konten artikel sedang dalam pengembangan. Silakan kunjungi kembali halaman ini untuk informasi lebih lanjut.
-          </p>
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">1. Ketentuan Pajak UMKM 2024</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Pajak bagi UMKM diatur dalam Peraturan Pemerintah Nomor 23 Tahun 2018 tentang Pajak Penghasilan atas Penghasilan dari Usaha yang Diterima atau Diperoleh Wajib Pajak yang Memiliki Peredaran Bruto Tertentu. Beberapa ketentuan penting yang perlu diperhatikan oleh UMKM di tahun 2024 antara lain:
+            </p>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">UMKM dengan omzet tahunan di bawah Rp500 juta dibebaskan dari pajak penghasilan (PPh Final).</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">UMKM dengan omzet tahunan di atas Rp500 juta dikenakan PPh Final sebesar 0,5% dari omzet bruto.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Kewajiban memiliki Nomor Pokok Wajib Pajak (NPWP) dan melakukan pencatatan atau pembukuan sesuai dengan ketentuan yang berlaku.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Bagi UMKM berbentuk Perseroan Terbatas (PT), pajaknya mengikuti ketentuan PPh Badan yang berlaku.</p>
+              </li>
+            </ol>
+          </div>
         </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">2. Tarif Pajak UMKM 2024</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Tarif pajak yang dikenakan kepada UMKM berbeda tergantung pada bentuk usaha dan omzetnya. Berikut adalah skema tarif pajak UMKM 2024:
+            </p>
+            <table class="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th class="px-6 py-3 text-left text-m font-medium text-gray-900 uppercase tracking-wider border-b border-gray-200">Kategori UMKM</th>
+                    <th class="px-6 py-3 text-left text-m font-medium text-gray-900 uppercase tracking-wider border-b border-gray-200">Omzet Tahunan</th>
+                    <th class="px-6 py-3 text-left text-m font-medium text-gray-900 uppercase tracking-wider border-b border-gray-200">Tarif Pajak</th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">UMKM Perorangan</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">≤ Rp500 juta</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0% (Bebas Pajak)</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">UMKM Perorangan</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">> Rp500 juta</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0,5% dari omzet</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">UMKM Berbadan Hukum (PT)</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sesuai tarif PPh Badan</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Hingga 22%</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">3. Cara Melaporkan Pajak UMKM</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Agar terhindar dari sanksi perpajakan, UMKM wajib melaporkan pajaknya secara berkala. Berikut langkah-langkah melaporkan pajak UMKM:
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">a. Mendaftarkan NPWP</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Sebelum bisa membayar pajak, UMKM harus memiliki NPWP yang dapat didaftarkan melalui Kantor Pajak atau secara online di situs Direktorat Jenderal Pajak (DJP).
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">b. Melakukan Pembayaran Pajak</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              UMKM yang terkena PPh Final harus membayar pajak setiap bulan melalui e-Billing DJP Online atau bank yang ditunjuk oleh pemerintah.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">c. Melaporkan SPT Tahunan</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Setiap pelaku UMKM wajib melaporkan Surat Pemberitahuan (SPT) Tahunan melalui DJP Online atau langsung ke Kantor Pajak.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">4. Sanksi Jika Tidak Melaporkan Pajak</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Jika UMKM tidak melaporkan pajaknya tepat waktu, ada beberapa sanksi yang bisa dikenakan, seperti:
+            </p>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Denda keterlambatan pelaporan SPT Tahunan sebesar Rp100.000 untuk Wajib Pajak Orang Pribadi dan Rp1.000.000 untuk Wajib Pajak Badan.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Sanksi administrasi berupa bunga atas keterlambatan pembayaran pajak.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Pemeriksaan pajak dan kemungkinan dikenakan sanksi lebih berat jika ditemukan ketidaksesuaian dalam laporan pajak.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">5. Butuh Bantuan dalam Urusan Pajak UMKM?</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Mengurus pajak bisa menjadi hal yang rumit, terutama bagi pelaku UMKM yang masih baru. Jangan khawatir! <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> siap membantu Anda dalam pengurusan pajak UMKM, mulai dari pendaftaran NPWP, pembayaran pajak, hingga pelaporan SPT Tahunan. Kami menyediakan layanan konsultasi dan pendampingan pajak secara profesional, cepat, dan terpercaya.
+            </p>
+            <p class="text-lg text-[#757575] leading-8">
+              Hubungi kami sekarang dan pastikan bisnis Anda tetap patuh pajak tan
+            </p>
+          </div>
+        </div>
+
       </div>
     `
   },
@@ -432,20 +656,136 @@ export const articles: Article[] = [
     id: 6,
     image: "https://api.builder.io/api/v1/image/assets/TEMP/e377661191bbda62fc641546a50428423c654fd6?width=747",
     category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan Hukum Digital",
-    excerpt: "Temukan alasan mengapa layanan hukum digital menjadi pilihan utama di era modern.",
-    height: "h-[284px]",
+    title: "HAKI (Hak Kekayaan Intelektual): Cara Melindungi Brand dan Produk Anda",
+    excerpt: "Dalam dunia bisnis yang kompetitif, melindungi brand dan produk adalah...",
+    height: "h-[399px]",
+    imageHeight: "h-[120px] sm:h-[160px] lg:h-[200px]",
     content: `
       <div class="prose max-w-4xl mx-auto">
         <p class="text-lg sm:text-xl text-[#757575] leading-8 mb-6">
-          Layanan hukum digital telah menjadi solusi praktis bagi banyak orang. Berikut adalah beberapa alasan 
-          mengapa Anda harus mempertimbangkannya.
+          Dalam dunia bisnis yang kompetitif, melindungi brand dan produk adalah langkah krusial untuk menjaga keunggulan dan mencegah penyalahgunaan oleh pihak lain. Hak Kekayaan Intelektual (HAKI) menjadi solusi utama untuk memberikan perlindungan hukum terhadap inovasi dan identitas bisnis Anda.
+          Artikel ini akan membahas apa itu HAKI, jenis-jenisnya, serta cara melindungi brand dan produk Anda melalui pendaftaran HAKI.
         </p>
         
-        <div class="space-y-8">
-          <p class="text-lg text-[#757575] leading-8">
-            Konten artikel akan segera tersedia. Silakan kunjungi kembali halaman ini untuk informasi lebih lanjut.
-          </p>
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">1. Apa Itu HAKI?</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Hak Kekayaan Intelektual (HAKI) adalah hak eksklusif yang diberikan oleh negara kepada individu atau badan hukum atas karya intelektual yang mereka ciptakan. HAKI bertujuan untuk memberikan perlindungan hukum terhadap hasil karya intelektual agar tidak disalahgunakan oleh pihak lain tanpa izin.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">2. Jenis-Jenis HAKI</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Berikut beberapa jenis HAKI yang dapat digunakan untuk melindungi brand dan produk bisnis Anda:
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">a. Hak Cipta</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Hak eksklusif atas karya seni, sastra, dan ilmu pengetahuan, termasuk buku, musik, film, dan perangkat lunak.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">b. Merek Dagang</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Melindungi identitas bisnis seperti logo, nama brand, slogan, dan simbol yang membedakan produk atau jasa dari pesaing.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">c. Paten</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Memberikan hak eksklusif atas penemuan atau inovasi teknis yang memiliki kebaruan, langkah inventif, dan dapat diterapkan dalam industri.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">d. Desain Industri</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Melindungi bentuk, konfigurasi, atau komposisi visual dari suatu produk yang memiliki nilai estetika dan orisinalitas.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">e. Rahasia Dagang</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Menjaga informasi bisnis yang bersifat rahasia dan memberikan keuntungan kompetitif, seperti resep, formula, atau strategi pemasaran.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">3. Cara Melindungi Brand dan Produk dengan HAKI</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Untuk memastikan brand dan produk Anda aman dari penyalahgunaan, berikut langkah-langkah yang perlu dilakukan:
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">a. Pendaftaran Merek Dagang</h3>
+            <ol class="space-y-1 list-decimal list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Cek Ketersediaan Merek </span>melalui situs Direktorat Jenderal Kekayaan Intelektual (DJKI).</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Ajukan Pendaftaran </span>secara online di laman resmi DJKI.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Tunggu Pemeriksaan </span>administratif dan substantif oleh DJKI.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Jika Disetujui, Merek Didaftarkan </span>dan berlaku selama 10 tahun, dapat diperpanjang.</p>
+              </li>
+            </ol>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">b. Pendaftaran Hak Cipta</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Dapat dilakukan secara online melalui DJKI.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Tidak perlu pemeriksaan substantif, hanya membutuhkan bukti kepemilikan karya.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Perlindungan berlaku seumur hidup pencipta + 70 tahun setelahnya.</p>
+              </li>
+            </ol>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">c. Pendaftaran Paten</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Pastikan inovasi memenuhi syarat kebaruan dan langkah inventif.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Ajukan permohonan paten melalui DJKI.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Paten berlaku selama 20 tahun sejak tanggal pengajuan.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">4. Pentingnya Mendaftarkan HAKI</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Mendaftarkan HAKI memberikan berbagai manfaat, antara lain:
+            </p>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Mencegah Pembajakan dan Pemalsuan – </span>Melindungi produk dari pencurian ide atau penjiplakan oleh pesaing.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Meningkatkan Nilai Bisnis – </span>HAKI bisa menjadi aset berharga yang meningkatkan daya saing dan valuasi perusahaan.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Keuntungan Hukum – </span>Jika ada pihak lain yang menggunakan karya atau brand Anda tanpa izin, Anda dapat menuntut mereka secara hukum.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Memudahkan Kemitraan dan Investasi – </span>Investor dan mitra bisnis lebih tertarik bekerja sama dengan bisnis yang memiliki perlindungan hukum atas kekayaan intelektualnya.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">5. Butuh Bantuan dalam Pendaftaran HAKI?</h2>
+            <p class="text-lg text-[#757575] leading-8 mb-2">
+              Mengurus pendaftaran HAKI bisa terasa rumit dan memakan waktu. <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> siap membantu Anda dalam proses pendaftaran merek dagang, hak cipta, paten, dan perlindungan kekayaan intelektual lainnya. Kami menyediakan layanan profesional, cepat, dan terpercaya untuk memastikan brand dan produk Anda aman secara hukum.
+            </p>
+            <p class="text-lg text-[#757575] leading-8">
+              Hubungi kami sekarang dan lindungi aset bisnis Anda sebelum terlambat!
+            </p>
+          </div>
         </div>
       </div>
     `
@@ -454,20 +794,140 @@ export const articles: Article[] = [
     id: 7,
     image: "https://api.builder.io/api/v1/image/assets/TEMP/a9420bce7f0334e6f7ed260e4b4ac9c59cec2c71?width=747",
     category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan Hukum Digital",
-    excerpt: "Temukan alasan mengapa layanan hukum digital menjadi pilihan utama di era modern.",
-    height: "h-[424px]",
+    title: "6 Kesalahan Umum Saat Mendirikan PT & Cara Menghindarinya",
+    excerpt: "Mendirikan Perseroan Terbatas (PT) adalah langkah besar dalam memulai bisnis yang profesional dan legal di Indonesia. Namun, banyak pengusaha yang melakukan kesalahan saat...",
+    height: "h-[597px]",
+    imageHeight: "h-[192px] sm:h-[256px] lg:h-[320px]",
     content: `
       <div class="prose max-w-4xl mx-auto">
         <p class="text-lg sm:text-xl text-[#757575] leading-8 mb-6">
-          Layanan hukum digital menawarkan berbagai keuntungan yang tidak bisa didapatkan dari layanan konvensional. 
-          Berikut adalah beberapa alasan mengapa Anda harus mempertimbangkannya.
+          Mendirikan Perseroan Terbatas (PT) adalah langkah besar dalam memulai bisnis yang profesional dan legal di Indonesia. Namun, banyak pengusaha yang melakukan kesalahan saat mendirikan PT, yang bisa berdampak pada operasional, legalitas, dan keberlanjutan bisnis mereka. Agar proses pendirian berjalan lancar, penting untuk memahami kesalahan umum yang sering terjadi dan bagaimana cara menghindarinya.
         </p>
         
-        <div class="space-y-8">
-          <p class="text-lg text-[#757575] leading-8">
-            Konten artikel akan segera tersedia. Silakan kunjungi kembali halaman ini untuk informasi lebih lanjut.
-          </p>
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">1. Tidak Memilih Nama PT dengan Cermat</h2>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Kesalahan:</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Banyak pengusaha terburu-buru dalam memilih nama PT tanpa melakukan pengecekan ketersediaan di Direktorat Jenderal Administrasi Hukum Umum (AHU). Akibatnya, nama yang diajukan bisa ditolak karena sudah digunakan atau mirip dengan perusahaan lain.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Cara Menghindari:</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Lakukan pengecekan nama PT di sistem AHU Online sebelum mendaftar.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Pilih nama yang unik, relevan dengan bisnis Anda, dan tidak mengandung kata-kata yang dilarang.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">2. Salah Memilih Jenis PT</h2>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Kesalahan:</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Beberapa pelaku usaha tidak memahami perbedaan antara PT Perorangan dan PT biasa. Mereka bisa saja memilih struktur yang tidak sesuai dengan kebutuhan bisnis mereka.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Cara Menghindari:</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Jika Anda adalah pemilik tunggal dan memiliki skala usaha kecil, PT Perorangan bisa menjadi pilihan yang lebih sederhana.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Jika Anda memiliki mitra atau ingin mendapatkan pendanaan dari investor, maka PT biasa lebih cocok karena bisa memiliki lebih dari satu pemegang saham.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">3. Tidak Memenuhi Persyaratan Modal Minimal</h2>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Kesalahan:</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Walaupun saat ini tidak ada ketentuan modal minimal yang baku, beberapa bidang usaha tetap mensyaratkan modal tertentu dalam standar KBLI (Klasifikasi Baku Lapangan Usaha Indonesia). Kesalahan dalam menentukan modal bisa menyebabkan kendala saat mengurus perizinan.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Cara Menghindari:</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Cek peraturan terbaru mengenai modal dasar dan modal disetor sesuai dengan bidang usaha yang dipilih.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Pastikan modal yang dicantumkan masuk akal dan sesuai dengan kapasitas bisnis Anda.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">4. Tidak Melengkapi Dokumen dengan Benar</h2>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Kesalahan:</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Kesalahan dalam pengisian dokumen seperti akta pendirian, NPWP perusahaan, dan dokumen lainnya bisa menghambat proses legalisasi PT.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Cara Menghindari:</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Pastikan semua dokumen disiapkan dengan benar sesuai ketentuan yang berlaku.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Gunakan jasa notaris yang berpengalaman untuk membantu dalam pembuatan akta pendirian.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">5. Tidak Mengurus Izin Usaha dan NPWP Perusahaan</h2>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Kesalahan:</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Banyak yang mengira bahwa setelah mendapatkan akta pendirian, bisnis sudah bisa langsung berjalan. Padahal, masih ada perizinan lain yang harus diurus, seperti Nomor Induk Berusaha (NIB), Surat Izin Usaha Perdagangan (SIUP), dan izin lainnya sesuai dengan bidang usaha.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Cara Menghindari:</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Segera ajukan perizinan melalui sistem OSS (Online Single Submission).</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Pastikan PT Anda memiliki NPWP perusahaan agar bisa menjalankan kewajiban pajak dengan benar.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">6. Tidak Menggunakan Jasa Pohon Hukum Indonesia</h2>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Kesalahan:</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Banyak pengusaha mencoba mendirikan PT sendiri tanpa bantuan profesional, yang sering kali menyebabkan kesalahan dalam dokumen, perizinan yang tertunda, atau pemilihan struktur bisnis yang kurang tepat.
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Cara Menghindari:</h3>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Gunakan jasa profesional seperti <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> untuk memastikan proses pendirian PT berjalan dengan lancar dan sesuai peraturan.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Dapatkan bimbingan hukum yang tepat agar bisnis Anda memiliki pondasi yang kuat.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">Kesimpulan</h2>
+            <p class="text-lg text-[#757575] leading-8 mb-2">
+              Mendirikan PT memang memerlukan perencanaan yang matang agar tidak terjadi kesalahan yang bisa menghambat operasional bisnis Anda. Dengan menghindari kesalahan-kesalahan di atas, Anda bisa memastikan bahwa perusahaan berdiri dengan legalitas yang kuat dan siap berkembang.
+            </p>
+            <p class="text-lg text-[#757575] leading-8">
+              Jika Anda ingin mendirikan PT tanpa repot dan memastikan semua proses berjalan dengan benar, <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> siap membantu! Kami menawarkan layanan pendirian PT mulai dari pembuatan akta, perizinan usaha, hingga konsultasi hukum bisnis. Hubungi kami sekarang dan biarkan kami mengurus semuanya untuk Anda!
+            </p>
+          </div>
         </div>
       </div>
     `
@@ -476,20 +936,129 @@ export const articles: Article[] = [
     id: 8,
     image: "https://api.builder.io/api/v1/image/assets/TEMP/9a73eae2e299cfdb55e33e46aa4aa0e2316854eb?width=747",
     category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan Hukum Digital",
-    excerpt: "Temukan alasan mengapa layanan hukum digital menjadi pilihan utama di era modern.",
-    height: "h-[364px]",
+    title: "Cara Mengurus NIB untuk Legalitas Usaha Anda",
+    excerpt: "Memiliki legalitas usaha adalah langkah penting dalam menjalankan bisnis...",
+    height: "h-[479px]",
+    imageHeight: "h-[168px] sm:h-[224px] lg:h-[280px]",
     content: `
       <div class="prose max-w-4xl mx-auto">
         <p class="text-lg sm:text-xl text-[#757575] leading-8 mb-6">
-          Layanan hukum digital menawarkan berbagai keuntungan yang tidak bisa didapatkan dari layanan konvensional. 
-          Berikut adalah beberapa alasan mengapa Anda harus mempertimbangkannya.
+          Memiliki legalitas usaha adalah langkah penting dalam menjalankan bisnis secara profesional dan sah di mata hukum. Dokumen utama yang wajib dimiliki oleh pelaku usaha di Indonesia adalah <span class="font-semibold text-[#05060C]">Nomor Induk Berusaha (NIB)</span>. Dengan memiliki NIB, usaha Anda akan lebih kredibel, mudah mendapatkan akses permodalan, serta terhindar dari masalah hukum di kemudian hari.
+          Dalam artikel ini, kami akan membahas secara lengkap tentang NIB, termasuk cara mengurusnya dengan mudah.
         </p>
         
-        <div class="space-y-8">
-          <p class="text-lg text-[#757575] leading-8">
-            Konten artikel akan segera tersedia. Silakan kunjungi kembali halaman ini untuk informasi lebih lanjut.
-          </p>
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">1. Apa Itu NIB?</h2>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Nomor Induk Berusaha (NIB)</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              NIB adalah identitas usaha yang diterbitkan melalui sistem <span class="font-semibold text-[#05060C]">Online Single Submission (OSS)</span>. 
+              NIB berfungsi sebagai tanda pengenal usaha dan menggantikan beberapa dokumen lain seperti Tanda Daftar Perusahaan (TDP), 
+              Angka Pengenal Impor (API), dan Akses Kepabeanan. Selain itu, NIB juga berfungsi sebagai izin usaha yang sebelumnya dikenal sebagai <span class="font-semibold text-[#05060C]">Surat Izin Usaha Perdagangan (SIUP)</span>.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">2. Siapa yang Wajib Mengurus NIB?</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Semua pelaku usaha yang menjalankan kegiatan bisnis di Indonesia, baik itu perorangan, badan usaha, atau badan hukum seperti <span class="font-semibold text-[#05060C]">CV dan PT</span>, wajib memiliki NIB. Dengan adanya NIB, usaha Anda akan terdaftar secara resmi dan bisa beroperasi dengan legal.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">3. Cara Mengurus NIB Melalui OSS</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Saat ini, proses pengurusan NIB bisa dilakukan secara <span class="font-semibold text-[#05060C]">online melalui sistem OSS</span>. Berikut adalah langkah-langkahnya:
+            </p>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Langkah 1: Persiapkan Dokumen yang Dibutuhkan</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Sebelum mendaftar, pastikan Anda sudah menyiapkan dokumen berikut:
+            </p>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Nomor Induk Kependudukan (NIK) </span>pemilik usaha (untuk usaha perorangan) atau direktur (untuk PT/CV).</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">NPWP usaha </span>atau pribadi jika belum memiliki NPWP usaha.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Akta Pendirian dan SK Kemenkumham </span>(khusus untuk PT dan badan usaha lainnya).</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Alamat usaha yang jelas.</span></p>
+              </li>
+            </ol>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Langkah 2: Buat Akun di OSS</h3>
+            <ol class="space-y-1 list-decimal list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Buka situs <span class="font-semibold text-[#05060C]">https://oss.go.id</span>.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Klik “Daftar” dan isi informasi yang dibutuhkan.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Setelah registrasi, login ke akun Anda.</p>
+              </li>
+            </ol>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Langkah 3: Ajukan NIB</h3>
+            <ol class="space-y-1 list-decimal list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Pilih menu “Pendaftaran NIB & Izin Usaha”.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Isi data usaha, termasuk bidang usaha berdasarkan KBLI (Klasifikasi Baku Lapangan Usaha Indonesia).</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Setelah semua data terisi, sistem akan menerbitkan <span class="font-semibold text-[#05060C]">NIB</span> secara otomatis.</p>
+              </li>
+            </ol>
+            <h3 class="text-xl font-bold text-[#05060C] mb-2">Langkah 4: Unduh dan Simpan Dokumen</h3>
+            <p class="text-lg text-[#757575] leading-8">
+              Setelah pengajuan berhasil, <span class="font-semibold text-[#05060C]">NIB</span> dapat diunduh dan dicetak langsung dari sistem OSS.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">4. Manfaat Memiliki NIB</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Dengan memiliki NIB, usaha Anda akan mendapatkan banyak keuntungan, seperti:
+            </p>
+            <ol class="space-y-1 list-disc list-inside ml-5">
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Legalitas usaha yang sah </span>di mata hukum.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Kemudahan dalam akses permodalan, </span>seperti pengajuan pinjaman ke bank.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Lebih dipercaya oleh pelanggan dan mitra bisnis.</span></p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Mempermudah pengurusan izin usaha lainnya, </span>seperti izin lingkungan dan izin industri.</p>
+              </li>
+              <li class="not-prose">
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6"><span class="font-semibold text-[#05060C]">Akses lebih luas ke tender pemerintah dan proyek bisnis besar.</span></p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-10 mb-4">
+          <div>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">5. Butuh Bantuan Mengurus NIB?</h2>
+            <p class="text-lg text-[#757575] leading-8">
+              Proses pengurusan legalitas usaha bisa membingungkan dan memakan waktu, terutama bagi pelaku usaha yang belum familiar dengan sistem OSS. Jika Anda ingin mengurus <span class="font-semibold text-[#05060C]">NIB dengan cepat dan tanpa ribet, Pohon Hukum Indonesia</span> siap membantu Anda!
+            </p>
+            <p class="text-lg text-[#757575] leading-8">
+              Kami menyediakan layanan konsultasi dan pengurusan perizinan usaha secara profesional dan terpercaya. Hubungi kami sekarang dan pastikan usaha Anda memiliki legalitas yang lengkap!
+            </p>
+          </div>
         </div>
       </div>
     `
