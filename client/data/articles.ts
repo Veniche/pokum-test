@@ -641,10 +641,7 @@ export const articles: Article[] = [
           <div>
             <h2 class="text-2xl font-bold text-[#05060C] mb-4">5. Butuh Bantuan dalam Urusan Pajak UMKM?</h2>
             <p class="text-lg text-[#757575] leading-8">
-              Mengurus pajak bisa menjadi hal yang rumit, terutama bagi pelaku UMKM yang masih baru. Jangan khawatir! <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> siap membantu Anda dalam pengurusan pajak UMKM, mulai dari pendaftaran NPWP, pembayaran pajak, hingga pelaporan SPT Tahunan. Kami menyediakan layanan konsultasi dan pendampingan pajak secara profesional, cepat, dan terpercaya.
-            </p>
-            <p class="text-lg text-[#757575] leading-8">
-              Hubungi kami sekarang dan pastikan bisnis Anda tetap patuh pajak tan
+              Mengurus pajak bisa menjadi hal yang rumit, terutama bagi pelaku UMKM yang masih baru. Jangan khawatir! <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> siap membantu Anda dalam pengurusan pajak UMKM, mulai dari pendaftaran NPWP, pembayaran pajak, hingga pelaporan SPT Tahunan. Kami menyediakan layanan konsultasi dan pendampingan pajak secara profesional, cepat, dan terpercaya. Hubungi kami sekarang dan pastikan bisnis Anda tetap patuh pajak.
             </p>
           </div>
         </div>
