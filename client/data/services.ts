@@ -24,63 +24,63 @@ export const serviceSections: ServiceSection[] = [
         id: 'pt-pmdn',
         title: 'Pendirian PT(PMDN)',
         price: 'IDR 8,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/b2a1ab12dd8d678d4bf5b14c352e9672d6310c75?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757500064/PMDN_rrnnav.png',
         description: 'Pendirian Perseroan Terbatas Penanaman Modal Dalam Negeri (PT PMDN) dengan proses cepat dan terpercaya. Termasuk pengurusan akta notaris, SK Kemenkumham, NIB, dan dokumen pendukung lainnya.'
       },
       {
         id: 'pt-pma',
         title: 'Pendirian PT(PMA)',
         price: 'IDR 11,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/2938cc9eb2f558311a2df3fb1af33796fa29a790?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502770/PT_PMA_tqq6ft.png',
         description: 'Pendirian Perseroan Terbatas Penanaman Modal Asing (PT PMA) untuk investor asing yang ingin berinvestasi di Indonesia. Termasuk pengurusan izin investasi, akta notaris, dan dokumen legal lainnya.'
       },
       {
         id: 'pt-perorangan',
         title: 'Pendirian PT(Perorangan)',
         price: 'IDR 1,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/1864b9955126e81208d95c0c789d029fc327e44c?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502769/PT_PERSERO_viyyen.png',
         description: 'Pendirian PT Perorangan sesuai dengan UU Cipta Kerja. Solusi tepat untuk pelaku usaha mikro dan kecil dengan proses yang lebih sederhana dan biaya terjangkau.'
       },
       {
         id: 'perubahan-akta',
         title: 'Perubahan Akta',
         price: 'IDR 6,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/f1b866b5d25f74e78c697bd74a386b87f14f8358?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502766/Akta_y8hmbc.png',
         description: 'Layanan perubahan akta pendirian atau perubahan perusahaan, termasuk perubahan nama, alamat, modal, pengurus, atau komposisi pemegang saham.'
       },
       {
         id: 'pendirian-cv',
         title: 'Pendirian CV',
         price: 'IDR 6,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/1b9873818bbad31b6e32e6244f51658c2eb60557?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502767/Pendirian_CV_ugizej.png',
         description: 'Pendirian Commanditaire Vennootschap (CV) untuk usaha kecil dan menengah. Termasuk pengurusan akta notaris, NIB, dan dokumen pendukung lainnya.'
       },
       {
         id: 'perubahan-cv',
         title: 'Perubahan CV',
         price: 'IDR 5,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/b4814a3492b77d30c889bc54169d0d89a0a8978b?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502768/Perubahan_CV_u4kkvz.png',
         description: 'Layanan perubahan data CV, termasuk perubahan pengurus, alamat, modal, atau bidang usaha. Dilengkapi dengan pengurusan perubahannya di notaris dan instansi terkait.'
       },
       {
         id: 'pendirian-firma',
         title: 'Pendirian Firma',
         price: 'IDR 6,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/4254a5625b7bf0ddc05139edfff14c6d20ee96bb?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502767/Pendirian_Firma_n1gks3.png',
         description: 'Pendirian Firma untuk usaha yang dijalankan oleh beberapa orang dengan satu nama bersama. Termasuk pengurusan akta notaris dan dokumen pendukung lainnya.'
       },
       {
         id: 'pendaftaran-merek',
         title: 'Pendaftaran Merek',
         price: 'IDR 3,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/2886e00d9cb29f11484196afc9ee0bfdf216c46c?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502766/Pendaftaran_Merek_ockhnx.png',
         description: 'Pendaftaran merek dagang ke Direktorat Jenderal Kekayaan Intelektual (DJKI). Termasuk konsultasi kelas merek, penelusuran merek, dan pengurusan dokumen pendaftaran.'
       },
       {
         id: 'perpanjangan-merek',
         title: 'Perpanjangan Merek',
         price: 'IDR 2,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/2c7a8b985e3e02f9cf1a4d82592132878d6ecf19?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502767/Perpanjangan_Merek_vkobgw.png',
         description: 'Layanan perpanjangan masa berlaku merek dagang yang akan habis masa berlakunya. Dilakukan sebelum masa berlaku habis untuk menghindari pembatalan merek.'
       }
     ]
@@ -94,35 +94,35 @@ export const serviceSections: ServiceSection[] = [
         id: 'npwp-perusahaan',
         title: 'NPWP Perusahaan',
         price: 'IDR 8,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/a58b7c886be6c958ba42947b58a3fb17a523e956?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503224/NPWP_Perusahaan_vxovyh.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Orang Pribadi (Form 1770/1770S/1770SS).'
       },
       {
         id: 'npwp-perorangan',
         title: 'NPWP Perorangan',
         price: 'IDR 11,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/62541ab90271f5626c57aa4b1ca22fdfab660e23?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503223/NPWP_Perorangan_bidjpq.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'laporan-pajak-bulanan',
         title: 'Laporan Pajak Bulanan',
         price: 'IDR 1,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/6ca0a07c856a53581d9f503a4dddc96ff381d80a?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503222/Laporan_Pajak_Bulanan_l54ksl.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'laporan-pajak-tahunan',
         title: 'Laporan Pajak Tahunan',
         price: 'IDR 6,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/526823435ef7a6c8948f844279a160ddba1edabc?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503223/Laporan_Pajak_Tahunan_kibtet.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'pengembalian-pajak',
         title: 'Pengembalian Pajak',
         price: 'IDR 6,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/2d769bb2eb8adf1b337afcdac7eed08155cdc7f2?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503226/Pengembalian_Pajak_lmwhjo.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       }
     ]
@@ -136,21 +136,21 @@ export const serviceSections: ServiceSection[] = [
         id: 'advokat',
         title: 'Advokat',
         price: 'IDR 8,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/5634fb80dec005fdb3dcf508d1dc1634a5ebbaeb?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503362/Advokat_pfsvpd.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'notaris',
         title: 'Notaris',
         price: 'IDR 11,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/14a5000a62b696eb2433a1ff1cf25a211c361021?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503378/Notaris_trtyaw.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'mediator',
         title: 'Mediator',
         price: 'IDR 1,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/367a6a5d72423077fd87b52f6061cc5a0afe1dfb?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503389/Mediator_tqsikv.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       }
     ]
@@ -164,14 +164,14 @@ export const serviceSections: ServiceSection[] = [
         id: 'virtual-office',
         title: 'Virtual Office',
         price: 'IDR 8,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/d6d92996449ceab1fc46ccf74942a5a9271ee5b3?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504137/Virtual_Office_unhnyj.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'sewa-kantor',
         title: 'Sewa Kantor',
         price: 'IDR 11,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/435727131dbcd27e5887633dad54d051bb74af37?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504034/Sewa_Kantor_gimchj.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       }
     ]
@@ -185,49 +185,49 @@ export const serviceSections: ServiceSection[] = [
         id: 'paket-video-satuan-essentials',
         title: 'Paket Video Satuan Essentials',
         price: 'IDR 8,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/f853320b7264f83b11181f8b1078688bb247d1ab?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504174/Paket_Video_Satuan_Essentials_o8iqpq.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'paket-video-satuan-advanced',
         title: 'Paket Video Satuan Advanced',
         price: 'IDR 11,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/a264071f16d6a9247623e6236fedf390b46b1c1c?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504173/Paket_Video_Satuan_Advanced_vg6kvh.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'paket-video-satuan-premium',
         title: 'Paket Video Satuan Premium',
         price: 'IDR 1,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/8ae0c0b1325397a813246171dcf4bc2404cf80df?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504179/Paket_Video_Satuan_Premium_qgzo4w.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'paket-video-bulk-essentials',
         title: 'Paket Video Bulk Essentials',
         price: 'IDR 6,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/4ebd9043144c4e56efb44f83fd77374a4f87b35a?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504167/Paket_Video_Bulk_Essentials_dj1otm.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'paket-video-bulk-advanced',
         title: 'Paket Video Bulk Advanced',
         price: 'IDR 8,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/c59a7f8b5614fe0d79bc5d3a5382b2cd07fdf49e?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504166/Paket_Video_Bulk_Advanced_zp8llr.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'paket-video-bulk-premium',
         title: 'Paket Video Bulk Premium',
         price: 'IDR 11,000,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/3a1520c5138f31b4de3eb0b5a1f4ef0d25b53381?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504172/Paket_Video_Bulk_Premium_oq3l5m.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       },
       {
         id: 'peluncuran-website',
         title: 'Peluncuran Website',
         price: 'IDR 1,500,000.00',
-        image: 'https://api.builder.io/api/v1/image/assets/TEMP/799ba80339acd88dd873b031d4ee850f4dd50b1b?width=640',
+        image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504177/Peluncuran_Website_fmnqek.png',
         description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
       }
     ]
