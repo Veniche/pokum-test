@@ -73,33 +73,40 @@ const ServiceCard = ({ service, isFlipped, onFlip }: ServiceCardProps) => {
           padding: '2rem',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
+          alignItems: 'flex-start',
           justifyContent: 'space-between'
         }}>
-          <h3 className="text-2xl font-bold text-[#05060C] font-helvetica-world mb-4 text-center">
-            {service.title}
-          </h3>
-          
-          <div className="flex-1 flex items-center">
-            <p className="text-lg text-[#383A46] font-helvetica-world text-center">
-              {service.description}
-            </p>
+          <div className="w-full h-full flex flex-col justify-between">
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-[#05060C] font-helvetica-world">
+                  {service.title}
+                </h3>
+              </div>
+              
+              <div className="flex-1">
+                <p className="text-lg text-[#757575] font-helvetica-world">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+            
+            <div className="mt-auto">
+              <p className="text-2xl font-bold text-[#05060C] font-helvetica-world mb-6">
+                {service.price}
+              </p>
+            </div>
           </div>
           
-          <div className="w-full flex flex-col items-center space-y-4">
-            <p className="text-xl text-[#05060C] font-helvetica-world font-medium">
-              {service.price}
-            </p>
-            <button 
-              onClick={(e) => {
-                e.stopPropagation();
-                // Handle order now action
-              }}
-              className="px-6 py-2 border-2 border-[#05060C] rounded-xl text-[#05060C] font-medium hover:bg-[#05060C] hover:text-white transition-colors duration-200"
-            >
-              Order Now →
-            </button>
-          </div>
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              // Handle order now action
+            }}
+            className="w-full py-3 border-2 border-[#05060C] rounded-xl text-[#05060C] font-medium hover:bg-[#05060C] hover:text-white transition-colors duration-200 text-center"
+          >
+            Order Now →
+          </button>
         </div>
       </div>
     </div>
