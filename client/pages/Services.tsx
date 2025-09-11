@@ -43,20 +43,24 @@ const ServiceCard = ({ service, isFlipped, onFlip }: ServiceCardProps) => {
           backfaceVisibility: 'hidden',
           WebkitBackfaceVisibility: 'hidden',
         }}>
-          <div className="bg-[#F5F8FC] rounded-3xl p-8 h-full flex flex-col items-center text-center hover:shadow-lg">
-            <div className="relative w-full h-80 mb-3">
+          <div className="bg-[#F5F8FC] rounded-3xl p-8 h-full flex flex-col items-center text-center hover:shadow-lg justify-between">
+            <div className="relative w-full h-80">
               <img 
                 src={service.image} 
                 alt={service.title} 
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <h3 className="text-2xl font-bold text-[#05060C] font-helvetica-world mb-2 leading-9">
-              {service.title}
-            </h3>
-            <p className="text-xl text-[#757575] font-helvetica-world">
-              {service.price}
-            </p>
+            <div className="space-y-4 w-full">
+              <h3 className="text-2xl font-bold text-[#05060C] font-helvetica-world leading-9">
+                {service.title}
+              </h3>
+            </div>
+            <div className="space-y-4 w-full mb-8">
+              <p className="text-xl text-[#757575] font-helvetica-world">
+                {service.price}
+              </p>
+            </div>
           </div>
         </div>
         
@@ -84,11 +88,10 @@ const ServiceCard = ({ service, isFlipped, onFlip }: ServiceCardProps) => {
                 </h3>
               </div>
               
-              <div className="flex-1">
-                <p className="text-lg text-[#757575] font-helvetica-world">
-                  {service.description}
-                </p>
-              </div>
+              <div 
+                className="flex-1 text-lg text-[#757575] font-helvetica-world space-y-2"
+                dangerouslySetInnerHTML={{ __html: service.description }}
+              />
             </div>
             
             <div className="mt-auto">

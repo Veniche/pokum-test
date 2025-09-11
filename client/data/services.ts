@@ -25,7 +25,16 @@ export const serviceSections: ServiceSection[] = [
         title: 'Pendirian PT(PMDN)',
         price: 'IDR 8,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757500064/PMDN_rrnnav.png',
-        description: 'Pendirian Perseroan Terbatas Penanaman Modal Dalam Negeri (PT PMDN) dengan proses cepat dan terpercaya. Termasuk pengurusan akta notaris, SK Kemenkumham, NIB, dan dokumen pendukung lainnya.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Pemeriksaan dan Pemesanan Nama PT</p>
+            <p>2. Pembuatan Akta Pendirian oleh Notaris</p>
+            <p>3. Pengesahan Akta Perseroan oleh Notaris</p>
+            <p>4. Surat Ketetapan dari Kementerian Hukum dan HAM</p>
+            <p>5. NPWP</p>
+            <p>6. Nomor Induk Berusaha (NIB) OSS RBA</p>
+        </div>
+        `
       },
       {
         id: 'pt-pma',
