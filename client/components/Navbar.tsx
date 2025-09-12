@@ -139,45 +139,24 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform ${
-          isMenuOpen ? "max-h-96 py-4 opacity-100" : "max-h-0 opacity-0 py-0"
+          isMenuOpen ? "max-h-[800px] py-8 opacity-100" : "max-h-0 opacity-0 py-0"
         }`}
       >
-        <div className="flex flex-col space-y-4 pt-4 px-4">
+        <div className="flex flex-col space-y-8 pt-4 px-6 pb-10">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className={`flex items-center space-x-3 p-3 rounded-md hover:bg-gray-50 transition-colors ${
+              className={`text-[28px] py-4 px-2 rounded-md hover:bg-gray-50 transition-colors ${
                 activeLink === link.to
-                  ? "text-blue-600 bg-blue-50"
-                  : "text-gray-600"
+                  ? "text-[#2556BA] font-bold"
+                  : "text-gray-800 font-normal"
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              <img
-                src={`/pokum/icons/${link.icon}`}
-                alt={link.text}
-                className="w-6 h-6"
-              />
-              <span className="font-medium">{link.text}</span>
+              {link.text}
             </Link>
           ))}
-          <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">
-            {socialLinks.map((social) => (
-              <a
-                key={social.name}
-                href={social.url}
-                className="text-gray-500 hover:text-blue-600 p-2"
-                aria-label={social.name}
-              >
-                <img
-                  src={`/pokum/icons/${social.icon}`}
-                  alt={social.name}
-                  className="h-5 w-5"
-                />
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </nav>
