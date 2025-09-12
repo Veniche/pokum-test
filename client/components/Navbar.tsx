@@ -75,110 +75,108 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            {/* Home Button - Special Styling */}
-            <Link
-              to="/"
-              className="flex h-[52px] px-8 py-4 justify-center items-center gap-3 rounded-[2000px] bg-[#EBF1FC] transition-colors"
-            >
-              <img src="/pokum/icons/home.svg" alt="Home" className="w-6 h-6" />
-              <span className="text-[#3971E3] text-center font-bold text-lg leading-normal font-['Helvetica_World',_sans-serif]">
-                Home
-              </span>
-            </Link>
-
-            {/* Other Navigation Items - Icons Only */}
-            <div className="flex items-center gap-10">
-              {navLinks.slice(1).map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="transition-opacity hover:opacity-70"
-                >
-                  <img
-                    src={`/pokum/icons/${link.icon}`}
-                    alt={link.text}
-                    className="w-6 h-6"
-                  />
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Social Links - Desktop */}
-        <div className="hidden lg:flex items-center gap-5">
-          {socialLinks.map((social) => (
-            <a
-              key={social.name}
-              href={social.url}
-              className="flex w-6 h-6 justify-center items-center rounded-[30000px] transition-opacity hover:opacity-70"
-              aria-label={social.name}
-            >
-              <img
-                src={`/pokum/icons/${social.icon}`}
-                alt={social.name}
-                className="w-6 h-6"
-              />
-            </a>
-          ))}
-        </div>
-
-        {/* Mobile menu button */}
-        <button
-          className="lg:hidden p-2 text-gray-600 hover:text-blue-600 focus:outline-none transition-colors"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        >
-          {isMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </button>
-
-        {/* Mobile Menu */}
-        <div
-          className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform ${
-            isMenuOpen ? "max-h-96 py-4 opacity-100" : "max-h-0 opacity-0 py-0"
-          }`}
-        >
-          <div className="flex flex-col space-y-4 pt-4 px-4">
+          <div className="hidden lg:flex items-center gap-2">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`flex items-center space-x-3 p-3 rounded-md hover:bg-gray-50 transition-colors ${
-                  activeLink === link.to
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-600"
+                className={`flex h-[52px] ${activeLink === link.to ? 'px-8' : 'px-4'} py-4 justify-center items-center gap-3 rounded-[2000px] transition-colors ${
+                  activeLink === link.to 
+                    ? 'bg-[#EBF1FC]' 
+                    : 'hover:opacity-70'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
               >
-                <img
-                  src={`/pokum/icons/${link.icon}`}
-                  alt={link.text}
+                <img 
+                  src={`/pokum/icons/${link.icon}`} 
+                  alt={link.text} 
                   className="w-6 h-6"
                 />
-                <span className="font-medium">{link.text}</span>
+                {activeLink === link.to && (
+                  <span className="text-center font-bold text-lg leading-normal font-['Helvetica_World',_sans-serif] text-[#3971E3]">
+                    {link.text}
+                  </span>
+                )}
               </Link>
             ))}
-            <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.url}
-                  className="text-gray-500 hover:text-blue-600 p-2"
-                  aria-label={social.name}
-                >
-                  <img
-                    src={`/pokum/icons/${social.icon}`}
-                    alt={social.name}
-                    className="h-5 w-5"
-                  />
-                </a>
-              ))}
-            </div>
+          </div>
+        </div>
+
+        {/* Right section with Social Links and Mobile Menu */}
+        <div className="flex items-center gap-5">
+          {/* Social Links - Desktop */}
+          <div className="hidden lg:flex items-center gap-5">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                className="flex w-6 h-6 justify-center items-center rounded-[30000px] transition-opacity hover:opacity-70"
+                aria-label={social.name}
+              >
+                <img
+                  src={`/pokum/icons/${social.icon}`}
+                  alt={social.name}
+                  className="w-6 h-6"
+                />
+              </a>
+            ))}
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            className="lg:hidden p-2 text-gray-600 hover:text-blue-600 focus:outline-none transition-colors"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform ${
+          isMenuOpen ? "max-h-96 py-4 opacity-100" : "max-h-0 opacity-0 py-0"
+        }`}
+      >
+        <div className="flex flex-col space-y-4 pt-4 px-4">
+          {navLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className={`flex items-center space-x-3 p-3 rounded-md hover:bg-gray-50 transition-colors ${
+                activeLink === link.to
+                  ? "text-blue-600 bg-blue-50"
+                  : "text-gray-600"
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <img
+                src={`/pokum/icons/${link.icon}`}
+                alt={link.text}
+                className="w-6 h-6"
+              />
+              <span className="font-medium">{link.text}</span>
+            </Link>
+          ))}
+          <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                className="text-gray-500 hover:text-blue-600 p-2"
+                aria-label={social.name}
+              >
+                <img
+                  src={`/pokum/icons/${social.icon}`}
+                  alt={social.name}
+                  className="h-5 w-5"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
