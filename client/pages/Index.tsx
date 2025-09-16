@@ -14,49 +14,125 @@ import { Button } from "@/components/ui/button";
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
-
       {/* Hero Section */}
-      <section className="relative bg-white pt-12 pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              {/* Large pokum title */}
-              <div className="space-y-4">
-                <h1 className="text-8xl md:text-9xl font-bold text-black font-helvetica-world leading-none">
+      <section className="relative bg-white">
+        {/* Desktop Layout - Exact Figma positioning */}
+        <div className="hidden md:block relative w-full h-[783px]">
+          <div className="relative w-[1440px] mx-auto h-full">
+            {/* Large pokum title - positioned exactly like Figma */}
+            <div className="absolute left-[120px] top-[92px] w-[717px] h-[224px]">
+              <h1 className="text-[160px] font-helvetica-world font-normal text-black leading-none tracking-tight">
+                pokum
+              </h1>
+            </div>
+
+            {/* Subtitle - positioned exactly like Figma */}
+            <div className="absolute left-[262px] top-[276px] w-[576px] h-[40px]">
+              <p className="text-[28px] font-helvetica-world font-normal text-black opacity-70">
+                Your Full-Cycle Business Incorporation Experts
+              </p>
+            </div>
+
+            {/* Content area with description and button - positioned exactly like Figma */}
+            <div className="absolute left-[120px] top-[384px] w-[820px] h-[228px] flex flex-col justify-between">
+              {/* Description Text */}
+              <div className="flex flex-col gap-5">
+                <div className="flex justify-center items-center gap-2.5 w-full">
+                  <p className="w-[820px] text-2xl font-helvetica-world font-normal leading-9 text-black">
+                    <span className="text-black/50">
+                      We guide your business from entity creation to marketing,
+                      finance, tax support, and more — combining legal expertise
+                      with AI-powered solutions. You can focus on what matters
+                      most:{" "}
+                    </span>
+                    <span className="font-bold text-black">
+                      growing your products
+                    </span>
+                    <span className="text-black">.</span>
+                  </p>
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <button className="flex px-6 py-5 justify-center items-center gap-3 rounded-xl border-2 border-black bg-white font-helvetica-world font-bold text-[17px] text-black opacity-85 hover:bg-black hover:text-white transition-colors group">
+                Start Free Consultation
+                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* Gavel Image - positioned exactly like Figma */}
+            <div className="absolute left-[915px] top-0 w-[646px] h-[646px]">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd76de5beb41c4e42ad32a1fa15d192cb%2Fb4c365d3f5b440e0844d3039a8ebb153?format=webp&width=800"
+                alt="Legal gavel"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Layout */}
+        <div className="md:hidden relative w-full min-h-[555px] bg-white">
+          <div className="px-4 pb-8">
+            {/* Mobile Header */}
+            <div className="pt-5 pb-6">
+              <div className="flex justify-between items-center">
+                <div className="text-[24px] font-helvetica-world font-normal text-[#2556BA]">
+                  pokum
+                </div>
+                <button className="p-2">
+                  <div className="w-6 h-6 flex flex-col justify-center space-y-1">
+                    <div className="w-full h-0.5 bg-black"></div>
+                    <div className="w-full h-0.5 bg-black"></div>
+                    <div className="w-full h-0.5 bg-black"></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            {/* Mobile Background Gavel Image */}
+            <div className="absolute right-0 top-[44px] w-[413px] h-[413px] opacity-20 overflow-hidden">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd76de5beb41c4e42ad32a1fa15d192cb%2Fb4c365d3f5b440e0844d3039a8ebb153?format=webp&width=800"
+                alt="Legal gavel background"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            {/* Mobile pokum title */}
+            <div className="relative z-10 pt-[140px] space-y-6">
+              <div className="text-center">
+                <h1 className="text-[66px] font-helvetica-world font-normal text-black leading-none tracking-tight mb-2">
                   pokum
                 </h1>
-                <p className="text-2xl md:text-3xl text-black/70 font-helvetica-world">
+                <div className="w-[127px] h-[1px] bg-black opacity-50 mx-auto mb-3"></div>
+                <p className="text-[13px] font-helvetica-world font-normal text-black opacity-70 tracking-wide">
                   Your Full-Cycle Business Incorporation Experts
                 </p>
               </div>
 
-              {/* Description */}
-              <div className="space-y-6">
-                <p className="text-xl md:text-2xl text-black/50 font-helvetica leading-9">
-                  We guide your business from entity creation to marketing,
-                  finance, tax support, and more — combining legal expertise
-                  with AI-powered solutions. You can focus on what matters most:{" "}
+              {/* Mobile Description and CTA */}
+              <div className="space-y-10 px-5 pt-8">
+                <p className="text-[15px] font-helvetica-world leading-6 text-center text-black">
+                  <span className="opacity-50">
+                    We guide your business from entity creation to marketing,
+                    finance, tax support, and more — combining legal expertise
+                    with AI-powered solutions. You can focus on what matters
+                    most:{" "}
+                  </span>
                   <span className="font-bold text-black">
                     growing your products
                   </span>
-                  .
+                  <span className="text-black">.</span>
                 </p>
+
+                <div className="flex justify-center">
+                  <button className="inline-flex items-center justify-center gap-3 px-6 py-[14px] bg-white border-2 border-black rounded-xl font-helvetica-world font-bold text-[14px] text-black hover:bg-black hover:text-white transition-colors group">
+                    Start Free Consultation
+                    <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
               </div>
-
-              {/* CTA Button */}
-              <Button className="bg-white border-2 border-black text-black hover:bg-black hover:text-white px-6 py-4 rounded-xl font-bold text-lg group">
-                Start Free Consultation
-                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
-
-            {/* Gavel Image */}
-            <div className="relative">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/59d45f696386a7b116e2dfd9d41e778ef00c8b9f?width=1292"
-                alt="Legal consultation"
-                className="w-full h-auto max-w-[646px] mx-auto"
-              />
             </div>
           </div>
         </div>
