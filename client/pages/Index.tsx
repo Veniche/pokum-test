@@ -16,43 +16,47 @@ export default function Index() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="relative bg-white min-h-[783px] overflow-hidden">
-        {/* Desktop Layout */}
+      <section className="relative bg-white">
+        {/* Desktop Layout - Exact Figma positioning */}
         <div className="hidden md:block relative w-full h-[783px]">
-          <div className="max-w-[1440px] mx-auto px-[120px] relative h-full">
-            {/* Content positioned absolutely like Figma */}
-            <div className="absolute left-[120px] top-[384px] w-[820px] space-y-14">
-              {/* Description Text */}
-              <div className="space-y-5">
-                <p className="text-2xl font-helvetica-world leading-9 text-black">
-                  We guide your business from entity creation to marketing, finance, tax support, and more — combining legal expertise with AI-powered solutions. You can focus on what matters most:{" "}
-                  <span className="font-bold text-black">growing your products</span>.
-                </p>
-              </div>
+          <div className="relative w-[1440px] mx-auto h-full">
 
-              {/* CTA Button */}
-              <button className="inline-flex items-center justify-center gap-3 px-6 py-5 bg-white border-2 border-black rounded-xl font-helvetica-world font-bold text-[17px] text-black hover:bg-black hover:text-white transition-colors group">
-                Start Free Consultation
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-
-            {/* Large pokum title positioned like Figma */}
+            {/* Large pokum title - positioned exactly like Figma */}
             <div className="absolute left-[120px] top-[92px] w-[717px] h-[224px]">
               <h1 className="text-[160px] font-helvetica-world font-normal text-black leading-none tracking-tight">
                 pokum
               </h1>
             </div>
 
-            {/* Subtitle positioned like Figma */}
+            {/* Subtitle - positioned exactly like Figma */}
             <div className="absolute left-[262px] top-[276px] w-[576px] h-[40px]">
               <p className="text-[28px] font-helvetica-world font-normal text-black opacity-70">
                 Your Full-Cycle Business Incorporation Experts
               </p>
             </div>
 
-            {/* Gavel Image positioned like Figma */}
-            <div className="absolute right-0 top-[100px] w-[646px] h-[646px]">
+            {/* Content area with description and button - positioned exactly like Figma */}
+            <div className="absolute left-[120px] top-[384px] w-[820px] h-[228px] flex flex-col justify-between">
+              {/* Description Text */}
+              <div className="flex flex-col gap-5">
+                <div className="flex justify-center items-center gap-2.5 w-full">
+                  <p className="w-[820px] text-2xl font-helvetica-world font-normal leading-9 text-black">
+                    <span className="text-black/50">We guide your business from entity creation to marketing, finance, tax support, and more — combining legal expertise with AI-powered solutions. You can focus on what matters most: </span>
+                    <span className="font-bold text-black">growing your products</span>
+                    <span className="text-black">.</span>
+                  </p>
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <button className="flex px-6 py-5 justify-center items-center gap-3 rounded-xl border-2 border-black bg-white font-helvetica-world font-bold text-[17px] text-black opacity-85 hover:bg-black hover:text-white transition-colors group">
+                Start Free Consultation
+                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            {/* Gavel Image - positioned exactly like Figma */}
+            <div className="absolute left-[915px] top-0 w-[646px] h-[646px]">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fd76de5beb41c4e42ad32a1fa15d192cb%2Fb4c365d3f5b440e0844d3039a8ebb153?format=webp&width=800"
                 alt="Legal gavel"
