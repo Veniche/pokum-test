@@ -14,13 +14,11 @@ import { Button } from "@/components/ui/button";
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
-
       {/* Hero Section */}
       <section className="relative bg-white">
         {/* Desktop Layout - Exact Figma positioning */}
         <div className="hidden md:block relative w-full h-[783px]">
           <div className="relative w-[1440px] mx-auto h-full">
-
             {/* Large pokum title - positioned exactly like Figma */}
             <div className="absolute left-[120px] top-[92px] w-[717px] h-[224px]">
               <h1 className="text-[160px] font-helvetica-world font-normal text-black leading-none tracking-tight">
@@ -41,8 +39,15 @@ export default function Index() {
               <div className="flex flex-col gap-5">
                 <div className="flex justify-center items-center gap-2.5 w-full">
                   <p className="w-[820px] text-2xl font-helvetica-world font-normal leading-9 text-black">
-                    <span className="text-black/50">We guide your business from entity creation to marketing, finance, tax support, and more — combining legal expertise with AI-powered solutions. You can focus on what matters most: </span>
-                    <span className="font-bold text-black">growing your products</span>
+                    <span className="text-black/50">
+                      We guide your business from entity creation to marketing,
+                      finance, tax support, and more — combining legal expertise
+                      with AI-powered solutions. You can focus on what matters
+                      most:{" "}
+                    </span>
+                    <span className="font-bold text-black">
+                      growing your products
+                    </span>
                     <span className="text-black">.</span>
                   </p>
                 </div>
@@ -109,8 +114,15 @@ export default function Index() {
               {/* Mobile Description and CTA */}
               <div className="space-y-10 px-5 pt-8">
                 <p className="text-[15px] font-helvetica-world leading-6 text-center text-black">
-                  <span className="opacity-50">We guide your business from entity creation to marketing, finance, tax support, and more — combining legal expertise with AI-powered solutions. You can focus on what matters most: </span>
-                  <span className="font-bold text-black">growing your products</span>
+                  <span className="opacity-50">
+                    We guide your business from entity creation to marketing,
+                    finance, tax support, and more — combining legal expertise
+                    with AI-powered solutions. You can focus on what matters
+                    most:{" "}
+                  </span>
+                  <span className="font-bold text-black">
+                    growing your products
+                  </span>
                   <span className="text-black">.</span>
                 </p>
 
