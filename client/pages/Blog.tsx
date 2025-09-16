@@ -1,6 +1,8 @@
 import React from 'react';
 import { FileText, ArrowRight, ChevronDown, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { articles } from "../data/articles";
+import { CtaBanner } from '@/components/CtaBanner';
+import { FaqSection } from '@/components/FaqSection';
 
 interface ArticleCardProps {
   id: number;
@@ -165,76 +167,10 @@ export default function Blog() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative bg-[#0B1017] rounded-[32px] h-[172px] flex items-center justify-between px-12 overflow-hidden">
-            {/* Background gradient effect */}
-            <div className="absolute inset-0 opacity-30">
-              <div className="absolute w-[430px] h-[130px] bg-[#5A6372] rounded-full blur-[85px] top-[-60px] left-[200px] transform rotate-[33deg]"></div>
-            </div>
-            
-            <h2 className="text-3xl sm:text-4xl font-bold text-white font-helvetica-world tracking-tight relative z-10">
-              Ready to work with us ?
-            </h2>
-            
-            <button className="flex items-center space-x-3 bg-transparent border-2 border-white text-white px-6 py-4 rounded-xl font-bold font-helvetica-world relative z-10 hover:bg-white hover:text-[#0B1017] transition-colors duration-200">
-              <span>Start Free Consultation</span>
-              <ArrowRight className="w-6 h-6" />
-            </button>
-          </div>
-        </div>
-      </section>
+      <CtaBanner title={"Ready to work with us ?"} buttonText={"Start Free Consultation"} />
 
       {/* FAQ Section */}
-      <section className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-start gap-20">
-            <div className="w-80 space-y-5">
-              <h2 className="text-3xl font-bold text-black font-helvetica-world leading-tight">
-                Frequently Asked Questions
-              </h2>
-              <div className="flex items-center space-x-3 text-[#2556BA]">
-                <span className="font-bold font-helvetica-world">Have Other Questions?</span>
-                <ArrowRight className="w-5 h-5" />
-              </div>
-            </div>
-            
-            <div className="flex-1 space-y-8">
-              <div className="space-y-5">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-bold text-[#05060C] font-helvetica-world">
-                    How long does the business formation process take?
-                  </h3>
-                  <ChevronDown className="w-7 h-7 text-[#896656]" />
-                </div>
-                <p className="text-lg text-[#383A46]/65 font-helvetica-world max-w-2xl">
-                  Typically, it takes X weeks depending on your business type and location.
-                </p>
-              </div>
-              
-              <div className="w-full h-px bg-[#DBDBDB]"></div>
-              
-              <div className="flex items-center justify-between">
-                <h3 className="text-xl font-bold text-[#05060C] font-helvetica-world">
-                  What types of businesses can you help incorporate?
-                </h3>
-                <ChevronDown className="w-7 h-7 text-[#896656] rotate-180" />
-              </div>
-              
-              <div className="w-full h-px bg-[#DBDBDB]"></div>
-              
-              <div className="flex items-center justify-between">
-                <h3 className="text-xl font-bold text-[#05060C] font-helvetica-world">
-                  Do you offer ongoing support after incorporation?
-                </h3>
-                <ChevronDown className="w-7 h-7 text-[#896656] rotate-180" />
-              </div>
-              
-              <div className="w-full h-px bg-[#DBDBDB]"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FaqSection />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Plus, ChevronDown, ChevronUp } from 'lucide-react';
 import { serviceSections } from '@/data/services';
+import { CtaBanner } from '@/components/CtaBanner';
+import { FaqSection } from '@/components/FaqSection';
 
 interface ServiceCardProps {
   service: {
@@ -190,6 +192,12 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      {/* CTA Banner */}
+      <CtaBanner title={"Ready to work with us ?"} buttonText={"Start Free Consultation"} />
+
+      {/* FAQ Section */}
+      <FaqSection />
     </div>
   );
 };

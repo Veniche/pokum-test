@@ -14,6 +14,8 @@ import {
   Linkedin 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CtaBanner } from "@/components/CtaBanner";
+import { FaqSection } from "@/components/FaqSection";
 
 export default function About() {
   return (
@@ -183,64 +185,10 @@ export default function About() {
       </section>
 
       {/* CTA Banner */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#0B1017] rounded-[32px] px-12 py-16 relative overflow-hidden">
-            {/* Background Effect */}
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute top-8 left-48 w-96 h-32 bg-gray-600 rounded-full blur-3xl transform rotate-45"></div>
-            </div>
-            
-            <div className="relative flex items-center justify-between">
-              <h2 className="text-5xl font-bold text-white font-helvetica-world tracking-tight">Ready to work with us ?</h2>
-              <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-6 py-4 rounded-xl font-bold text-lg group">
-                Start Free Consultation
-                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CtaBanner title={"Ready to work with us ?"} buttonText={"Start Free Consultation"} />
 
       {/* FAQ Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-black font-helvetica-world leading-tight">Frequently Asked Questions</h2>
-              <div className="flex items-center space-x-3 text-[#2556BA]">
-                <span className="font-bold text-lg font-helvetica">Have Other Questions?</span>
-                <ArrowRight className="h-5 w-5" />
-              </div>
-            </div>
-
-            <div className="lg:col-span-2 space-y-8">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-bold text-black font-helvetica-world">How long does the business formation process take?</h3>
-                  <ChevronDown className="h-7 w-7 text-gray-400" />
-                </div>
-                <p className="text-xl text-black/65 font-helvetica-world leading-relaxed">
-                  Typically, it takes X weeks depending on your business type and location.
-                </p>
-                <hr className="border-gray-200" />
-              </div>
-
-              <div className="flex items-center justify-between">
-                <h3 className="text-2xl font-bold text-black font-helvetica-world">What types of businesses can you help incorporate?</h3>
-                <ChevronDown className="h-7 w-7 text-gray-400 rotate-180" />
-              </div>
-              <hr className="border-gray-200" />
-
-              <div className="flex items-center justify-between">
-                <h3 className="text-2xl font-bold text-black font-helvetica-world">Do you offer ongoing support after incorporation?</h3>
-                <ChevronDown className="h-7 w-7 text-gray-400 rotate-180" />
-              </div>
-              <hr className="border-gray-200" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <FaqSection />
     </div>
   );
 }
