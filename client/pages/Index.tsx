@@ -22,54 +22,45 @@ export default function Index() {
         <div className="hidden md:block relative w-full h-[783px]">
           <div className="relative w-[1440px] mx-auto h-full">
             {/* Large pokum title - positioned exactly like Figma */}
-            <div className="absolute left-[120px] top-[92px] w-[717px] h-[224px]">
-              <h1 className="text-[160px] font-helvetica-world font-normal text-black leading-none tracking-tight">
+            <div className="absolute left-[120px] top-[150px] w-[800px] h-[280px]">
+              <h1 className="text-[200px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight">
                 pokum
               </h1>
             </div>
 
             {/* Subtitle - positioned exactly like Figma */}
-            <div className="absolute left-[262px] top-[276px] w-[576px] h-[40px]">
+            <div className="absolute left-[262px] top-[376px] w-[576px] h-[40px]">
               <p className="text-[28px] font-helvetica-world font-normal text-black opacity-70">
                 Your Full-Cycle Business Incorporation Experts
               </p>
             </div>
 
             {/* Content area with description and button - positioned exactly like Figma */}
-            <div className="absolute left-[120px] top-[384px] w-[820px] h-[228px] flex flex-col justify-between">
+            <div className="absolute left-[120px] top-[484px] w-[820px] flex flex-col gap-[56px]">
               {/* Description Text */}
-              <div className="flex flex-col gap-5">
-                <div className="flex justify-center items-center gap-2.5 w-full">
-                  <p className="w-[820px] text-2xl font-helvetica-world font-normal leading-9 text-black">
-                    <span className="text-black/50">
-                      We guide your business from entity creation to marketing,
-                      finance, tax support, and more — combining legal expertise
-                      with AI-powered solutions. You can focus on what matters
-                      most:{" "}
-                    </span>
-                    <span className="font-bold text-black">
-                      growing your products
-                    </span>
-                    <span className="text-black">.</span>
-                  </p>
-                </div>
+              <div className="flex flex-col gap-5 w-full">
+                <p className="text-2xl font-helvetica-world font-normal leading-9 text-black/50">
+                  We guide your business from entity creation to marketing, finance, tax support, and more — combining legal expertise with AI-powered solutions. You can focus on what matters most:{" "}
+                  <span className="font-bold text-black">
+                    growing your products
+                  </span>
+                  <span className="text-black">.</span>
+                </p>
               </div>
 
               {/* CTA Button */}
-              <button className="flex px-6 py-5 justify-center items-center gap-3 rounded-xl border-2 border-black bg-white font-helvetica-world font-bold text-[17px] text-black opacity-85 hover:bg-black hover:text-white transition-colors group">
+              <button className="flex px-6 py-5 justify-center items-center gap-3 rounded-xl border-2 border-black bg-white font-helvetica-world font-bold text-[17px] text-black opacity-85 hover:bg-black hover:text-white transition-colors group relative">
                 Start Free Consultation
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
             {/* Gavel Image - positioned exactly like Figma */}
-            <div className="absolute left-[915px] top-0 w-[646px] h-[646px]">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd76de5beb41c4e42ad32a1fa15d192cb%2Fb4c365d3f5b440e0844d3039a8ebb153?format=webp&width=800"
-                alt="Legal gavel"
-                className="w-full h-full object-contain"
-              />
-            </div>
+            <div className="absolute left-[900px] top-[100px] w-[700px] h-[700px] bg-center bg-contain bg-no-repeat"
+              style={{
+                backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2Fd76de5beb41c4e42ad32a1fa15d192cb%2Fb4c365d3f5b440e0844d3039a8ebb153?format=webp&width=1000)'
+              }}
+            />
           </div>
         </div>
 
