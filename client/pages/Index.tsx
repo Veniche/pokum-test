@@ -21,22 +21,22 @@ export default function Index() {
         {/* Desktop Layout - Only shows on 1024px and above */}
         <div className="hidden lg:block">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 relative z-10">
-            <div className="grid grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-[60%_40%] gap-0 items-center">
               {/* Left Column - Content */}
-              <div className="max-w-4xl mx-auto lg:mx-0">
+              <div className="w-full max-w-5xl mx-auto lg:mx-0">
               <div className="mb-6 md:mb-8 lg:mb-10">
                 <h1 className="text-7xl sm:text-8xl md:text-[160px] lg:text-[200px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight">
                   pokum
                 </h1>
               </div>
 
-              <div className="mb-8 md:mb-12 lg:mb-16 max-w-2xl">
+              <div className="mb-8 md:mb-12 lg:mb-16 max-w-3xl">
                 <p className="text-2xl md:text-3xl lg:text-[28px] font-helvetica-world font-normal text-black opacity-70 leading-snug">
                   Your Full-Cycle Business Incorporation Experts
                 </p>
               </div>
 
-              <div className="max-w-3xl space-y-6 md:space-y-8 lg:space-y-10">
+              <div className="max-w-4xl space-y-6 md:space-y-8 lg:space-y-10">
                 <p className="text-lg sm:text-xl lg:text-2xl font-helvetica-world font-normal leading-relaxed text-black/50">
                   We guide your business from entity creation to marketing, finance, tax support, and more — combining legal expertise with AI-powered solutions. You can focus on what matters most:{" "}
                   <span className="font-bold text-black">
@@ -53,12 +53,11 @@ export default function Index() {
             </div>
 
               {/* Right Column - Image */}
-              <div className="relative h-[400px] sm:h-[500px] lg:h-[700px] w-full">
+              <div className="relative h-[400px] sm:h-[500px] lg:h-[700px] w-full overflow-visible">
                 <div 
-                  className="absolute inset-0 w-full h-full bg-contain bg-no-repeat bg-center lg:bg-right"
+                  className="absolute inset-y-0 right-0 w-[50vw] h-full bg-contain bg-no-repeat bg-right -mr-[calc(50vw-95%-2rem)]"
                   style={{
-                    backgroundImage: 'url(https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758093205/gavel_vclmdh.svg)',
-                    right: 'calc(50% - 50vw + 1.5rem)'
+                    backgroundImage: 'url(https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758093205/gavel_vclmdh.svg)'
                   }}
                 />
               </div>
