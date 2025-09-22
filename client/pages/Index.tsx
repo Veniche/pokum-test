@@ -17,61 +17,63 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-white">
-        {/* Desktop Layout - Exact Figma positioning */}
-        <div className="hidden md:block relative w-full h-[783px]">
-          <div className="relative w-[1440px] mx-auto h-full">
-            {/* Large pokum title - positioned exactly like Figma */}
-            <div className="absolute left-[120px] top-[150px] w-[800px] h-[280px]">
-              <h1 className="text-[200px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight">
-                pokum
-              </h1>
-            </div>
+      <section className="relative overflow-hidden">
+        {/* Desktop Layout - Only shows on 1024px and above */}
+        <div className="hidden lg:block">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 relative z-10">
+            <div className="grid grid-cols-2 gap-12 items-center">
+              {/* Left Column - Content */}
+              <div className="max-w-4xl mx-auto lg:mx-0">
+              <div className="mb-6 md:mb-8 lg:mb-10">
+                <h1 className="text-7xl sm:text-8xl md:text-[160px] lg:text-[200px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight">
+                  pokum
+                </h1>
+              </div>
 
-            {/* Subtitle - positioned exactly like Figma */}
-            <div className="absolute left-[262px] top-[376px] w-[576px] h-[40px]">
-              <p className="text-[28px] font-helvetica-world font-normal text-black opacity-70">
-                Your Full-Cycle Business Incorporation Experts
-              </p>
-            </div>
+              <div className="mb-8 md:mb-12 lg:mb-16 max-w-2xl">
+                <p className="text-2xl md:text-3xl lg:text-[28px] font-helvetica-world font-normal text-black opacity-70 leading-snug">
+                  Your Full-Cycle Business Incorporation Experts
+                </p>
+              </div>
 
-            {/* Content area with description and button - positioned exactly like Figma */}
-            <div className="absolute left-[120px] top-[484px] w-[820px] flex flex-col gap-[56px]">
-              {/* Description Text */}
-              <div className="flex flex-col gap-5 w-full">
-                <p className="text-2xl font-helvetica-world font-normal leading-9 text-black/50">
+              <div className="max-w-3xl space-y-6 md:space-y-8 lg:space-y-10">
+                <p className="text-lg sm:text-xl lg:text-2xl font-helvetica-world font-normal leading-relaxed text-black/50">
                   We guide your business from entity creation to marketing, finance, tax support, and more — combining legal expertise with AI-powered solutions. You can focus on what matters most:{" "}
                   <span className="font-bold text-black">
                     growing your products
                   </span>
                   <span className="text-black">.</span>
                 </p>
-              </div>
 
-              {/* CTA Button */}
-              <button className="flex px-6 py-5 justify-center items-center gap-3 rounded-xl border-2 border-black bg-white font-helvetica-world font-bold text-[17px] text-black opacity-85 hover:bg-black hover:text-white transition-colors group relative">
-                Start Free Consultation
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-              </button>
+                <button className="inline-flex items-center justify-center px-6 py-5 md:px-8 md:py-6 rounded-xl border-2 border-black bg-white font-helvetica-world font-bold text-base md:text-lg text-black opacity-85 hover:bg-black hover:text-white transition-all duration-300 group">
+                  Start Free Consultation
+                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
             </div>
 
-            {/* Gavel Image - positioned exactly like Figma */}
-            <div className="absolute left-[900px] top-[100px] w-[700px] h-[700px] bg-center bg-contain bg-no-repeat"
-              style={{
-                backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2Fd76de5beb41c4e42ad32a1fa15d192cb%2Fb4c365d3f5b440e0844d3039a8ebb153?format=webp&width=1000)'
-              }}
-            />
+              {/* Right Column - Image */}
+              <div className="relative h-[400px] sm:h-[500px] lg:h-[700px] w-full">
+                <div 
+                  className="absolute inset-0 w-full h-full bg-contain bg-no-repeat bg-center lg:bg-right"
+                  style={{
+                    backgroundImage: 'url(https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758093205/gavel_vclmdh.svg)',
+                    right: 'calc(50% - 50vw + 1.5rem)'
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Mobile Layout */}
-        <div className="md:hidden relative w-full min-h-[555px] bg-white">
+        {/* Mobile Layout - Shows below 1024px */}
+        <div className="lg:hidden relative w-full min-h-[555px] bg-white">
           <div className="px-4 pb-8">
 
             {/* Mobile Background Gavel Image */}
             <div className="absolute right-0 top-[44px] w-[413px] h-[413px] opacity-20 overflow-hidden">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fd76de5beb41c4e42ad32a1fa15d192cb%2Fb4c365d3f5b440e0844d3039a8ebb153?format=webp&width=800"
+                src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758093205/gavel_vclmdh.svg"
                 alt="Legal gavel background"
                 className="w-full h-full object-contain"
               />

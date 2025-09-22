@@ -139,12 +139,15 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-white">
+      <section className="pt-32 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-7xl sm:text-8xl lg:text-9xl font-bold text-black font-helvetica-world tracking-tight -ml-1">
-              Services
-            </h1>
+            <div className="relative w-full">
+              <h1 className="relative inline-block text-7xl sm:text-8xl lg:text-9xl font-bold text-black font-helvetica-world tracking-tight -ml-1 w-fit">
+                Services
+                <span className="absolute left-full top-1/2 w-screen h-px bg-black opacity-40 ml-4"></span>
+              </h1>
+            </div>
             <p className="mt-6 text-xl sm:text-2xl text-black/50 font-helvetica-world max-w-2xl">
               Committed to help you build your dream company.
             </p>
