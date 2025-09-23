@@ -7,7 +7,7 @@ interface CtaBannerProps {
 export function CtaBanner({
   title = "Ready to work with us ?",
   buttonText = "Start Free Consultation",
-  className = ""
+  className = "",
 }: CtaBannerProps) {
   return (
     <section className={`bg-white py-20 ${className}`}>
@@ -23,13 +23,29 @@ export function CtaBanner({
               preserveAspectRatio="xMidYMid slice"
             >
               <defs>
-                <filter id="filter0_f" x="91.6896" y="-233.766" width="708.876" height="596.216" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                  <feGaussianBlur stdDeviation="85" result="effect1_foregroundBlur"/>
+                <filter
+                  id="filter0_f"
+                  x="91.6896"
+                  y="-233.766"
+                  width="708.876"
+                  height="596.216"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="85"
+                    result="effect1_foregroundBlur"
+                  />
                 </filter>
                 <clipPath id="clip0">
-                  <rect width="1200" height="172" rx="32" fill="white"/>
+                  <rect width="1200" height="172" rx="32" fill="white" />
                 </clipPath>
               </defs>
               <g clipPath="url(#clip0)">
