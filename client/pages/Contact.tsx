@@ -79,8 +79,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Separator Line */}
-          <div className="w-full h-px bg-black opacity-40"></div>
         </div>
       </section>
 
