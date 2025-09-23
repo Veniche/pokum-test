@@ -73,7 +73,7 @@ export function CtaBanner({
                 {buttonText}
               </span>
               <svg
-                className="w-6 h-6 group-hover:translate-x-1 transition-transform"
+                className="w-6 h-6 group-hover:translate-x-1 transition-transform text-white group-hover:text-black"
                 viewBox="0 0 24 24"
                 fill="none"
               >
@@ -95,7 +95,7 @@ export function CtaBanner({
                 {buttonText}
               </span>
               <svg
-                className="w-6 h-6 group-hover:translate-x-1 transition-transform"
+                className="w-6 h-6 group-hover:translate-x-1 transition-transform text-white group-hover:text-black"
                 viewBox="0 0 24 24"
                 fill="none"
               >
