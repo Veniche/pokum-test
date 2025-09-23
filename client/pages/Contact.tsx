@@ -16,32 +16,52 @@ export default function Contact() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          {/* Background decorative text */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden">
+      <section className="bg-white">
+        <div className="max-w-[1440px] mx-auto relative">
+          {/* Background decorative text - Desktop */}
+          <div className="hidden md:block absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden">
             <div className="text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
               pokumpokumpokum
             </div>
           </div>
-          
-          <div className="relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h1 className="text-[151px] font-bold text-black font-helvetica-world tracking-tight leading-tight">
-                  Contact Us
-                </h1>
-              </div>
-              
-              <div className="flex justify-center lg:justify-end">
-                <img 
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/e0728f26d3bdf73e27a4231eca2857954f325cb7?width=1200" 
-                  alt="Vintage rotary phone" 
-                  className="w-full h-auto max-w-[600px]"
-                />
-              </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden md:flex relative z-10 min-h-[634px] items-center justify-between px-4 sm:px-6 lg:px-8">
+            <div className="pt-[181px] pb-16">
+              <h1 className="text-[150.698px] font-bold text-black font-helvetica-world tracking-[-0.03em] leading-none">
+                Contact Us
+              </h1>
+            </div>
+
+            <div className="absolute right-0 top-[181px] w-[600px] h-[389px]">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/483786050a79bb7db29e024e20080f6437bc7b2e?width=724"
+                alt="Vintage rotary phone"
+                className="w-full h-full object-cover opacity-30"
+              />
             </div>
           </div>
+
+          {/* Mobile Layout */}
+          <div className="md:hidden relative z-10 px-5 pt-20 pb-16">
+            <div className="relative">
+              {/* Phone image background for mobile */}
+              <div className="absolute right-0 top-0 w-[362px] h-[235px] opacity-30">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/483786050a79bb7db29e024e20080f6437bc7b2e?width=724"
+                  alt="Vintage rotary phone"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <h1 className="relative text-[72px] font-bold text-black font-helvetica-world tracking-[-2.16px] leading-none w-[362px]">
+                Contact Us
+              </h1>
+            </div>
+          </div>
+
+          {/* Separator Line */}
+          <div className="w-full h-px bg-black opacity-40"></div>
         </div>
       </section>
 
