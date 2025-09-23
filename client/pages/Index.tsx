@@ -24,17 +24,20 @@ export default function Index() {
             <div className="grid grid-cols-[60%_40%] gap-0 items-center">
               {/* Left Column - Content */}
               <div className="w-full max-w-5xl mx-auto lg:mx-0">
-              <div className="mb-6 md:mb-8 lg:mb-10">
-                <h1 className="text-7xl sm:text-8xl md:text-[160px] lg:text-[200px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight">
-                  pokum
-                </h1>
-              </div>
-
-              <div className="mb-8 md:mb-12 lg:mb-16 max-w-3xl">
-                <p className="text-2xl md:text-3xl lg:text-[28px] font-helvetica-world font-normal text-black opacity-70 leading-snug">
-                  Your Full-Cycle Business Incorporation Experts
-                </p>
-              </div>
+                <div className="relative">
+                  <h1 className="text-7xl sm:text-8xl md:text-[160px] lg:text-[200px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight">
+                    pokum
+                  </h1>
+                  <div className="absolute left-0 bottom-0 translate-y-[1em] w-full max-w-3xl pl-[8em]">
+                    <div className="relative">
+                      <div className="absolute right-full top-1/2 w-[100vw] h-px bg-black/30 -translate-y-1/2 mr-4"></div>
+                      <p className="text-2xl md:text-3xl lg:text-[24px] font-helvetica-world font-normal text-black opacity-70 leading-snug">
+                        Your Full-Cycle Business Incorporation Experts
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="h-16 md:h-24 lg:h-32"></div>
 
               <div className="max-w-4xl space-y-6 md:space-y-8 lg:space-y-10">
                 <p className="text-lg sm:text-xl lg:text-2xl font-helvetica-world font-normal leading-relaxed text-black/50">
@@ -120,32 +123,36 @@ export default function Index() {
       {/* Statistics Section */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-5">
-              <h2 className="text-4xl font-bold text-black font-helvetica-world">
-                Why Choose Indonesia for Your Business?
-              </h2>
-              <p className="text-2xl text-black/50 font-helvetica leading-8">
-                As Southeast Asia's largest economy, Indonesia provides access
-                to a significant consumer base and strategic positioning for
-                expansion. With a vast market of over 279 million people.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="text-center space-y-3">
-                <div className="text-7xl font-bold text-[#2556BA] font-helvetica">
-                  279+
-                </div>
-                <div className="text-2xl text-black/60 font-helvetica">
-                  million people
-                </div>
+          <div className="flex flex-col">
+            <h2 className="text-[32px] font-bold text-black font-helvetica-world mb-6">
+              Why Choose Indonesia for Your Business?
+            </h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-10">
+              <div className="space-y-6">
+                <p className="text-2xl text-black/50 font-helvetica leading-8 pr-24">
+                  As Southeast Asia's largest economy, Indonesia provides access
+                  to a significant consumer base and strategic positioning for
+                  expansion. With a vast market of over 279 million people.
+                </p>
               </div>
-              <div className="text-center space-y-3">
-                <div className="text-7xl font-bold text-[#2556BA] font-helvetica">
-                  126%
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2">
+                <div className="text-start space-y-3">
+                  <div className="text-7xl font-bold text-[#2556BA] font-helvetica">
+                    279+
+                  </div>
+                  <div className="text-2xl text-black/60 font-helvetica">
+                    million people
+                  </div>
                 </div>
-                <div className="text-2xl text-black/60 font-helvetica">
-                  active mobile connection
+                <div className="text-start space-y-3">
+                  <div className="text-7xl font-bold text-[#2556BA] font-helvetica">
+                    126%
+                  </div>
+                  <div className="text-2xl text-black/60 font-helvetica">
+                    active mobile connection
+                  </div>
                 </div>
               </div>
             </div>
@@ -155,17 +162,22 @@ export default function Index() {
 
       {/* Our Advantages Section */}
       <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+        <div className="max-w-7xl ">
+          <div className="mb-20">
             <div className="relative">
-              <h2 className="text-8xl font-bold text-black font-helvetica-world tracking-tight">
-                Our Advantages
-              </h2>
-              <div className="mt-4 text-center">
+              <div className="relative w-full">
+                <div className="inline-block relative">
+                  <h2 className="text-[140px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+                    Our Advantages
+                  </h2>
+                  <div className="absolute left-full top-1/2 w-[100vw] h-px bg-black/40 -translate-y-1/2 ml-8"></div>
+                </div>
+              </div>
+              <div className="mt-4 mx-auto px-16 sm:px-24 lg:px-32">
                 <p className="text-3xl text-black/50 font-bold font-helvetica-world">
-                  Why Choose pokum?
+                  Why Choose <span className="text-black">pokum</span>?
                 </p>
-                <p className="text-2xl text-black/60 font-helvetica mt-2 max-w-4xl mx-auto">
+                <p className="text-2xl text-black/60 font-helvetica mt-2 max-w-4xl">
                   We are committed to making your business formation process
                   effortless, providing everything you need in one place. Here's
                   how we help you succeed:
@@ -182,7 +194,7 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/d357c52f866174452de8bf8e9c97ae96601a38ec?width=736"
+                src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601787/legal-expertise_insocq.png"
                 alt="Legal expertise"
                 className="w-full h-auto max-w-[368px] mx-auto"
               />
@@ -191,7 +203,7 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Legal Expertise
               </h3>
-              <p className="text-xl text-black/60 font-helvetica leading-8">
+              <p className="text-xl text-black/60 font-helvetica leading-8 mr-4">
                 Get your business set up with ease, thanks to our experienced
                 legal team. From entity formation, business licenses, deed of
                 establishment to compliance, we handle it all.
@@ -217,7 +229,7 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 AI-Powered Marketing
               </h3>
-              <p className="text-xl text-black/60 font-helvetica leading-8">
+              <p className="text-xl text-black/60 font-helvetica leading-8 ml-24">
                 Maximize your reach and operational efficiency with our
                 AI-powered marketing solutions, strategically tailored to meet
                 your business needs and goals.
@@ -225,14 +237,9 @@ export default function Index() {
             </div>
             <div className="relative">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/074772d81be3c16c979e89c9c1572c2f0f82dd8a?width=679"
+                src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601999/ai-powered_rn7gw5.png"
                 alt="AI Marketing"
                 className="w-full h-auto max-w-[339px]"
-              />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2642dd60ff120e7db17a8b069260ec54b82f5883?width=335"
-                alt="Marketing chart"
-                className="absolute top-32 right-0 w-[168px] h-[168px] transform rotate-12"
               />
             </div>
           </div>
@@ -245,7 +252,7 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/4750412ffc4dd4c7ac90c5fd38288c45eca2ccc5?width=1038"
+                src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601785/financial-statement-support_kiu11f.png"
                 alt="Financial statement support"
                 className="w-full h-auto max-w-[519px]"
               />
@@ -254,7 +261,7 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Comprehensive Financial Statement Support
               </h3>
-              <p className="text-xl text-black/60 font-helvetica leading-8">
+              <p className="text-xl text-black/60 font-helvetica leading-8 mr-4">
                 From balance sheet to cash flow statement, we help you prepare
                 every financial documents needed, ensuring your business thrives
                 financially.
@@ -272,14 +279,14 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Tax Support & Optimization
               </h3>
-              <p className="text-xl text-black/60 font-helvetica leading-8">
+              <p className="text-xl text-black/60 font-helvetica leading-8 ml-24">
                 Navigate tax regulations confidently with our expert tax team,
                 ensuring your business is compliant and optimized for savings.
               </p>
             </div>
             <div>
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/f251517f6009d8d395bb1b20cee3322417c02141?width=850"
+                src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601793/tax-support_segdiq.png"
                 alt="Tax support"
                 className="w-full h-auto max-w-[425px]"
               />
@@ -294,7 +301,7 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/a985391c0d6864b9d74129b93315399bf54b02f2?width=880"
+                src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601792/pokum-society_hszmp5.png"
                 alt="Pokum Society"
                 className="w-full h-auto max-w-[440px] mx-auto"
               />
@@ -303,7 +310,7 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Pokum Society
               </h3>
-              <p className="text-xl text-black/60 font-helvetica leading-8">
+              <p className="text-xl text-black/60 font-helvetica leading-8 mr-4">
                 Community for entrepreneurs, legal professionals, and tech
                 innovators. Pokum Society supports leaders through education and
                 collaboration. Connect with partners and explore ways to grow
@@ -322,7 +329,7 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Asset Management Services
               </h3>
-              <p className="text-xl text-black/60 font-helvetica leading-8">
+              <p className="text-xl text-black/60 font-helvetica leading-8 ml-24">
                 Secure your company's profitability with our tailored asset
                 management solutions. We help businesses grow and maintain
                 financial stability through strategic asset oversight and
@@ -331,7 +338,7 @@ export default function Index() {
             </div>
             <div>
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/7e3c99886d5ca6161f9524e905780f2e5106cf99?width=1174"
+                src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601782/asset-management_u8hvzn.png"
                 alt="Asset management"
                 className="w-full h-auto max-w-[587px]"
               />
