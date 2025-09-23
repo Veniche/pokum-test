@@ -26,20 +26,29 @@ export default function Contact() {
           </div>
 
           {/* Desktop Layout */}
-          <div className="hidden md:flex relative z-10 min-h-[634px] items-center justify-between px-4 sm:px-6 lg:px-8">
-            <div className="pt-[181px] pb-16">
-              <h1 className="text-[150.698px] font-bold text-black font-helvetica-world tracking-[-0.03em] leading-none">
+          <div className="hidden md:block relative w-[1440px] h-[634px]">
+            {/* Contact Us Title - Positioned exactly as in Figma */}
+            <div className="absolute" style={{ left: '169px', top: '181px' }}>
+              <h1 className="text-[150.698px] font-bold text-black font-helvetica-world tracking-[-0.03em] leading-none whitespace-nowrap">
                 Contact Us
               </h1>
             </div>
 
-            <div className="absolute right-0 top-[181px] w-[600px] h-[389px]">
+            {/* Phone Image - Positioned exactly as in Figma */}
+            <div className="absolute" style={{ left: '767px', top: '181px', width: '600px', height: '389px' }}>
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/483786050a79bb7db29e024e20080f6437bc7b2e?width=724"
                 alt="Vintage rotary phone"
-                className="w-full h-full object-cover opacity-30"
+                className="w-full h-full object-cover"
+                style={{ opacity: 0.3 }}
               />
             </div>
+
+            {/* Separator Line - Positioned exactly as in Figma */}
+            <div
+              className="absolute w-full h-px bg-black"
+              style={{ top: '472.5px', opacity: 0.4 }}
+            ></div>
           </div>
 
           {/* Mobile Layout */}
