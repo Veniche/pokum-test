@@ -167,10 +167,10 @@ export default function Index() {
             <div className="relative">
               <div className="relative w-full">
                 <div className="inline-block relative">
-                  <h2 className="text-[140px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+                  <h2 className="text-[140px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap ml-2">
                     Our Advantages
                   </h2>
-                  <div className="absolute left-full top-1/2 w-[100vw] h-px bg-black/40 -translate-y-1/2 ml-8"></div>
+                  <div className="absolute left-full top-1/2 w-screen h-px bg-black/40 -translate-y-1/2 ml-8" style={{ width: 'calc(100vw - 100%)' }}></div>
                 </div>
               </div>
               <div className="mt-4 mx-auto px-16 sm:px-24 lg:px-32">
