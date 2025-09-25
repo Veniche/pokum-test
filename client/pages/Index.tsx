@@ -170,7 +170,7 @@ export default function Index() {
                   <h2 className="text-[140px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap ml-2">
                     Our Advantages
                   </h2>
-                  <div className="absolute left-full top-1/2 w-screen h-px bg-black/40 -translate-y-1/2 ml-8" style={{ width: 'calc(100vw - 100%)' }}></div>
+                  <div className="absolute left-full top-1/2 w-screen h-px bg-black/40 -translate-y-1/2 ml-8" style={{ width: 'calc(100vw - 103%)' }}></div>
                 </div>
               </div>
               <div className="mt-4 mx-auto px-16 sm:px-24 lg:px-32">
@@ -349,23 +349,26 @@ export default function Index() {
 
       {/* Our Proven Process Section */}
       <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-8xl font-bold text-black font-helvetica-world tracking-tight mb-12">
-              Our Proven Process
-            </h2>
-            <div className="space-y-4">
-              <h3 className="text-4xl font-bold text-black font-helvetica-world">
+        <div className="max-w-7xl mx-auto px-4 sm:pl-8 lg:pl-16">
+          <div className="max-w-4xl">
+            <div className="relative">
+              <h2 className="text-[140px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap relative">
+                <div className="absolute right-full top-1/2 w-[100vw] h-px bg-black/30 -translate-y-1/2 mr-4"></div>
+                Our Proven Process
+              </h2>
+            </div>
+            <div className="mt-8 space-y-4">
+              <h3 className="text-[32px] font-bold text-black font-helvetica-world">
                 How can we help you?
               </h3>
-              <p className="text-2xl text-black/60 font-helvetica max-w-4xl mx-auto">
+              <p className="text-[24px] text-black/60 font-helvetica max-w-4xl whitespace-nowrap">
                 We provide end-to-end support from business formation to
                 scaling. Here's what to expect:
               </p>
             </div>
           </div>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mt-16">
             <div className="relative">
               {/* Process Steps */}
               <div className="space-y-16">
@@ -479,35 +482,36 @@ export default function Index() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-transparent py-20">
+      <section className="py-20 bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-black/50 font-helvetica-world mb-2">
-              What they say about
+            <h2 className="text-4xl font-bold font-helvetica-world">
+              <span className="text-black/50">What they say about</span>{' '}
+              <span className="text-black">pokum</span>
             </h2>
-            <div className="text-4xl font-bold text-black font-helvetica-world">
-              pokum
-            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-col md:flex-row gap-8">
             {/* Testimonial 1 */}
-            <div className="bg-white rounded-2xl p-10 shadow-sm">
-              <div className="mb-8">
-                <div className="text-[#2556BA] text-3xl mb-4">"</div>
-                <p className="text-2xl font-helvetica leading-9">
-                  <span className="font-helvetica">
-                    pokum helped me get my{" "}
-                  </span>
-                  <span className="font-bold">business off the ground</span>
-                  <span className="font-helvetica">
-                    {" "}
-                    quickly. Their full-cycle service made everything so much
-                    easier!
-                  </span>
+            <div className="bg-white rounded-2xl p-10 shadow-sm flex-1 relative">
+              {/* Vertical line that starts below the quote image */}
+              <div className="absolute left-14 top-10 bottom-0 w-0.5 bg-black opacity-10 mt-12 mb-10"></div>
+              
+              <div className="relative">
+                <div className="absolute left-0 top-0 w-8 h-8">
+                  <img 
+                    src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758768482/double-quotes_r5yvtx.png" 
+                    alt="Quote" 
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-2xl font-helvetica leading-[1.5] text-black pl-12">
+                  <span className="font-bold">pokum</span> helped me get my{" "}
+                  <span className="font-bold">business off the ground</span>{" "}
+                  quickly. <span className="font-bold">Their full-cycle service</span> made everything so much easier!
                 </p>
               </div>
-              <div className="border-l-2 border-black/10 pl-8">
+              <div className="mt-10 pl-12">
                 <div className="font-bold text-2xl font-helvetica">John D.</div>
                 <div className="text-xl text-black/60 font-helvetica">
                   Entrepreneur
@@ -516,21 +520,27 @@ export default function Index() {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-white rounded-2xl p-10 shadow-sm">
-              <div className="mb-8">
-                <div className="text-[#2556BA] text-3xl mb-4">"</div>
-                <p className="text-2xl font-helvetica leading-9">
+            <div className="bg-white rounded-2xl p-10 shadow-sm flex-1 relative">
+              {/* Vertical line that starts below the quote image */}
+              <div className="absolute left-14 top-10 bottom-0 w-0.5 bg-black opacity-10 mt-12 mb-10"></div>
+              
+              <div className="relative">
+                <div className="absolute left-0 top-0 w-8 h-8">
+                  <img 
+                    src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758768482/double-quotes_r5yvtx.png" 
+                    alt="Quote" 
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-2xl font-helvetica leading-[1.5] text-black pl-12">
                   From <span className="font-bold">legal</span> setup to{" "}
-                  <span className="font-bold">marketing</span>, the team at
-                  pokum made sure that we had{" "}
-                  <span className="font-bold">everything in place</span> to
-                  thrive.
+                  <span className="font-bold">marketing</span>, the team at{" "}
+                  <span className="font-bold">pokum</span> made sure that we had{" "}
+                  <span className="font-bold">everything in place</span> to thrive.
                 </p>
               </div>
-              <div className="border-l-2 border-black/10 pl-8">
-                <div className="font-bold text-2xl font-helvetica">
-                  Sarah L.
-                </div>
+              <div className="mt-10 pl-12">
+                <div className="font-bold text-2xl font-helvetica">Sarah L.</div>
                 <div className="text-xl text-black/60 font-helvetica">
                   Business Owner
                 </div>
