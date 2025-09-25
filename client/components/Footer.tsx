@@ -5,15 +5,15 @@ export function Footer() {
     <footer className="bg-[#0C0B0E] text-white">
       {/* Desktop Layout */}
       <div className="hidden lg:block">
-        <div className="flex w-[1440px] h-[561px] justify-center items-center mx-auto">
+        <div className="flex w-[1440px] h-[561px] justify-center items-center">
           <div className="w-[1440px] h-[561px] relative">
             <div className="w-[1192px] h-[270px] absolute left-[120px] top-[116px]">
               {/* Logo */}
               <svg
-                className="w-[117px] h-[37px] absolute left-0 top-0"
-                width="118"
+                className="w-[130px] h-[37px] absolute left-0 top-0"
+                width="130"
                 height="37"
-                viewBox="0 0 118 37"
+                viewBox="0 0 130 37"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -37,10 +37,11 @@ export function Footer() {
                   d="M5.21706 18.0893C5.21706 19.9171 5.63595 21.3705 6.47372 22.4495C7.3115 23.5158 8.492 24.0489 10.0152 24.0489C11.4115 24.0489 12.5095 23.4523 13.3092 22.2591C14.1089 21.0532 14.5088 19.5554 14.5088 17.7656C14.5088 15.7092 14.0962 14.1416 13.2711 13.0626C12.4587 11.971 11.3227 11.4251 9.86291 11.4251C8.3016 11.4251 7.13379 11.9963 6.35948 13.1388C5.59787 14.2685 5.21706 15.9187 5.21706 18.0893ZM5.21706 10.2446H5.31226C6.64509 7.88363 8.70779 6.70312 11.5004 6.70312C13.9883 6.70312 16.0447 7.65514 17.6695 9.55918C19.3069 11.4505 20.1257 14.059 20.1257 17.3848C20.1257 20.647 19.364 23.3254 17.8408 25.4198C16.3303 27.5015 14.1787 28.5424 11.3861 28.5424C8.65702 28.5424 6.70855 27.4762 5.54074 25.3436H5.46458V36.6462H0V7.23625H5.21706V10.2446Z"
                   fill="#3971E3"
                 />
+                <rect x="122" y="22" width="6" height="6" fill="#3971E3" />
               </svg>
 
               {/* Navigation Links */}
-              <div className="inline-flex items-start gap-[59px] absolute left-[543px] top-[21px] w-[289px] h-[122px]">
+              <div className="inline-flex items-start gap-[80px] absolute left-[680px] top-[21px] w-[350px] h-[122px]">
                 <div className="text-white/70 font-helvetica-world text-xl font-normal leading-[120%] tracking-[-0.2px]">
                   <div>About Us</div>
                   <div>Services</div>
@@ -53,7 +54,7 @@ export function Footer() {
               </div>
 
               {/* Social Media Icons */}
-              <div className="inline-flex items-center gap-5 absolute left-[1036px] top-[30px] w-[156px] h-6">
+              <div className="inline-flex items-center gap-5 absolute left-[1236px] top-[30px] w-[156px] h-6">
                 <div className="flex items-center gap-5">
                   <div className="flex w-6 h-6 justify-center items-center rounded-[30000px]">
                     <a
