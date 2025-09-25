@@ -140,10 +140,10 @@ export default function Services() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px] mx-auto">
           <div className="max-w-3xl">
             <div className="relative w-full">
-              <h1 className="relative inline-block text-7xl sm:text-8xl lg:text-9xl font-bold text-black font-helvetica-world tracking-tight -ml-1 w-fit">
+              <h1 className="relative inline-block text-[4.5rem] sm:text-[6rem] lg:text-[8.75rem] font-bold text-black font-helvetica-world tracking-tight -ml-1 w-fit">
                 Services
                 <span className="absolute left-full top-1/2 w-screen h-px bg-black opacity-40 ml-4"></span>
               </h1>
@@ -157,7 +157,7 @@ export default function Services() {
 
       {/* Services Content */}
       <section className="pb-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px] mx-auto">
           <div className="space-y-32">
             {serviceSections.map((section) => (
               <div key={section.id} className="space-y-20">
