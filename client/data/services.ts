@@ -41,7 +41,16 @@ export const serviceSections: ServiceSection[] = [
         title: 'Pendirian PT(PMA)',
         price: 'IDR 11,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502770/PT_PMA_tqq6ft.png',
-        description: 'Pendirian Perseroan Terbatas Penanaman Modal Asing (PT PMA) untuk investor asing yang ingin berinvestasi di Indonesia. Termasuk pengurusan izin investasi, akta notaris, dan dokumen legal lainnya.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Pemeriksaan dan Pemesanan Nama PT</p>
+            <p>2. Pembuatan Akta Pendirian oleh Notaris</p>
+            <p>3. Pengesahan Akta Perseroan oleh Notaris</p>
+            <p>4. Surat Ketetapan dari Kementerian Hukum dan HAM</p>
+            <p>5. NPWP</p>
+            <p>6. Nomor Induk Berusaha (NIB) OSS RBA</p>
+        </div>
+        `
       },
       {
         id: 'pt-perorangan',
@@ -55,14 +64,27 @@ export const serviceSections: ServiceSection[] = [
         title: 'Perubahan Akta',
         price: 'IDR 6,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502766/Akta_y8hmbc.png',
-        description: 'Layanan perubahan akta pendirian atau perubahan perusahaan, termasuk perubahan nama, alamat, modal, pengurus, atau komposisi pemegang saham.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Akta Perubahan</p>
+            <p>2. Surat Ketetapan dari Kementerian Hukum dan HAM</p>
+            <p>3. Nomor Induk Berusaha (NIB) OSS RBA</p>
+        </div>
+        `
       },
       {
         id: 'pendirian-cv',
         title: 'Pendirian CV',
         price: 'IDR 6,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502767/Pendirian_CV_ugizej.png',
-        description: 'Pendirian Commanditaire Vennootschap (CV) untuk usaha kecil dan menengah. Termasuk pengurusan akta notaris, NIB, dan dokumen pendukung lainnya.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Pemeriksaan dan Pemesanan Nama CV</p>
+            <p>2. Pengesahan Pengadilan Negeri</p>
+            <p>3. NPWP</p>
+            <p>4. Nomor Induk Berusaha (NIB) OSS RBA</p>
+        </div>
+        `
       },
       {
         id: 'perubahan-cv',
@@ -76,14 +98,30 @@ export const serviceSections: ServiceSection[] = [
         title: 'Pendirian Firma',
         price: 'IDR 6,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502767/Pendirian_Firma_n1gks3.png',
-        description: 'Pendirian Firma untuk usaha yang dijalankan oleh beberapa orang dengan satu nama bersama. Termasuk pengurusan akta notaris dan dokumen pendukung lainnya.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Pemeriksaan dan Pemesanan Nama Firma</p>
+            <p>2. Pengesahan Pengadilan Negeri</p>
+            <p>3. NPWP</p>
+            <p>4. Nomor Induk Berusaha (NIB) OSS RBA</p>
+        </div>
+        `
       },
       {
         id: 'pendaftaran-merek',
         title: 'Pendaftaran Merek',
         price: 'IDR 3,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502766/Pendaftaran_Merek_ockhnx.png',
-        description: 'Pendaftaran merek dagang ke Direktorat Jenderal Kekayaan Intelektual (DJKI). Termasuk konsultasi kelas merek, penelusuran merek, dan pengurusan dokumen pendaftaran.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Pengecekan Merek</p>
+            <p>2. Permohonan Pendaftaran</p>
+            <p>3. Monitoring Pendaftaran</p>
+            <p>4. Sertifikat Tanda Daftar</p>
+            <p>5. Sertifikat Merek</p>
+            <p>6. Konsultasi seputar pendaftaran Merek</p>
+        </div>
+        `
       },
       {
         id: 'perpanjangan-merek',
@@ -104,35 +142,65 @@ export const serviceSections: ServiceSection[] = [
         title: 'NPWP Perusahaan',
         price: 'IDR 8,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503224/NPWP_Perusahaan_vxovyh.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Orang Pribadi (Form 1770/1770S/1770SS).'
+        description: `
+        <div class="space-y-0">
+            <p>1. Nomor Pokok Wajib Pajak (NPWP)</p>
+            <p>2. Surat Keterangan Terdaftar Pajak</p>
+            <p>3. Surat Penerbitan Akun Wajib Pajak</p>
+        </div>
+        `
       },
       {
         id: 'npwp-perorangan',
         title: 'NPWP Perorangan',
         price: 'IDR 11,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503223/NPWP_Perorangan_bidjpq.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>Nomor Pokok Wajib Pajak (NPWP)</p>
+        </div>
+        `
       },
       {
         id: 'laporan-pajak-bulanan',
         title: 'Laporan Pajak Bulanan',
         price: 'IDR 1,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503222/Laporan_Pajak_Bulanan_l54ksl.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Draft Laporan Bulanan <ul><li>PPH 21</li><li>PPH 23</li><li>4 (2)</li></ul></p>
+            <p>2. Draft Template Coretax / E-Form</p>
+            <p>3. Submit Laporan Pajak Bulanan</p>
+            <p>4. Konsultasi Online</p>
+        </div>
+        `
       },
       {
         id: 'laporan-pajak-tahunan',
         title: 'Laporan Pajak Tahunan',
         price: 'IDR 6,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503223/Laporan_Pajak_Tahunan_kibtet.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Draft Corporate Income Tax Return (CITR) <ul><li>Perhitungan List Aset</li><li>Perhitungan Inventory</li><li>Perhitungan kurang bayar, Angsuran pph 25</li><li>Persamaan SPM PPH 21 dengan biaya gaji</li></ul></p>
+            <p>2. Draft Template Coretax / E-Form</p>
+            <p>3. Submit Laporan Pajak Tahunan</p>
+            <p>4. Konsultasi Online</p>
+        </div>
+        `
       },
       {
         id: 'pengembalian-pajak',
         title: 'Pengembalian Pajak',
         price: 'IDR 6,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503226/Pengembalian_Pajak_lmwhjo.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Pengembalian PPh & PPN</p>
+            <p>2. Penyusunan Dokumen & Pengajuan</p>
+            <p>3. Pendampingan hingga Refund Cair</p>
+        </div>
+        `
       }
     ]
   },
@@ -146,21 +214,35 @@ export const serviceSections: ServiceSection[] = [
         title: 'Advokat',
         price: 'IDR 8,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503362/Advokat_pfsvpd.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Konsultasi Hukum</p>
+            <p>2. Legal Opinion</p>
+        </div>
+        `
       },
       {
         id: 'notaris',
         title: 'Notaris',
         price: 'IDR 11,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503378/Notaris_trtyaw.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Konsultasi Hukum</p>
+            <p>2. Legal Opinion</p>
+        </div>
+        `
       },
       {
         id: 'mediator',
         title: 'Mediator',
         price: 'IDR 1,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503389/Mediator_tqsikv.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>Bantuan Penyelesaian Sengketa dengan Mediasi</p>
+        </div>
+        `
       }
     ]
   },
@@ -172,16 +254,38 @@ export const serviceSections: ServiceSection[] = [
       {
         id: 'virtual-office',
         title: 'Virtual Office',
-        price: 'IDR 8,500,000.00',
+        price: 'IDR 2,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504137/Virtual_Office_unhnyj.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Penyewaan Alamat VO 1 tahun</p>
+            <p>2. Penerimaan Surat dan Paket</p>
+            <p>3. Informasi Penerimaan Surat dan Paket</p>
+        </div>
+        `
       },
       {
         id: 'sewa-kantor',
         title: 'Sewa Kantor',
         price: 'IDR 11,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504034/Sewa_Kantor_gimchj.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Ipl</p>
+            <p>2. Internet</p>
+            <p>3. Air</p>
+            <p>4. Listrik</p>
+            <p>5. Bersih bersih</p>
+            <p>6. Galon</p>
+            <p>7. Pantry Supplies (coffee, tea & snack)</p>
+            <p>8. Full furnished tinggal bawa diri</p>
+            <p>9. 3 meja kerja</p>
+            <p>10. Sofa</p>
+            <p>11. Bean bag</p>
+            <p>12. Whiteboard</p>
+            <p>13. Lemari / rak simpan</p>
+        </div>
+        `
       }
     ]
   },
@@ -237,7 +341,13 @@ export const serviceSections: ServiceSection[] = [
         title: 'Peluncuran Website',
         price: 'IDR 1,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504177/Peluncuran_Website_fmnqek.png',
-        description: 'Layanan pembuatan dan pelaporan SPT Tahunan Pajak Penghasilan Badan (Form 1771) untuk perusahaan.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Website Perusahaan & Portofolio</p>
+            <p>2. Konsultasi sampai dengan maksimal 5 (lima) kali</p>
+            <p>3. Hosting</p>
+        </div>
+        `
       }
     ]
   }

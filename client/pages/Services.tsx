@@ -46,7 +46,7 @@ const ServiceCard = ({ service, isFlipped, onFlip }: ServiceCardProps) => {
           WebkitBackfaceVisibility: 'hidden',
         }}>
           <div className="bg-[#F5F8FC] rounded-3xl p-8 h-full flex flex-col items-center text-center hover:shadow-lg justify-between">
-            <div className="relative w-full h-80">
+            <div className="relative w-full">
               <img 
                 src={service.image} 
                 alt={service.title} 
