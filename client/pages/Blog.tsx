@@ -34,30 +34,32 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ id, image, category, title, e
 
 export default function Blog() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Background Text Effect */}
-      <div className="relative bg-white py-16">
-        <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden pointer-events-none">
-          <div className="text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
-            pokumpokumpokumpokum
-          </div>
+    <div className="min-h-screen bg-white relative">
+      {/* Background Text Effect - Absolute Position */}
+      <div className="absolute top-[5%] left-0 right-0 flex justify-center opacity-[0.02] pointer-events-none z-0">
+        <div className="text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+          pokumpokumpokumpokum
         </div>
-        
-        {/* Hero Section */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      </div>
+      
+      {/* Hero Section */}
+      <section className="relative pt-48 pb-8">
+        <div className="absolute inset-0 bg-white -z-20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-3">
             <h1 className="text-4xl sm:text-5xl font-bold text-[#05060C] font-helvetica-world">
               Article List
             </h1>
-            <p className="text-lg sm:text-xl text-black/60 font-helvetica max-w-lg mx-auto">
+            <p className="text-lg sm:text-xl text-black/60 font-helvetica mx-auto">
               Browse our various articles curated by experts in their field
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Articles Grid */}
-      <section className="py-20 bg-gradient-to-b from-[#F7F7F7] to-transparent">
+      <section className="relative py-20">
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7] -z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Three Column Masonry Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
