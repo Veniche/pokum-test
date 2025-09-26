@@ -1,9 +1,41 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { X, Menu } from "lucide-react";
 import { useActiveLink } from "@/hooks/useActiveLink";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const navRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const isScrollingDown = currentScrollY > lastScrollY;
+      
+      if (currentScrollY > 100) {
+        setIsScrolled(true);
+        
+        // Scrolling down
+        if (isScrollingDown && currentScrollY > 10) {
+          navRef.current?.classList.add('-translate-y-full');
+        } 
+        // Scrolling up
+        else if (!isScrollingDown) {
+          navRef.current?.classList.remove('-translate-y-full');
+        }
+      } else {
+        setIsScrolled(false);
+        navRef.current?.classList.remove('-translate-y-full');
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const { activeLink } = useActiveLink();
@@ -37,7 +69,13 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="fixed w-full bg-white z-50">
+    <nav 
+      ref={navRef}
+      className={cn(
+        "fixed w-full bg-white z-50 transition-transform duration-300",
+        isScrolled ? "shadow-md" : ""
+      )}
+    >
       <div className="flex w-full px-4 sm:px-8 md:px-16 lg:px-[120px] py-6 md:py-12 justify-between items-center rounded-[20000px]">
         {/* Left section with Logo and Navigation */}
         <div className="flex items-center gap-6 md:gap-10">
