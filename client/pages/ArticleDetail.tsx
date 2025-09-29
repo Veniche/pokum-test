@@ -42,7 +42,7 @@ export default function ArticleDetail() {
   return (
     <div className="min-h-screen bg-white">
       {/* Background Text Effect */}
-      <div className="relative bg-white py-16">
+      <div className="relative bg-white py-16 bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7]">
         <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden pointer-events-none">
           <div className="text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
             pokumpokumpokumpokum

@@ -120,7 +120,12 @@ const ServiceCard = ({ service, isFlipped, onFlip }: ServiceCardProps) => {
 
 export default function Services() {
   const [flippedCards, setFlippedCards] = useState<Record<string, boolean>>({});
-  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
+  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>(
+    serviceSections.reduce((acc, section) => ({
+      ...acc,
+      [section.id]: false
+    }), {})
+  );
 
   const toggleCardFlip = (serviceId: string) => {
     setFlippedCards(prev => ({
@@ -129,11 +134,43 @@ export default function Services() {
     }));
   };
 
-  const toggleSectionExpand = (sectionId: string) => {
-    setExpandedSections(prev => ({
-      ...prev,
-      [sectionId]: !prev[sectionId]
-    }));
+  const toggleSectionExpand = (sectionId: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    setExpandedSections(prev => {
+      const wasExpanded = prev[sectionId];
+      
+      // Close all sections first
+      const newState = Object.keys(prev).reduce((acc, key) => ({
+        ...acc,
+        [key]: false
+      }), {});
+      
+      // Toggle the clicked section (will open it if it was closed)
+      const updatedState = {
+        ...newState,
+        [sectionId]: !wasExpanded
+      };
+      
+      // If we're expanding the section, scroll to it after the state updates
+      if (!wasExpanded) {
+        setTimeout(() => {
+          const element = document.getElementById(`section-${sectionId}`);
+          if (element) {
+            const headerOffset = 100; // Adjust this value based on your header height
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }, 10); // Small timeout to allow the state to update
+      }
+      
+      return updatedState;
+    });
   };
 
   return (
@@ -158,13 +195,14 @@ export default function Services() {
       {/* Services Content */}
       <section className="pb-32 bg-white">
         <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px] mx-auto">
-          <div className="space-y-32">
+          <div className="space-y-4 md:space-y-8">
             {serviceSections.map((section) => (
               <div key={section.id} className="space-y-20">
                 <div className="space-y-5">
                   <div 
+                    id={`section-${section.id}`}
                     className="flex items-center justify-between cursor-pointer"
-                    onClick={() => toggleSectionExpand(section.id)}
+                    onClick={(e) => toggleSectionExpand(section.id, e)}
                   >
                     <h2 className="text-3xl font-bold text-[#05060C] font-helvetica-world tracking-tight">
                       {section.title}

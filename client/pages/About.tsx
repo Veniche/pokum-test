@@ -19,29 +19,40 @@ import { FaqSection } from "@/components/FaqSection";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7]">
 
       {/* Hero Section */}
-      <section className="bg-white py-16">
+      <section className="relative pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           {/* Background decorative text */}
           <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden">
-            <div className="text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+            <div className="text-[80px] md:text-[120px] lg:text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
               pokumpokumpokum
             </div>
           </div>
           
           <div className="relative z-10">
-            <div className="text-center mb-16">
-              <h1 className="text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-tight mb-8">
-                We Help
-                <br />
-                Companies
-              </h1>
+            <div className="mb-8 md:mb-16 pt-6 md:pt-12">
+              <div className="relative">
+                <div className="flex flex-col space-y-2 md:space-y-4">
+                  <div className="relative">
+                    <h1 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-left -ml-6 sm:-ml-12 md:-ml-16 lg:-ml-24">
+                      We Help
+                    </h1>
+                    <hr className="hidden sm:block absolute left-[12rem] md:left-[16rem] lg:left-[24rem] -right-4 sm:-right-12 md:-right-24 lg:-right-56 bottom-8 sm:bottom-12 md:bottom-16 border-t-2 border-black/40 -z-10" />
+                  </div>
+                  <div className="relative">
+                    <h1 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-center ml-4 sm:ml-12 md:ml-20 lg:ml-32">
+                      Companies
+                    </h1>
+                    <hr className="hidden sm:block absolute -left-16 sm:-left-32 md:-left-48 lg:-left-64 right-[8rem] sm:right-[20rem] md:right-[35rem] lg:right-[55rem] bottom-8 sm:bottom-12 md:bottom-[72px] border-t-2 border-black/40 -z-10" />
+                  </div>
+                </div>
+              </div>
               
-              <div className="max-w-3xl mx-auto">
+              <div className="max-w-2xl mt-4 ml-96">
                 <p className="text-2xl text-black/50 font-helvetica leading-relaxed">
-                  At <span className="font-bold text-black">pokum</span> we are dedicated to empowering entrepreneurs and businesses to thrive by providing seamless, end-to-end business incorporation services.
+                  At <span className="text-3xl font-bold text-black">pokum</span> we are dedicated to empowering entrepreneurs and businesses to thrive by providing seamless, end-to-end business incorporation services.
                 </p>
               </div>
             </div>
@@ -50,7 +61,7 @@ export default function About() {
       </section>
 
       {/* Who are we Section */}
-      <section className="bg-white py-16">
+      <section className="relative py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
@@ -58,7 +69,7 @@ export default function About() {
               
               <div className="space-y-6">
                 <p className="text-2xl text-black/50 font-helvetica leading-relaxed">
-                  <span className="font-bold text-black">pokum</span> is a full-cycle business incorporation service that specializes in providing comprehensive solutions to businesses of all sizes.
+                  <span className="text-3xl font-bold text-black">pokum</span> is a full-cycle business incorporation service that specializes in providing comprehensive solutions to businesses of all sizes.
                 </p>
                 
                 <p className="text-2xl text-black/50 font-helvetica leading-relaxed">
@@ -69,7 +80,7 @@ export default function About() {
             
             <div className="flex justify-center">
               <img 
-                src="https://api.builder.io/api/v1/image/assets/TEMP/0de7fc7e5897d6463620a9d0ccc79cb50011ea2d?width=984" 
+                src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758907149/about-laptop_tyzhie.png" 
                 alt="Pokum laptop" 
                 className="w-full h-auto max-w-[492px] rounded-lg"
               />
@@ -79,7 +90,7 @@ export default function About() {
       </section>
 
       {/* Vision Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-transparent py-20">
+      <section className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Background decorative text */}
           <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden pointer-events-none">
@@ -91,14 +102,14 @@ export default function About() {
           <div className="relative z-10 text-center">
             <h2 className="text-4xl font-bold text-black font-helvetica-world mb-6">Our Vision</h2>
             <p className="text-3xl font-helvetica text-black/60 max-w-4xl mx-auto leading-tight">
-              To become the <span className="font-bold text-black">leading global partner</span> for entrepreneurs, providing innovative, reliable, and holistic solutions for business formation and growth.
+              To become the <span className="font-bold text-black/60">leading global partner</span> for entrepreneurs, providing innovative, reliable, and holistic solutions for business formation and growth.
             </p>
           </div>
         </div>
       </section>
 
       {/* Mission Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-transparent py-20">
+      <section className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-black font-helvetica-world">Our Mission</h2>
@@ -109,9 +120,11 @@ export default function About() {
             <div className="bg-white rounded-2xl p-10 shadow-sm">
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="w-8 h-8 bg-[#2556BA] rounded flex items-center justify-center">
-                    <Building className="w-5 h-5 text-white" />
-                  </div>
+                  <img 
+                    src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758907312/mission_1_shjlac.png" 
+                    alt="Mission 1 icon" 
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-black font-helvetica mb-4">
@@ -128,9 +141,11 @@ export default function About() {
             <div className="bg-white rounded-2xl p-10 shadow-sm">
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="w-8 h-8 bg-[#2556BA] rounded flex items-center justify-center">
-                    <TrendingUp className="w-5 h-5 text-white" />
-                  </div>
+                  <img 
+                    src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758907316/mission_2_iuf3z9.png" 
+                    alt="Mission 2 icon" 
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-black font-helvetica mb-4">
@@ -147,9 +162,11 @@ export default function About() {
             <div className="bg-white rounded-2xl p-10 shadow-sm">
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="w-8 h-8 bg-[#2556BA] rounded flex items-center justify-center">
-                    <Bot className="w-5 h-5 text-white" />
-                  </div>
+                  <img 
+                    src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758907319/mission_3_gvnn1c.png" 
+                    alt="Mission 3 icon" 
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-black font-helvetica mb-4">
@@ -166,9 +183,11 @@ export default function About() {
             <div className="bg-white rounded-2xl p-10 shadow-sm">
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="w-8 h-8 bg-[#2556BA] rounded flex items-center justify-center">
-                    <ArrowRight className="w-5 h-5 text-white" />
-                  </div>
+                  <img 
+                    src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758907322/mission_4_no0jhq.png" 
+                    alt="Mission 4 icon" 
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-black font-helvetica mb-4">

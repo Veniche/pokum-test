@@ -37,6 +37,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hoveredLink, setHoveredLink] = useState('');
   const location = useLocation();
   const { activeLink } = useActiveLink();
 
@@ -118,19 +119,21 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`flex h-[52px] ${activeLink === link.to ? 'px-8' : 'px-4'} py-4 justify-center items-center gap-3 rounded-[2000px] transition-colors ${
+                className={`group flex h-[52px] ${activeLink === link.to ? 'px-8' : 'px-4 hover:px-8'} py-4 justify-center items-center gap-3 rounded-[2000px] transition-all duration-200 ${
                   activeLink === link.to 
                     ? 'bg-[#EBF1FC]' 
-                    : 'hover:opacity-70'
+                    : 'hover:bg-gray-50'
                 }`}
+                onMouseEnter={() => setHoveredLink(link.to)}
+                onMouseLeave={() => setHoveredLink('')}
               >
                 <img 
                   src={`/pokum/icons/${link.icon}`} 
                   alt={link.text} 
                   className="w-6 h-6"
                 />
-                {activeLink === link.to && (
-                  <span className="text-center font-bold text-lg leading-normal font-['Helvetica_World',_sans-serif] text-[#3971E3]">
+                {(activeLink === link.to || hoveredLink === link.to) && (
+                  <span className="text-center font-bold text-lg leading-normal font-['Helvetica_World',_sans-serif] text-[#3971E3] transition-opacity duration-200">
                     {link.text}
                   </span>
                 )}
