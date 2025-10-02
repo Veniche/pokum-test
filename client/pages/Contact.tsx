@@ -16,7 +16,7 @@ export default function Contact() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white pt-48 pb-16 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           {/* Background decorative text */}
           <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden">
@@ -26,29 +26,33 @@ export default function Contact() {
           </div>
           
           <div className="relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h1 className="text-[151px] font-bold text-black font-helvetica-world tracking-tight leading-tight">
+            <div className="relative">
+              <div className="relative z-0">
+                <h1 className="text-[80px] sm:text-[100px] md:text-[120px] lg:text-[151px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
                   Contact Us
                 </h1>
               </div>
               
-              <div className="flex justify-center lg:justify-end">
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 pr-8 z-10">
                 <img 
                   src="https://api.builder.io/api/v1/image/assets/TEMP/e0728f26d3bdf73e27a4231eca2857954f325cb7?width=1200" 
                   alt="Vintage rotary phone" 
-                  className="w-full h-auto max-w-[600px]"
+                  className="w-full h-auto max-w-full"
                 />
               </div>
             </div>
           </div>
         </div>
+        
+        {/* Divider */}
+        <div className="absolute bottom-20 left-0 right-0 border-t border-black/40"></div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
+      <section className="bg-white py-20 pb-64">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px]">
+          <div className="max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
             {/* Contact Information */}
             <div className="space-y-12">
               <div className="space-y-5">
@@ -182,6 +186,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
+      </div>
       </section>
 
     </div>

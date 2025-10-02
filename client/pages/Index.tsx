@@ -43,7 +43,7 @@ export default function Index() {
                 <p className="text-lg sm:text-xl lg:text-2xl font-helvetica-world font-normal leading-relaxed text-black/50">
                   We guide your business from entity creation to marketing, finance, tax support, and more — combining legal expertise with AI-powered solutions. You can focus on what matters most:{" "}
                   <span className="font-bold text-black">
-                    growing your products
+                    growing your business
                   </span>
                   <span className="text-black">.</span>
                 </p>
