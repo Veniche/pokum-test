@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -42,19 +43,19 @@ export function Footer() {
 
               {/* Navigation Links */}
               <div className="inline-flex items-start gap-[80px] absolute left-[680px] top-[21px] w-[350px] h-[122px]">
-                <div className="text-white/70 font-helvetica-world text-xl font-normal leading-[120%] tracking-[-0.2px]">
-                  <div>About Us</div>
-                  <div>Services</div>
-                  <div>Contact</div>
+                <div className="text-white/70 font-helvetica-world text-xl font-normal leading-[120%] tracking-[-0.2px] space-y-8">
+                  <div><Link to="/about" className="block hover:text-white transition-colors">About Us</Link></div>
+                  <div><Link to="/services" className="block hover:text-white transition-colors">Services</Link></div>
+                  <div><Link to="/contact" className="block hover:text-white transition-colors">Contact</Link></div>
                 </div>
-                <div className="text-white/70 font-helvetica-world text-xl font-normal leading-[120%] tracking-[-0.2px]">
-                  <div>Privacy Policy</div>
-                  <div>Terms Of Service</div>
+                <div className="text-white/70 font-helvetica-world text-xl font-normal leading-[120%] tracking-[-0.2px] space-y-8">
+                  <div><a href="#" className="block hover:text-white transition-colors">Privacy Policy</a></div>
+                  <div><a href="#" className="block hover:text-white transition-colors">Terms Of Service</a></div>
                 </div>
               </div>
 
               {/* Social Media Icons */}
-              <div className="inline-flex items-center gap-5 absolute left-[1236px] top-[30px] w-[156px] h-6">
+              <div className="inline-flex items-center gap-5 absolute left-[1270px] top-[30px] w-[156px] h-6">
                 <div className="flex items-center gap-5">
                   <div className="flex w-6 h-6 justify-center items-center rounded-[30000px]">
                     <a

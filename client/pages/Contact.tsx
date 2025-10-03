@@ -167,7 +167,6 @@ export default function Contact() {
                     rows={4}
                     className="w-full bg-blue-50/30 p-5 rounded text-xl text-black/40 font-helvetica-world placeholder-black/40 border-none outline-none resize-none"
                   />
-                  <div className="absolute bottom-2 right-2 w-3 h-3 bg-black/20 transform rotate-45"></div>
                 </div>
 
                 {/* Bottom Row */}
