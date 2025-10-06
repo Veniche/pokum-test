@@ -103,15 +103,15 @@ const ServiceCard = ({ service, isFlipped, onFlip }: ServiceCardProps) => {
             </div>
           </div>
           
-          <button 
-            onClick={(e) => {
-              e.stopPropagation();
-              // Handle order now action
-            }}
-            className="w-full py-3 border-2 border-[#05060C] rounded-xl text-[#05060C] font-medium hover:bg-[#05060C] hover:text-white transition-colors duration-200 text-center"
+          <a 
+            href={`https://wa.me/6282283863111?text=${encodeURIComponent(`Jasa : ${service.title}\nNama : \nEmail : `)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="block w-full py-3 border-2 border-[#05060C] rounded-xl text-[#05060C] font-medium hover:bg-[#05060C] hover:text-white transition-colors duration-200 text-center"
           >
             Order Now →
-          </button>
+          </a>
         </div>
       </div>
     </div>

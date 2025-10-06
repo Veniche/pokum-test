@@ -68,7 +68,12 @@ export function CtaBanner({
             <h2 className="text-white font-helvetica-world text-[30px] font-bold leading-[160%] tracking-[-0.9px] text-center">
               {title}
             </h2>
-            <button className="flex items-center justify-center gap-3 px-6 py-[14px] border-2 border-white rounded-xl bg-transparent hover:bg-white hover:text-[#0B1017] transition-colors group">
+            <a 
+              href={`https://wa.me/6282283863111?text=${encodeURIComponent('Halo, saya ingin berkonsultasi tentang layanan Anda.\nNama : \nEmail : ')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 px-6 py-[14px] border-2 border-white rounded-xl bg-transparent hover:bg-white hover:text-[#0B1017] transition-colors group"
+            >
               <span className="text-white group-hover:text-[#0B1017] font-helvetica-world text-[14px] font-bold opacity-85">
                 {buttonText}
               </span>
@@ -82,7 +87,7 @@ export function CtaBanner({
                   fill="currentColor"
                 />
               </svg>
-            </button>
+            </a>
           </div>
 
           {/* Content - Desktop Layout */}
@@ -90,7 +95,12 @@ export function CtaBanner({
             <h2 className="text-white font-helvetica-world text-[40px] font-bold leading-[160%] tracking-[-1.2px]">
               {title}
             </h2>
-            <button className="flex items-center justify-center gap-3 px-6 py-5 border-2 border-white rounded-xl bg-transparent hover:bg-white hover:text-[#0B1017] transition-colors group">
+            <a 
+              href={`https://wa.me/6282283863111?text=${encodeURIComponent('Halo, saya ingin berkonsultasi tentang layanan Anda.\nNama : \nEmail : ')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 px-6 py-5 border-2 border-white rounded-xl bg-transparent hover:bg-white hover:text-[#0B1017] transition-colors group"
+            >
               <span className="text-white group-hover:text-[#0B1017] font-helvetica-world text-[16px] font-bold">
                 {buttonText}
               </span>
@@ -104,7 +114,7 @@ export function CtaBanner({
                   fill="currentColor"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>

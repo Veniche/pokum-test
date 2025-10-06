@@ -48,10 +48,15 @@ export default function Index() {
                   <span className="text-black">.</span>
                 </p>
 
-                <button className="inline-flex items-center justify-center px-6 py-5 md:px-8 md:py-6 rounded-xl border-2 border-black bg-white font-helvetica-world font-bold text-base md:text-lg text-black opacity-85 hover:bg-black hover:text-white transition-all duration-300 group">
+                <a 
+                  href={`https://wa.me/6282283863111?text=${encodeURIComponent('Halo, saya ingin berkonsultasi tentang layanan Anda.\nNama : \nEmail : ')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-5 md:px-8 md:py-6 rounded-xl border-2 border-black bg-white font-helvetica-world font-bold text-base md:text-lg text-black opacity-85 hover:bg-black hover:text-white transition-all duration-300 group"
+                >
                   Start Free Consultation
                   <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
             </div>
 
@@ -109,10 +114,15 @@ export default function Index() {
                 </p>
 
                 <div className="flex justify-center">
-                  <button className="inline-flex items-center justify-center gap-3 px-6 py-[14px] bg-white border-2 border-black rounded-xl font-helvetica-world font-bold text-[14px] text-black hover:bg-black hover:text-white transition-colors group">
+                  <a 
+                    href={`https://wa.me/6282283863111?text=${encodeURIComponent('Halo, saya ingin berkonsultasi tentang layanan Anda.\nNama : \nEmail : ')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-3 px-6 py-[14px] bg-white border-2 border-black rounded-xl font-helvetica-world font-bold text-[14px] text-black hover:bg-black hover:text-white transition-colors group"
+                  >
                     Start Free Consultation
                     <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
