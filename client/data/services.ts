@@ -57,7 +57,13 @@ export const serviceSections: ServiceSection[] = [
         title: 'Pendirian PT(Perorangan)',
         price: 'IDR 1,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502769/PT_PERSERO_viyyen.png',
-        description: 'Pendirian PT Perorangan sesuai dengan UU Cipta Kerja. Solusi tepat untuk pelaku usaha mikro dan kecil dengan proses yang lebih sederhana dan biaya terjangkau.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Surat Terdaftar PT Perorangan Menteri Hukum</p>
+            <p>2. Nomor Induk Berusaha (NIB) OSS RBA</p>
+            <p>3. NPWP</p>
+        </div>
+        `
       },
       {
         id: 'perubahan-akta',
@@ -91,7 +97,12 @@ export const serviceSections: ServiceSection[] = [
         title: 'Perubahan CV',
         price: 'IDR 5,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502768/Perubahan_CV_u4kkvz.png',
-        description: 'Layanan perubahan data CV, termasuk perubahan pengurus, alamat, modal, atau bidang usaha. Dilengkapi dengan pengurusan perubahannya di notaris dan instansi terkait.'
+        description:  `
+        <div class="space-y-0">
+            <p>1. Akta Perubahan Notaris</p>
+            <p>2. Surat Ketetapan dari Kementerian Hukum dan HAM</p>
+        </div>
+        `
       },
       {
         id: 'pendirian-firma',
@@ -126,9 +137,14 @@ export const serviceSections: ServiceSection[] = [
       {
         id: 'perpanjangan-merek',
         title: 'Perpanjangan Merek',
-        price: 'IDR 2,000,000.00',
+        price: 'IDR 3,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757502767/Perpanjangan_Merek_vkobgw.png',
-        description: 'Layanan perpanjangan masa berlaku merek dagang yang akan habis masa berlakunya. Dilakukan sebelum masa berlaku habis untuk menghindari pembatalan merek.'
+        description: `
+        <div class="space-y-0">
+            <p>1. Sebelum Expiredk</p>
+            <p>2. Setelah Expiredk</p>
+        </div>
+        `
       }
     ]
   },
@@ -140,7 +156,7 @@ export const serviceSections: ServiceSection[] = [
       {
         id: 'npwp-perusahaan',
         title: 'NPWP Perusahaan',
-        price: 'IDR 8,500,000.00',
+        price: 'IDR 2,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503224/NPWP_Perusahaan_vxovyh.png',
         description: `
         <div class="space-y-0">
@@ -153,7 +169,7 @@ export const serviceSections: ServiceSection[] = [
       {
         id: 'npwp-perorangan',
         title: 'NPWP Perorangan',
-        price: 'IDR 11,000,000.00',
+        price: 'IDR 500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503223/NPWP_Perorangan_bidjpq.png',
         description: `
         <div class="space-y-0">
@@ -167,8 +183,13 @@ export const serviceSections: ServiceSection[] = [
         price: 'IDR 1,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503222/Laporan_Pajak_Bulanan_l54ksl.png',
         description: `
-        <div class="space-y-0">
-            <p>1. Draft Laporan Bulanan <ul><li>PPH 21</li><li>PPH 23</li><li>4 (2)</li></ul></p>
+        <div>
+            <div class="font-medium">1. Draft Laporan Bulanan:</div>
+            <ul class="list-disc pl-10">
+                <li class="pl-2">PPH 21</li>
+                <li class="pl-2">PPH 23</li>
+                <li class="pl-2">4 (2)</li>
+            </ul>
             <p>2. Draft Template Coretax / E-Form</p>
             <p>3. Submit Laporan Pajak Bulanan</p>
             <p>4. Konsultasi Online</p>
@@ -181,8 +202,14 @@ export const serviceSections: ServiceSection[] = [
         price: 'IDR 6,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503223/Laporan_Pajak_Tahunan_kibtet.png',
         description: `
-        <div class="space-y-0">
-            <p>1. Draft Corporate Income Tax Return (CITR) <ul><li>Perhitungan List Aset</li><li>Perhitungan Inventory</li><li>Perhitungan kurang bayar, Angsuran pph 25</li><li>Persamaan SPM PPH 21 dengan biaya gaji</li></ul></p>
+        <div>
+            <div class="font-medium">1. Draft Corporate Income Tax Return (CITR):</div>
+            <ul class="list-disc pl-10">
+                <li class="pl-2">Perhitungan List Aset</li>
+                <li class="pl-2">Perhitungan Inventory</li>
+                <li class="pl-2">Perhitungan kurang bayar, Angsuran pph 25</li>
+                <li class="pl-2">Persamaan SPM PPH 21 dengan biaya gaji</li>
+            </ul>
             <p>2. Draft Template Coretax / E-Form</p>
             <p>3. Submit Laporan Pajak Tahunan</p>
             <p>4. Konsultasi Online</p>
@@ -212,7 +239,7 @@ export const serviceSections: ServiceSection[] = [
       {
         id: 'advokat',
         title: 'Advokat',
-        price: 'IDR 8,500,000.00',
+        price: 'IDR 90,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503362/Advokat_pfsvpd.png',
         description: `
         <div class="space-y-0">
@@ -224,7 +251,7 @@ export const serviceSections: ServiceSection[] = [
       {
         id: 'notaris',
         title: 'Notaris',
-        price: 'IDR 11,000,000.00',
+        price: 'IDR 350,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503378/Notaris_trtyaw.png',
         description: `
         <div class="space-y-0">
@@ -236,7 +263,7 @@ export const serviceSections: ServiceSection[] = [
       {
         id: 'mediator',
         title: 'Mediator',
-        price: 'IDR 1,500,000.00',
+        price: 'IDR 450,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757503389/Mediator_tqsikv.png',
         description: `
         <div class="space-y-0">
@@ -267,23 +294,62 @@ export const serviceSections: ServiceSection[] = [
       {
         id: 'sewa-kantor',
         title: 'Sewa Kantor',
-        price: 'IDR 11,000,000.00',
+        price: 'IDR 65,000,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504034/Sewa_Kantor_gimchj.png',
         description: `
-        <div class="space-y-0">
-            <p>1. Ipl</p>
-            <p>2. Internet</p>
-            <p>3. Air</p>
-            <p>4. Listrik</p>
-            <p>5. Bersih bersih</p>
-            <p>6. Galon</p>
-            <p>7. Pantry Supplies (coffee, tea & snack)</p>
-            <p>8. Full furnished tinggal bawa diri</p>
-            <p>9. 3 meja kerja</p>
-            <p>10. Sofa</p>
-            <p>11. Bean bag</p>
-            <p>12. Whiteboard</p>
-            <p>13. Lemari / rak simpan</p>
+        <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-base">
+            <div class="flex items-start">
+                <span class="mr-2">1.</span>
+                <span>Ipl</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">2.</span>
+                <span>Internet</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">3.</span>
+                <span>Air</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">4.</span>
+                <span>Listrik</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">5.</span>
+                <span>Bersih bersih</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">6.</span>
+                <span>Galon</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">7.</span>
+                <span>Pantry Supplies</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">8.</span>
+                <span>Full furnished</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">9.</span>
+                <span>3 meja kerja</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">10.</span>
+                <span>Sofa</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">11.</span>
+                <span>Bean bag</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">12.</span>
+                <span>Whiteboard</span>
+            </div>
+            <div class="flex items-start">
+                <span class="mr-2">13.</span>
+                <span>Lemari / rak simpan</span>
+            </div>
         </div>
         `
       }
@@ -338,14 +404,13 @@ export const serviceSections: ServiceSection[] = [
       },
       {
         id: 'peluncuran-website',
-        title: 'Peluncuran Website',
-        price: 'IDR 1,500,000.00',
+        title: 'Pembuatan Website',
+        price: 'IDR 3,500,000.00',
         image: 'https://res.cloudinary.com/dn8wwzjaj/image/upload/v1757504177/Peluncuran_Website_fmnqek.png',
         description: `
         <div class="space-y-0">
             <p>1. Website Perusahaan & Portofolio</p>
             <p>2. Konsultasi sampai dengan maksimal 5 (lima) kali</p>
-            <p>3. Hosting</p>
         </div>
         `
       }
