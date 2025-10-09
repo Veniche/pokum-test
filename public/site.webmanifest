@@ -1,0 +1,53 @@
+{
+  "name": "Pokum - Business Incorporation Experts",
+  "short_name": "Pokum",
+  "description": "Full-cycle business incorporation and legal services for entrepreneurs and businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2556BA",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758533832/pokum._bjfoo8.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758533832/pokum._bjfoo8.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "legal", "finance", "productivity"],
+  "screenshots": [
+    {
+      "src": "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1759825000/screenshot1.jpg",
+      "sizes": "1280x800",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1759825000/screenshot2.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "View our business incorporation services",
+      "url": "/services"
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with our team",
+      "url": "/contact"
+    }
+  ]
+}

@@ -1,23 +1,71 @@
-import {
-  ArrowRight,
-  ChevronDown,
-  Mail,
-  Phone,
-  MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { Seo } from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { CtaBanner } from "@/components/CtaBanner";
 import { FaqSection } from "@/components/FaqSection";
+import { ArrowRight, ChevronDown } from "lucide-react";
+
+// Structured data for Organization
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pokum",
+  "url": "https://pokum.id",
+  "logo": "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758533832/pokum._bjfoo8.png",
+  "sameAs": [
+    "https://www.instagram.com/pokum.id/",
+    "https://www.linkedin.com/company/pokum-id/"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+628118888888",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Bahasa Indonesia"]
+    }
+  ]
+};
+
+// Structured data for WebPage
+const webpageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Pokum - Full-Cycle Business Incorporation Experts",
+  "description": "Professional business incorporation, legal services, and corporate solutions. Start and grow your business with our expert guidance.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pokum"
+  }
+};
 
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
+      <Seo 
+        title="Pokum - Full-Cycle Business Incorporation Experts"
+        description="Professional business incorporation, legal services, and corporate solutions. Start and grow your business with our expert guidance in Indonesia."
+        keywords="business incorporation Indonesia, company registration, legal services, corporate solutions, business setup, PT PMA, local company, virtual office, business license"
+      />
+      
+      {/* Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify(organizationSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(webpageSchema)}
+      </script>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section 
+        className="relative overflow-hidden"
+        itemScope
+        itemType="https://schema.org/ProfessionalService"
+      >
+        <meta itemProp="name" content="Pokum - Business Incorporation Experts" />
+        <meta itemProp="description" content="Professional business incorporation and legal services in Indonesia" />
+        <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+          <meta itemProp="addressLocality" content="Jakarta" />
+          <meta itemProp="addressCountry" content="ID" />
+        </div>
         {/* Desktop Layout - Only shows on 1024px and above */}
         <div className="hidden lg:block">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 relative z-10">
