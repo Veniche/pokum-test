@@ -195,7 +195,7 @@ export default function Contact() {
   // Real Web3Forms submission
   const submitToWeb3Forms = async (data: FormData): Promise<{ success: boolean; message?: string }> => {
     const formDataToSend = new FormData();
-    formDataToSend.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY');
+    formDataToSend.append('access_key', '77ce8064-c6e3-4209-9579-bb83915a2796');
     formDataToSend.append('name', data.name);
     formDataToSend.append('email', data.email);
     formDataToSend.append('phone', data.phone);
