@@ -3,6 +3,10 @@
   functions = "netlify/functions"
   publish = "dist/spa"
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [functions]
   external_node_modules = ["express"]
