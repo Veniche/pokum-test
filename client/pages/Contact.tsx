@@ -239,9 +239,8 @@ export default function Contact() {
 
     try {
       // Use mock in development, real API in production
-      const result = process.env.NODE_ENV === 'development' 
-        ? await mockSubmitForm(formData)
-        : await submitToWeb3Forms(formData);
+      // const result = await mockSubmitForm(formData);
+      const result = await submitToWeb3Forms(formData);
       
       if (result.success) {
         // Show success toast
