@@ -11,6 +11,8 @@
     ]
   },
   "scripts": {
+    "generate-sitemap": "node sitemap-generator.js",
+    "postbuild": "npm run generate-sitemap",
     "dev": "vite",
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build",

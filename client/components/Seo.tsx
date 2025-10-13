@@ -31,6 +31,9 @@ export function Seo({
   
   return (
     <Helmet>
+      {/* Google Search Console Verification */}
+      {/* <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> */}
+      
       {/* Primary Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="title" content={fullTitle} />
