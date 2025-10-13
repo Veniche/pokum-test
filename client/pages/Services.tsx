@@ -22,7 +22,7 @@ const ServiceCard = ({ service, isFlipped, onFlip }: ServiceCardProps) => {
       className="w-full h-full"
       style={{
         perspective: '1000px',
-        minHeight: '556px' // Ensure consistent height
+        minHeight: 'clamp(400px, 70vh, 556px)' // Responsive height
       }}
     >
       <div 
@@ -45,21 +45,22 @@ const ServiceCard = ({ service, isFlipped, onFlip }: ServiceCardProps) => {
           backfaceVisibility: 'hidden',
           WebkitBackfaceVisibility: 'hidden',
         }}>
-          <div className="bg-[#F5F8FC] rounded-3xl p-8 h-full flex flex-col items-center text-center hover:shadow-lg justify-between">
-            <div className="relative w-full">
+          <div className="bg-[#F5F8FC] rounded-3xl p-4 sm:p-6 md:p-8 h-full flex flex-col items-center text-center hover:shadow-lg justify-between">
+            <div className="relative w-3/4 sm:w-full max-w-[200px] sm:max-w-none">
               <img 
                 src={service.image} 
                 alt={service.title} 
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-auto object-contain aspect-square max-h-[180px] sm:max-h-[220px] md:max-h-[280px] rounded-lg"
+                loading="lazy"
               />
             </div>
-            <div className="space-y-4 w-full">
-              <h3 className="text-2xl font-bold text-[#05060C] font-helvetica-world leading-9">
+            <div className="space-y-2 sm:space-y-4 w-full mt-2 sm:mt-0">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#05060C] font-helvetica-world leading-tight sm:leading-9">
                 {service.title}
               </h3>
             </div>
-            <div className="space-y-4 w-full mb-8">
-              <p className="text-xl text-[#757575] font-helvetica-world">
+            <div className="w-full mb-4 sm:mb-8">
+              <p className="text-lg sm:text-xl text-[#757575] font-helvetica-world">
                 {service.price}
               </p>
             </div>
@@ -76,22 +77,24 @@ const ServiceCard = ({ service, isFlipped, onFlip }: ServiceCardProps) => {
           transform: 'rotateY(180deg)',
           backgroundColor: '#F5F8FC',
           borderRadius: '1.5rem',
-          padding: '2rem',
+          padding: '1.5rem',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'flex-start',
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
+          overflowY: 'auto',
+          WebkitOverflowScrolling: 'touch'
         }}>
           <div className="w-full h-full flex flex-col justify-between">
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6 w-full">
               <div>
-                <h3 className="text-2xl font-bold text-[#05060C] font-helvetica-world">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#05060C] font-helvetica-world">
                   {service.title}
                 </h3>
               </div>
               
               <div 
-                className="flex-1 text-lg text-[#757575] font-helvetica-world space-y-2"
+                className="flex-1 text-base sm:text-lg text-[#757575] font-helvetica-world space-y-2 overflow-y-auto"
                 dangerouslySetInnerHTML={{ __html: service.description }}
               />
             </div>
