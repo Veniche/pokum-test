@@ -14,6 +14,15 @@ const Navbar = () => {
       const currentScrollY = window.scrollY;
       const isScrollingDown = currentScrollY > lastScrollY;
       
+      // Check if any section is currently expanded by looking for the active-section class
+      const isSectionExpanded = document.querySelector('.active-section') !== null;
+      
+      if (isSectionExpanded) {
+        // If a section is expanded, keep the navbar hidden
+        navRef.current?.classList.add('-translate-y-full');
+        return;
+      }
+      
       if (currentScrollY > 100) {
         setIsScrolled(true);
         

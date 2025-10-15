@@ -140,8 +140,16 @@ export default function Services() {
   const toggleSectionExpand = (sectionId: string, e: React.MouseEvent) => {
     e.preventDefault();
     
+    // Get the navbar element
+    const navbar = document.querySelector('header');
+    
     setExpandedSections(prev => {
       const wasExpanded = prev[sectionId];
+      
+      // Check if any other section is currently expanded
+      const otherSectionExpanded = Object.entries(prev).some(
+        ([key, value]) => key !== sectionId && value
+      );
       
       // Close all sections first
       const newState = Object.keys(prev).reduce((acc, key) => ({
@@ -157,19 +165,40 @@ export default function Services() {
       
       // If we're expanding the section, scroll to it after the state updates
       if (!wasExpanded) {
-        setTimeout(() => {
+        // Use requestAnimationFrame to ensure the DOM has updated
+        requestAnimationFrame(() => {
           const element = document.getElementById(`section-${sectionId}`);
           if (element) {
-            const headerOffset = 100; // Adjust this value based on your header height
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            // Always hide the navbar when expanding a section
+            if (navbar) {
+              navbar.classList.add('-translate-y-full');
+            }
             
+            // Calculate the scroll position with a small offset from the top
+            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = elementPosition - 40; // 40px offset from top
+            
+            // Use smooth scroll behavior
             window.scrollTo({
               top: offsetPosition,
               behavior: 'smooth'
             });
+            
+            // Add a class to the section for visual feedback
+            element.classList.add('active-section');
+            
+            // Remove the class after animation completes
+            setTimeout(() => {
+              element.classList.remove('active-section');
+            }, 1000);
           }
-        }, 10); // Small timeout to allow the state to update
+        });
+      } else if (!otherSectionExpanded) {
+        // Only show navbar if we're collapsing the last expanded section
+        // and not switching to another section
+        if (navbar) {
+          navbar.classList.remove('-translate-y-full');
+        }
       }
       
       return updatedState;
@@ -188,7 +217,7 @@ export default function Services() {
                 <span className="absolute left-full top-1/2 w-screen h-px bg-black opacity-40 ml-4"></span>
               </h1>
             </div>
-            <p className="mt-6 text-xl sm:text-2xl text-black/50 font-helvetica-world max-w-2xl">
+            <p className="text-xl sm:text-2xl text-black/50 font-helvetica-world max-w-2xl">
               Committed to help you build your dream company.
             </p>
           </div>
@@ -200,10 +229,13 @@ export default function Services() {
         <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px] mx-auto">
           <div className="space-y-4 md:space-y-8">
             {serviceSections.map((section) => (
-              <div key={section.id} className="space-y-20">
+              <div 
+                key={section.id} 
+                id={`section-${section.id}`}
+                className="py-8 scroll-mt-24 transition-all duration-300 ease-in-out"
+              >
                 <div className="space-y-5">
                   <div 
-                    id={`section-${section.id}`}
                     className="flex items-center justify-between cursor-pointer"
                     onClick={(e) => toggleSectionExpand(section.id, e)}
                   >
