@@ -336,7 +336,7 @@ export default function Contact() {
                       alt="Email" 
                       className="w-5 h-5 object-contain"
                     />
-                    <a href="mailto:pohonhukum.id@gmail.com" className="text-lg text-gray-700 font-helvetica-world hover:underline">pohonhukum.id@gmail.com</a>
+                    <a href="mailto:pohonhukum.id@gmail.com" className="text-lg text-gray-700 font-helvetica-world hover:underline">corporate@pokum.id</a>
                   </div>
                   
                   <div className="flex items-center space-x-3">
@@ -355,12 +355,12 @@ export default function Contact() {
                       className="w-5 h-5 object-contain"
                     />
                     <a 
-                      href="https://www.tiktok.com/@pohonhukum" 
+                      href="https://www.tiktok.com/@pohonhukumindonesia?_t=ZS-90Yo6HcAlvN&_r=1" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-lg text-gray-700 font-helvetica-world hover:underline"
                     >
-                      Pohon Hukum Indonesia
+                      Pokum
                     </a>
                   </div>
                   
@@ -371,12 +371,12 @@ export default function Contact() {
                       className="w-5 h-5 object-contain"
                     />
                     <a 
-                      href="https://instagram.com/pohonhukum.id" 
+                      href="https://www.instagram.com/pokum.id" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-lg text-gray-700 font-helvetica-world hover:underline"
                     >
-                      Pohon Hukum ID
+                      pokum.id
                     </a>
                   </div>
                   
@@ -387,12 +387,12 @@ export default function Contact() {
                       className="w-5 h-5 object-contain"
                     />
                     <a 
-                      href="https://www.linkedin.com/company/pohonhukum" 
+                      href="https://www.linkedin.com/company/pokum-id" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-lg text-gray-700 font-helvetica-world hover:underline"
                     >
-                      Pohon Hukum
+                      Pokum ID
                     </a>
                   </div>
                 </div>

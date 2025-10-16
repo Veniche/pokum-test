@@ -19,41 +19,47 @@ import { FaqSection } from "@/components/FaqSection";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7]">
+    <div className="min-h-screen bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7] overflow-x-hidden">
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          {/* Background decorative text */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden">
-            <div className="text-[80px] md:text-[120px] lg:text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
-              pokumpokumpokum
-            </div>
+        {/* Background text component */}
+        <div className="absolute inset-0 w-screen overflow-hidden pointer-events-none">
+          <div className="absolute left-0 right-0 top-1/2 -translate-y-[70%] transform -translate-x-[500px] opacity-[0.02]">
+            <p className="text-[120px] md:text-[180px] lg:text-[270px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+              pokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokum
+            </p>
           </div>
-          
+        </div>
+        
+        <div className="relative">
           <div className="relative z-10">
-            <div className="mb-8 md:mb-16 pt-6 md:pt-12">
+            <div className="mb-8 md:mb-16">
               <div className="relative">
                 <div className="flex flex-col space-y-2 md:space-y-4">
-                  <div className="relative">
-                    <h1 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-left -ml-6 sm:-ml-12 md:-ml-16 lg:-ml-24">
+                  <div className="relative w-full px-4 sm:px-8 md:px-16 lg:px-[120px] flex items-center">
+                    <h1 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-left whitespace-nowrap">
                       We Help
                     </h1>
-                    <hr className="hidden sm:block absolute left-[12rem] md:left-[16rem] lg:left-[24rem] -right-4 sm:-right-12 md:-right-24 lg:-right-56 bottom-8 sm:bottom-12 md:bottom-16 border-t-2 border-black/40 -z-10" />
+                    <div className="hidden sm:block h-[1px] bg-black/40 flex-grow ml-8"></div>
                   </div>
-                  <div className="relative">
-                    <h1 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-center ml-4 sm:ml-12 md:ml-20 lg:ml-32">
+                  <div className="relative w-full px-4 sm:px-8 md:px-16 lg:px-[120px] flex items-center justify-end">
+                    <div className="hidden sm:block h-[1px] bg-black/40 flex-grow mr-8"></div>
+                    <h1 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-right whitespace-nowrap">
                       Companies
                     </h1>
-                    <hr className="hidden sm:block absolute -left-16 sm:-left-32 md:-left-48 lg:-left-64 right-[8rem] sm:right-[20rem] md:right-[35rem] lg:right-[55rem] bottom-8 sm:bottom-12 md:bottom-[72px] border-t-2 border-black/40 -z-10" />
                   </div>
                 </div>
               </div>
               
-              <div className="max-w-2xl mt-4 ml-96">
-                <p className="text-2xl text-black/50 font-helvetica leading-relaxed">
-                  At <span className="text-3xl font-bold text-black">pokum</span> we are dedicated to empowering entrepreneurs and businesses to thrive by providing seamless, end-to-end business incorporation services.
-                </p>
+              <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px] mt-4">
+                <div className="flex justify-end">
+                  <div className="w-full max-w-2xl text-left pl-16">
+                    <p className="text-2xl text-black/50 font-helvetica leading-relaxed">
+                      At <span className="text-3xl font-bold text-black">pokum</span> we are dedicated to empowering entrepreneurs and businesses to thrive by providing seamless, end-to-end business incorporation services.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
