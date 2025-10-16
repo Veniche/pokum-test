@@ -22,11 +22,11 @@ export default function About() {
     <div className="min-h-screen bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7] overflow-x-hidden">
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16">
         {/* Background text component */}
         <div className="absolute inset-0 w-screen overflow-hidden pointer-events-none">
           <div className="absolute left-0 right-0 top-1/2 -translate-y-[70%] transform -translate-x-[500px] opacity-[0.02]">
-            <p className="text-[120px] md:text-[180px] lg:text-[270px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+            <p className="text-[80px] sm:text-[100px] md:text-[180px] lg:text-[270px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
               pokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokumpokum
             </p>
           </div>
@@ -36,27 +36,31 @@ export default function About() {
           <div className="relative z-10">
             <div className="mb-8 md:mb-16">
               <div className="relative">
-                <div className="flex flex-col space-y-2 md:space-y-4">
+                <div className="flex flex-col space-y-4">
                   <div className="relative w-full px-4 sm:px-8 md:px-16 lg:px-[120px] flex items-center">
-                    <h1 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-left whitespace-nowrap">
-                      We Help
-                    </h1>
-                    <div className="hidden sm:block h-[1px] bg-black/40 flex-grow ml-8"></div>
+                    <div className="relative">
+                      <h1 className="text-[40px] min-[400px]:text-[64px] sm:text-[80px] md:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-left whitespace-nowrap">
+                        We Help
+                      </h1>
+                      <div className="absolute left-full top-1/2 w-[50vw] sm:w-screen h-[1px] bg-black/40 ml-4 sm:ml-8 -translate-x-4 sm:translate-x-0"></div>
+                    </div>
                   </div>
                   <div className="relative w-full px-4 sm:px-8 md:px-16 lg:px-[120px] flex items-center justify-end">
-                    <div className="hidden sm:block h-[1px] bg-black/40 flex-grow mr-8"></div>
-                    <h1 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[100px] xl:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-right whitespace-nowrap">
-                      Companies
-                    </h1>
+                    <div className="relative">
+                      <div className="absolute right-full top-1/2 w-[50vw] sm:w-screen h-[1px] bg-black/40 mr-4 sm:mr-8 translate-x-4 sm:translate-x-0"></div>
+                      <h1 className="text-[40px] min-[400px]:text-[64px] sm:text-[80px] md:text-[120px] font-bold text-black font-helvetica-world tracking-tight leading-[0.9] md:leading-tight text-right whitespace-nowrap">
+                        Companies
+                      </h1>
+                    </div>
                   </div>
                 </div>
               </div>
               
-              <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px] mt-4">
-                <div className="flex justify-end">
-                  <div className="w-full max-w-2xl text-left pl-16">
-                    <p className="text-2xl text-black/50 font-helvetica leading-relaxed">
-                      At <span className="text-3xl font-bold text-black">pokum</span> we are dedicated to empowering entrepreneurs and businesses to thrive by providing seamless, end-to-end business incorporation services.
+              <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px] mt-4 md:mt-4">
+                <div className="flex justify-center lg:justify-end">
+                  <div className="w-full max-w-2xl lg:pl-16">
+                    <p className="text-lg sm:text-xl md:text-2xl text-black/50 font-helvetica leading-relaxed text-center lg:text-left">
+                      At <span className="text-xl sm:text-2xl md:text-3xl font-bold text-black">pokum</span> we are dedicated to empowering entrepreneurs and businesses to thrive by providing seamless, end-to-end business incorporation services.
                     </p>
                   </div>
                 </div>
@@ -98,10 +102,12 @@ export default function About() {
       {/* Vision Section */}
       <section className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Background decorative text */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden pointer-events-none">
-            <div className="text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
-              vision&missionvission&mission
+          {/* Background text component - matching hero section */}
+          <div className="absolute inset-0 w-screen overflow-hidden pointer-events-none">
+            <div className="absolute left-0 right-0 top-[-35%] transform -translate-x-[500px] opacity-[0.02]">
+              <p className="text-[60px] sm:text-[80px] md:text-[140px] lg:text-[220px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+                vision&missionvission&missionvision&missionvission&missionvision&missionvission&mission
+              </p>
             </div>
           </div>
           
