@@ -37,7 +37,7 @@ export default function Blog() {
     <div className="min-h-screen bg-white relative">
       {/* Background Text Effect - Absolute Position */}
       <div className="absolute top-[5%] left-0 right-0 flex justify-center opacity-[0.02] pointer-events-none z-0">
-        <div className="text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+        <div className="text-[240px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
           pokumpokumpokumpokum
         </div>
       </div>

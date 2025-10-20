@@ -96,16 +96,16 @@ export function Footer() {
             {/* Right Section - Social Media Icons */}
             <div className="flex justify-end items-start">
               <div className="flex items-center gap-6">
-                <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
+                <a href="https://www.facebook.com/share/1Baj8So5Tq/" className="w-6 h-6 hover:opacity-80 transition-opacity">
                   <img src="/pokum/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
                 </a>
                 <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
                   <img src="/pokum/icons/twitter.svg" alt="Twitter" className="w-6 h-6" />
                 </a>
-                <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
+                <a href="https://www.instagram.com/pokum.id" className="w-6 h-6 hover:opacity-80 transition-opacity">
                   <img src="/pokum/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
                 </a>
-                <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
+                <a href="https://www.linkedin.com/company/pokum-id" className="w-6 h-6 hover:opacity-80 transition-opacity">
                   <img src="/pokum/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
                 </a>
               </div>
@@ -153,16 +153,16 @@ export function Footer() {
 
             {/* Social Media Icons */}
             <div className="flex items-center gap-5">
-              <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
+              <a href="https://www.facebook.com/share/1Baj8So5Tq/" className="w-6 h-6 hover:opacity-80 transition-opacity">
                 <img src="/pokum/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
               </a>
               <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
                 <img src="/pokum/icons/twitter.svg" alt="Twitter" className="w-6 h-6" />
               </a>
-              <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
+              <a href="https://www.instagram.com/pokum.id" className="w-6 h-6 hover:opacity-80 transition-opacity">
                 <img src="/pokum/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
               </a>
-              <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
+              <a href="https://www.linkedin.com/company/pokum-id" className="w-6 h-6 hover:opacity-80 transition-opacity">
                 <img src="/pokum/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
               </a>
             </div>

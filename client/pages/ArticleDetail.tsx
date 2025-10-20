@@ -41,11 +41,13 @@ export default function ArticleDetail() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Background Text Effect */}
-      <div className="relative bg-white py-16 bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7]">
-        <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] overflow-hidden pointer-events-none">
-          <div className="text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
-            pokumpokumpokumpokum
+      <div className="relative py-16 bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7] overflow-hidden">
+        {/* Background Text Effect */}
+        <div className="absolute inset-0 w-screen overflow-hidden pointer-events-none">
+          <div className="absolute left-0 right-0 top-[5%] transform -translate-x-[500px] opacity-[0.02]">
+            <p className="text-[80px] sm:text-[100px] md:text-[180px] lg:text-[270px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+              pokumpokumpokumpokumpokumpokumpokumpokum
+            </p>
           </div>
         </div>
 

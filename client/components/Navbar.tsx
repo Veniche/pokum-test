@@ -59,10 +59,10 @@ const Navbar = () => {
   ];
 
   const socialLinks = [
-    { name: "Facebook", icon: "facebook.svg", url: "#" },
+    { name: "Facebook", icon: "facebook.svg", url: "https://www.facebook.com/share/1Baj8So5Tq/" },
     { name: "Twitter", icon: "twitter.svg", url: "#" },
-    { name: "Instagram", icon: "instagram.svg", url: "#" },
-    { name: "LinkedIn", icon: "linkedin.svg", url: "#" },
+    { name: "Instagram", icon: "instagram.svg", url: "https://www.instagram.com/pokum.id" },
+    { name: "LinkedIn", icon: "linkedin.svg", url: "https://www.linkedin.com/company/pokum-id" },
   ];
 
   // Close menu when clicking outside

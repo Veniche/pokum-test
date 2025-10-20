@@ -73,8 +73,8 @@ export default function About() {
       {/* Who are we Section */}
       <section className="relative py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
+          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8 mt-12 lg:mt-0">
               <h2 className="text-4xl font-bold text-black font-helvetica-world">Who are we?</h2>
               
               <div className="space-y-6">
@@ -88,7 +88,7 @@ export default function About() {
               </div>
             </div>
             
-            <div className="flex justify-center">
+            <div className="flex justify-center lg:justify-end">
               <img 
                 src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758907149/about-laptop_tyzhie.png" 
                 alt="Pokum laptop" 

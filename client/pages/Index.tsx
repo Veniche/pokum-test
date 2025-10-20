@@ -39,7 +39,7 @@ const webpageSchema = {
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-hidden">
       <Seo 
         title="Pokum - Full-Cycle Business Incorporation Experts"
         description="Professional business incorporation, legal services, and corporate solutions. Start and grow your business with our expert guidance in Indonesia."
@@ -66,6 +66,14 @@ export default function Index() {
           <meta itemProp="addressLocality" content="Jakarta" />
           <meta itemProp="addressCountry" content="ID" />
         </div>
+        {/* Background Text Effect */}
+        <div className="absolute inset-0 w-screen h-screen overflow-hidden pointer-events-none">
+          <div className="absolute left-0 right-0 top-[35%] -translate-y-1/2 transform -translate-x-[30px] opacity-[0.03] z-0">
+            <p className="text-[240px] md:text-[400px] lg:text-[550px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+              pokumpokumpokumpokum
+            </p>
+          </div>
+        </div>
         {/* Desktop Layout - Only shows on 1024px and above */}
         <div className="hidden lg:block">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 relative z-10">
@@ -79,7 +87,7 @@ export default function Index() {
                   <div className="absolute left-0 bottom-0 translate-y-[1em] w-full max-w-3xl pl-[8em]">
                     <div className="relative">
                       <div className="absolute right-full top-1/2 w-[100vw] h-px bg-black/30 -translate-y-1/2 mr-4"></div>
-                      <p className="text-2xl md:text-3xl lg:text-[24px] font-helvetica-world font-normal text-black opacity-70 leading-snug">
+                      <p className="text-lg xl:text-2xl 2xl:text-3xl font-helvetica-world font-normal text-black opacity-70 leading-snug">
                         Your Full-Cycle Business Incorporation Experts
                       </p>
                     </div>
@@ -126,7 +134,7 @@ export default function Index() {
           <div className="px-4 pb-8">
 
             {/* Mobile Background Gavel Image */}
-            <div className="absolute right-0 top-[44px] w-[413px] h-[413px] opacity-20 overflow-hidden">
+            <div className="absolute right-[-120px] top-[20px] w-[413px] h-[413px] opacity-20 overflow-hidden">
               <img
                 src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758093205/gavel_vclmdh.svg"
                 alt="Legal gavel background"
@@ -136,14 +144,18 @@ export default function Index() {
 
             {/* Mobile pokum title */}
             <div className="relative z-10 pt-[140px] space-y-6">
-              <div className="text-center">
-                <h1 className="text-[66px] font-helvetica-world font-normal text-black leading-none tracking-tight mb-2">
+              <div className="relative">
+                <h1 className="text-[120px] sm:text-[160px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight text-center">
                   pokum
                 </h1>
-                <div className="w-[127px] h-[1px] bg-black opacity-50 mx-auto mb-3"></div>
-                <p className="text-[13px] font-helvetica-world font-normal text-black opacity-70 tracking-wide">
-                  Your Full-Cycle Business Incorporation Experts
-                </p>
+                <div className="w-full max-w-[300px] mx-auto pl-8 sm:pl-0">
+                  <div className="relative">
+                    <div className="absolute right-full top-1/2 w-[100vw] h-px bg-black/30 -translate-y-1/2 mr-4"></div>
+                    <p className="text-sm font-helvetica-world font-normal text-black opacity-70 leading-snug text-center whitespace-nowrap">
+                      Your Full-Cycle Business Incorporation Experts
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Mobile Description and CTA */}
@@ -156,7 +168,7 @@ export default function Index() {
                     most:{" "}
                   </span>
                   <span className="font-bold text-black">
-                    growing your products
+                    growing your business
                   </span>
                   <span className="text-black">.</span>
                 </p>
@@ -181,34 +193,34 @@ export default function Index() {
       {/* Statistics Section */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col">
-            <h2 className="text-[32px] font-bold text-black font-helvetica-world mb-6">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+            <h2 className="text-3xl md:text-[32px] font-bold text-black font-helvetica-world mb-6 max-w-2xl">
               Why Choose Indonesia for Your Business?
             </h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-10 w-full">
               <div className="space-y-6">
-                <p className="text-2xl text-black/50 font-helvetica leading-8 pr-24">
+                <p className="text-xl md:text-2xl text-black/50 font-helvetica leading-8 lg:pr-24">
                   As Southeast Asia's largest economy, Indonesia provides access
                   to a significant consumer base and strategic positioning for
                   expansion. With a vast market of over 279 million people.
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2">
-                <div className="text-start space-y-3">
-                  <div className="text-7xl font-bold text-[#2556BA] font-helvetica">
+              <div className="grid grid-cols-2 sm:grid-cols-2 gap-8 sm:gap-4 justify-items-center">
+                <div className="text-center sm:text-start space-y-3">
+                  <div className="text-4xl sm:text-7xl font-bold text-[#2556BA] font-helvetica">
                     279+
                   </div>
-                  <div className="text-2xl text-black/60 font-helvetica">
+                  <div className="text-lg sm:text-xl text-black/60 font-helvetica">
                     million people
                   </div>
                 </div>
-                <div className="text-start space-y-3">
-                  <div className="text-7xl font-bold text-[#2556BA] font-helvetica">
+                <div className="text-center sm:text-start space-y-3">
+                  <div className="text-4xl sm:text-7xl font-bold text-[#2556BA] font-helvetica">
                     126%
                   </div>
-                  <div className="text-2xl text-black/60 font-helvetica">
+                  <div className="text-lg sm:text-xl text-black/60 font-helvetica">
                     active mobile connection
                   </div>
                 </div>
@@ -219,23 +231,31 @@ export default function Index() {
       </section>
 
       {/* Our Advantages Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl ">
+      <section className="bg-white pt-20 pb-0 lg:py-20 relative overflow-hidden">
+        {/* Background Text Effect */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+          <div className="absolute left-0 right-0 top-[15%] -translate-y-1/2 transform -translate-x-[300px] opacity-[0.02] z-0">
+            <p className="text-[80px] md:text-[120px] lg:text-[180px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+            pokumpokumpokumpokum
+            </p>
+          </div>
+        </div>
+        <div className="max-w-7xl relative z-10">
           <div className="mb-20">
             <div className="relative">
               <div className="relative w-full">
                 <div className="inline-block relative">
-                  <h2 className="text-[140px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap ml-2">
+                  <h2 className="text-[40px] xs:text-[50px] sm:text-[80px] md:text-[100px] lg:text-[120px] xl:text-[140px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap ml-2">
                     Our Advantages
                   </h2>
                   <div className="absolute left-full top-1/2 w-screen h-px bg-black/40 -translate-y-1/2 ml-8" style={{ width: 'calc(100vw - 103%)' }}></div>
                 </div>
               </div>
-              <div className="mt-4 mx-auto px-16 sm:px-24 lg:px-32">
-                <p className="text-3xl text-black/50 font-bold font-helvetica-world">
+              <div className="mt-4 mx-auto px-4 sm:px-12 md:px-16 lg:px-24 xl:px-32">
+                <p className="text-2xl sm:text-3xl text-black/50 font-bold font-helvetica-world text-center lg:text-left">
                   Why Choose <span className="text-black">pokum</span>?
                 </p>
-                <p className="text-2xl text-black/60 font-helvetica mt-2 max-w-4xl">
+                <p className="text-xl sm:text-2xl text-black/60 font-helvetica mt-2 max-w-4xl text-center lg:text-left">
                   We are committed to making your business formation process
                   effortless, providing everything you need in one place. Here's
                   how we help you succeed:
@@ -247,21 +267,51 @@ export default function Index() {
       </section>
 
       {/* Legal Expertise Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
+          {/* Mobile & Tablet Layout - Side by side */}
+          <div className="lg:hidden">
+            <h3 className="text-2xl md:text-3xl font-bold text-black font-helvetica text-center mb-6">
+              Legal Expertise
+            </h3>
+            <div className="flex justify-center items-center gap-6 md:gap-8">
+              <div className="flex-shrink-0">
+                <img
+                  src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601787/legal-expertise_insocq.png"
+                  alt="Legal expertise"
+                  className="w-[200px] sm:w-[260px] md:w-[360px] h-auto"
+                />
+              </div>
+              <div className="space-y-2 md:space-y-3">
+                <div className="text-4xl sm:text-5xl md:text-7xl font-bold text-[#2556BA] font-helvetica">
+                  100%
+                </div>
+                <div className="text-lg sm:text-xl md:text-2xl text-black/60 font-helvetica">
+                  Free of charge
+                </div>
+              </div>
+            </div>
+            <p className="text-lg md:text-xl text-black/60 font-helvetica leading-8 md:leading-9 mt-6 md:mt-8 text-center max-w-2xl mx-auto">
+              Get your business set up with ease, thanks to our experienced
+              legal team. From entity formation, business licenses, deed of
+              establishment to compliance, we handle it all.
+            </p>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid grid-cols-2 gap-16 items-center">
+            <div className="flex justify-center">
               <img
                 src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601787/legal-expertise_insocq.png"
                 alt="Legal expertise"
-                className="w-full h-auto max-w-[368px] mx-auto"
+                className="w-full h-auto max-w-[368px]"
               />
             </div>
-            <div className="order-1 lg:order-2 space-y-6">
+            <div className="space-y-6 text-left">
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Legal Expertise
               </h3>
-              <p className="text-xl text-black/60 font-helvetica leading-8 mr-4">
+              <p className="text-xl text-black/60 font-helvetica leading-8">
                 Get your business set up with ease, thanks to our experienced
                 legal team. From entity formation, business licenses, deed of
                 establishment to compliance, we handle it all.
@@ -280,9 +330,31 @@ export default function Index() {
       </section>
 
       {/* AI-Powered Marketing Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Mobile & Tablet Layout - Side by side */}
+          <div className="lg:hidden">
+            <h3 className="text-2xl md:text-3xl font-bold text-black font-helvetica text-center mb-6">
+              AI-Powered Marketing
+            </h3>
+            <div className="flex justify-center items-center gap-6 md:gap-8">
+              <div className="flex-shrink-0">
+                <img
+                  src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601999/ai-powered_rn7gw5.png"
+                  alt="AI Marketing"
+                  className="w-[200px] sm:w-[260px] md:w-[360px] h-auto"
+                />
+              </div>
+            </div>
+            <p className="text-lg md:text-xl text-black/60 font-helvetica leading-8 md:leading-9 mt-6 md:mt-8 text-center max-w-2xl mx-auto">
+              Maximize your reach and operational efficiency with our
+              AI-powered marketing solutions, strategically tailored to meet
+              your business needs and goals.
+            </p>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid grid-cols-2 gap-16 items-center">
             <div className="space-y-6 text-right">
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 AI-Powered Marketing
@@ -297,7 +369,7 @@ export default function Index() {
               <img
                 src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601999/ai-powered_rn7gw5.png"
                 alt="AI Marketing"
-                className="w-full h-auto max-w-[339px]"
+                className="w-full h-auto max-w-[339px] mx-auto"
               />
             </div>
           </div>
@@ -305,9 +377,31 @@ export default function Index() {
       </section>
 
       {/* Financial Statement Support Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Mobile & Tablet Layout - Side by side */}
+          <div className="lg:hidden">
+            <h3 className="text-2xl md:text-3xl font-bold text-black font-helvetica text-center mb-6">
+              Comprehensive Financial Statement Support
+            </h3>
+            <div className="flex justify-center items-center gap-6 md:gap-8">
+              <div className="flex-shrink-0">
+                <img
+                  src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601785/financial-statement-support_kiu11f.png"
+                  alt="Financial statement support"
+                  className="w-[200px] sm:w-[260px] md:w-[360px] h-auto"
+                />
+              </div>
+            </div>
+            <p className="text-lg md:text-xl text-black/60 font-helvetica leading-8 md:leading-9 mt-6 md:mt-8 text-center max-w-2xl mx-auto">
+              From balance sheet to cash flow statement, we help you prepare
+              every financial documents needed, ensuring your business thrives
+              financially.
+            </p>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid grid-cols-2 gap-16 items-center">
             <div>
               <img
                 src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601785/financial-statement-support_kiu11f.png"
@@ -319,7 +413,7 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Comprehensive Financial Statement Support
               </h3>
-              <p className="text-xl text-black/60 font-helvetica leading-8 mr-4">
+              <p className="text-xl text-black/60 font-helvetica leading-8">
                 From balance sheet to cash flow statement, we help you prepare
                 every financial documents needed, ensuring your business thrives
                 financially.
@@ -330,9 +424,30 @@ export default function Index() {
       </section>
 
       {/* Tax Support Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Mobile & Tablet Layout */}
+          <div className="lg:hidden">
+            <h3 className="text-2xl md:text-3xl font-bold text-black font-helvetica text-center mb-6">
+              Tax Support & Optimization
+            </h3>
+            <div className="flex justify-center items-center gap-6 md:gap-8">
+              <div className="flex-shrink-0">
+                <img
+                  src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601793/tax-support_segdiq.png"
+                  alt="Tax support"
+                  className="w-[200px] sm:w-[260px] md:w-[360px] h-auto"
+                />
+              </div>
+            </div>
+            <p className="text-lg md:text-xl text-black/60 font-helvetica leading-8 md:leading-9 mt-6 md:mt-8 text-center max-w-2xl mx-auto">
+              Navigate tax regulations confidently with our expert tax team,
+              ensuring your business is compliant and optimized for savings.
+            </p>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid grid-cols-2 gap-16 items-center">
             <div className="space-y-6 text-right">
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Tax Support & Optimization
@@ -346,7 +461,7 @@ export default function Index() {
               <img
                 src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601793/tax-support_segdiq.png"
                 alt="Tax support"
-                className="w-full h-auto max-w-[425px]"
+                className="w-full h-auto max-w-[519px]"
               />
             </div>
           </div>
@@ -354,9 +469,32 @@ export default function Index() {
       </section>
 
       {/* Pokum Society Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Mobile & Tablet Layout */}
+          <div className="lg:hidden">
+            <h3 className="text-2xl md:text-3xl font-bold text-black font-helvetica text-center mb-6">
+              Pokum Society
+            </h3>
+            <div className="flex justify-center items-center gap-6 md:gap-8">
+              <div className="flex-shrink-0">
+                <img
+                  src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601792/pokum-society_hszmp5.png"
+                  alt="Pokum Society"
+                  className="w-[200px] sm:w-[260px] md:w-[360px] h-auto"
+                />
+              </div>
+            </div>
+            <p className="text-lg md:text-xl text-black/60 font-helvetica leading-8 md:leading-9 mt-6 md:mt-8 text-center max-w-2xl mx-auto">
+              Community for entrepreneurs, legal professionals, and tech
+              innovators. Pokum Society supports leaders through education and
+              collaboration. Connect with partners and explore ways to grow
+              business.
+            </p>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid grid-cols-2 gap-16 items-center">
             <div>
               <img
                 src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601792/pokum-society_hszmp5.png"
@@ -368,7 +506,7 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Pokum Society
               </h3>
-              <p className="text-xl text-black/60 font-helvetica leading-8 mr-4">
+              <p className="text-xl text-black/60 font-helvetica leading-8">
                 Community for entrepreneurs, legal professionals, and tech
                 innovators. Pokum Society supports leaders through education and
                 collaboration. Connect with partners and explore ways to grow
@@ -380,9 +518,32 @@ export default function Index() {
       </section>
 
       {/* Asset Management Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Mobile & Tablet Layout */}
+          <div className="lg:hidden">
+            <h3 className="text-2xl md:text-3xl font-bold text-black font-helvetica text-center mb-6">
+              Asset Management Services
+            </h3>
+            <div className="flex justify-center items-center gap-6 md:gap-8">
+              <div className="flex-shrink-0">
+                <img
+                  src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758601782/asset-management_u8hvzn.png"
+                  alt="Asset management"
+                  className="w-[200px] sm:w-[260px] md:w-[360px] h-auto"
+                />
+              </div>
+            </div>
+            <p className="text-lg md:text-xl text-black/60 font-helvetica leading-8 md:leading-9 mt-6 md:mt-8 text-center max-w-2xl mx-auto">
+              Secure your company's profitability with our tailored asset
+              management solutions. We help businesses grow and maintain
+              financial stability through strategic asset oversight and
+              optimization.
+            </p>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid grid-cols-2 gap-16 items-center">
             <div className="space-y-6 text-right">
               <h3 className="text-2xl font-bold text-black font-helvetica">
                 Asset Management Services
@@ -406,14 +567,27 @@ export default function Index() {
       </section>
 
       {/* Our Proven Process Section */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:pl-8 lg:pl-16">
           <div className="max-w-4xl">
-            <div className="relative">
-              <h2 className="text-[140px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap relative">
-                <div className="absolute right-full top-1/2 w-[100vw] h-px bg-black/30 -translate-y-1/2 mr-4"></div>
-                Our Proven Process
-              </h2>
+            {/* Mobile Layout */}
+            <div className="lg:hidden">
+              <div className="relative">
+                <h2 className="text-4xl font-bold text-black font-helvetica-world tracking-tight">
+                  Our Proven Process
+                </h2>
+                <div className="w-full h-px bg-black/30 mt-4 mb-6"></div>
+              </div>
+            </div>
+
+            {/* Desktop Layout */}
+            <div className="hidden lg:block">
+              <div className="relative">
+                <h2 className="text-[80px] lg:text-[100px] xl:text-[120px] 2xl:text-[140px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap relative">
+                  <div className="absolute right-full top-1/2 w-[100vw] h-px bg-black/30 -translate-y-1/2 mr-4"></div>
+                  Our Proven Process
+                </h2>
+              </div>
             </div>
             <div className="mt-8 space-y-4">
               <h3 className="text-[32px] font-bold text-black font-helvetica-world">
