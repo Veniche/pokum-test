@@ -145,7 +145,7 @@ export default function Index() {
             {/* Mobile pokum title */}
             <div className="relative z-10 pt-[140px] space-y-6">
               <div className="relative">
-                <h1 className="text-[120px] sm:text-[160px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight text-center">
+                <h1 className="max-[399px]:text-[100px] text-[120px] sm:text-[160px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight text-center">
                   pokum
                 </h1>
                 <div className="w-full max-w-[300px] mx-auto pl-8 sm:pl-0">
@@ -596,7 +596,7 @@ export default function Index() {
               <h3 className="text-[32px] font-bold text-black font-helvetica-world">
                 How can we help you?
               </h3>
-              <p className="text-[24px] text-black/60 font-helvetica max-w-4xl whitespace-nowrap">
+              <p className="text-[24px] text-black/60 font-helvetica w-full max-w-4xl">
                 We provide end-to-end support from business formation to
                 scaling. Here's what to expect:
               </p>

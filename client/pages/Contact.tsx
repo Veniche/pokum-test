@@ -292,7 +292,7 @@ export default function Contact() {
           <div className="relative z-10">
             <div className="relative">
               <div className="relative z-0">
-                <h1 className="text-[80px] sm:text-[100px] md:text-[120px] lg:text-[151px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
+                <h1 className="max-[399px]:text-[60px] text-[80px] sm:text-[100px] md:text-[120px] lg:text-[151px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
                   Contact Us
                 </h1>
               </div>

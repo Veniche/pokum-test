@@ -34,7 +34,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ id, image, category, title, e
 
 export default function Blog() {
   return (
-    <div className="min-h-screen bg-white relative">
+    <div className="min-h-screen bg-white relative overflow-hidden">
       {/* Background Text Effect - Absolute Position */}
       <div className="absolute top-[5%] left-0 right-0 flex justify-center opacity-[0.02] pointer-events-none z-0">
         <div className="text-[240px] font-bold text-black font-helvetica-world tracking-tight whitespace-nowrap">
