@@ -167,8 +167,30 @@ export function Footer() {
               </a>
             </div>
 
+
             {/* Contact Information */}
-            <div className="flex flex-col items-center gap-6 w-full max-w-[340px]">
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <svg className="w-5 h-5 aspect-square" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5013 2.50269H17.5013C17.7223 2.50269 17.9343 2.59048 18.0906 2.74676C18.2468 2.90304 18.3346 3.11501 18.3346 3.33602V16.6694C18.3346 16.8904 18.2468 17.1023 18.0906 17.2586C17.9343 17.4149 17.7223 17.5027 17.5013 17.5027H2.5013C2.28029 17.5027 2.06833 17.4149 1.91205 17.2586C1.75577 17.1023 1.66797 16.8904 1.66797 16.6694V3.33602C1.66797 3.11501 1.75577 2.90304 1.91205 2.74676C2.06833 2.59048 2.28029 2.50269 2.5013 2.50269ZM10.0513 9.73852L4.70797 5.20102L3.6288 6.47102L10.0621 11.9335L16.3796 6.46685L15.2896 5.20602L10.0513 9.73852Z" fill="white" fill-opacity="0.7"></path></svg>
+                <span className="text-white/70 font-helvetica-world text-xl">
+                corporate@pokum.id
+                </span>
+              </div>
+              <div className="flex items-center gap-4">
+                <svg className="w-5 h-5 aspect-square" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 13.6815V16.6282C17.5001 16.8392 17.4202 17.0423 17.2763 17.1967C17.1325 17.351 16.9355 17.4451 16.725 17.4598C16.3611 17.4854 16.0639 17.4982 15.8333 17.4982C8.46917 17.4982 2.5 11.529 2.5 4.16484C2.5 3.93484 2.51278 3.63761 2.53833 3.27317C2.5531 3.06271 2.64715 2.86568 2.8015 2.72184C2.95585 2.57801 3.15902 2.49807 3.37 2.49817H6.31667C6.42003 2.49806 6.51975 2.53638 6.59644 2.60569C6.67313 2.67499 6.72133 2.77032 6.73167 2.87317C6.75056 3.06428 6.76833 3.21761 6.785 3.33317C6.9506 4.48894 7.28999 5.61303 7.79167 6.66734C7.87083 6.834 7.81917 7.03317 7.66917 7.13984L5.87083 8.42484C6.97059 10.9867 9.01227 13.0284 11.5742 14.1282L12.8575 12.3332C12.9097 12.2596 12.9863 12.2068 13.0736 12.1841C13.161 12.1613 13.2535 12.1702 13.335 12.209C14.3892 12.7097 15.513 13.0483 16.6683 13.2132C16.7839 13.2298 16.9367 13.2476 17.1267 13.2665C17.2294 13.277 17.3245 13.3253 17.3936 13.402C17.4628 13.4787 17.5001 13.5783 17.5 13.6815Z" fill="white" fill-opacity="0.7"></path></svg>
+                <span className="text-white/70 font-helvetica-world text-xl">
+                +62 822-8386-3111
+                </span>
+              </div>
+              <div className="flex items-start gap-4">
+                <svg className="w-5 h-5 flex-shrink-0 aspect-square" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.66797 4.16553L7.5013 1.66553L12.5013 4.16553L17.7538 1.91469C17.8172 1.88751 17.8864 1.8765 17.9551 1.88265C18.0238 1.88879 18.0899 1.9119 18.1475 1.9499C18.2051 1.9879 18.2523 2.0396 18.285 2.10036C18.3176 2.16112 18.3347 2.22904 18.3346 2.29803V15.8322L12.5013 18.3322L7.5013 15.8322L2.2488 18.083C2.1854 18.1102 2.11623 18.1212 2.04752 18.1151C1.97881 18.1089 1.9127 18.0858 1.85512 18.0478C1.79755 18.0098 1.75031 17.9581 1.71764 17.8974C1.68498 17.8366 1.66791 17.7687 1.66797 17.6997V4.16553ZM12.5013 16.4689V5.97886L12.4471 6.00219L7.5013 3.52886V14.0189L7.55547 13.9955L12.5013 16.4689Z" fill="white" fill-opacity="0.7"></path></svg>
+                <span className="text-white/70 font-helvetica-world text-xl">
+                Jakarta Barat, Indonesia.
+                </span>
+              </div>
+            </div>
+            {/* Contact Information */}
+            {/* <div className="flex flex-col items-center gap-6 w-full max-w-[340px]">
               <div className="text-center text-white/70 font-helvetica-world">
                 corporate@pokum.id
               </div>
@@ -178,7 +200,7 @@ export function Footer() {
               <div className="text-center text-white/70 font-helvetica-world">
                 Jakarta Barat, Indonesia.
               </div>
-            </div>
+            </div> */}
 
             {/* Navigation Links */}
             <div className="flex gap-16 pt-8">
