@@ -208,7 +208,7 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-white">
+      <section className="pt-32 pb-16 bg-white overflow-hidden">
         <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px] mx-auto">
           <div className="max-w-3xl">
             <div className="relative w-full">
