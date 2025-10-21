@@ -174,23 +174,41 @@ export default function Services() {
               navbar.classList.add('-translate-y-full');
             }
             
-            // Calculate the scroll position with a small offset from the top
+            // Get the header height for better scroll position calculation
+            const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+            
+            // Calculate the scroll position with header offset and some additional space
             const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-            const offsetPosition = elementPosition - 40; // 40px offset from top
+            const offsetPosition = elementPosition - headerHeight - 16; // 16px additional space
             
-            // Use smooth scroll behavior
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
-            
-            // Add a class to the section for visual feedback
-            element.classList.add('active-section');
-            
-            // Remove the class after animation completes
+            // Add a small delay to ensure the DOM has fully updated
             setTimeout(() => {
-              element.classList.remove('active-section');
-            }, 1000);
+              // Use smooth scroll behavior for non-mobile, instant for mobile for better UX
+              const isMobile = window.innerWidth < 768;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: isMobile ? 'auto' : 'smooth'
+              });
+              
+              // On mobile, we'll do a second scroll after a small delay to ensure proper positioning
+              if (isMobile) {
+                setTimeout(() => {
+                  const updatedPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+                  window.scrollTo({
+                    top: updatedPosition,
+                    behavior: 'auto'
+                  });
+                }, 50);
+              }
+            
+              // Add a class to the section for visual feedback
+              element.classList.add('active-section');
+              
+              // Remove the class after animation completes
+              setTimeout(() => {
+                element.classList.remove('active-section');
+              }, 1000);
+            }, 10); // Small delay to ensure the first scroll happens
           }
         });
       } else if (!otherSectionExpanded) {
