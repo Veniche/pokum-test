@@ -60,7 +60,7 @@ export function Footer() {
                 <div className="flex items-center gap-4">
                   <svg className="w-5 h-5 aspect-square" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5013 2.50269H17.5013C17.7223 2.50269 17.9343 2.59048 18.0906 2.74676C18.2468 2.90304 18.3346 3.11501 18.3346 3.33602V16.6694C18.3346 16.8904 18.2468 17.1023 18.0906 17.2586C17.9343 17.4149 17.7223 17.5027 17.5013 17.5027H2.5013C2.28029 17.5027 2.06833 17.4149 1.91205 17.2586C1.75577 17.1023 1.66797 16.8904 1.66797 16.6694V3.33602C1.66797 3.11501 1.75577 2.90304 1.91205 2.74676C2.06833 2.59048 2.28029 2.50269 2.5013 2.50269ZM10.0513 9.73852L4.70797 5.20102L3.6288 6.47102L10.0621 11.9335L16.3796 6.46685L15.2896 5.20602L10.0513 9.73852Z" fill="white" fill-opacity="0.7"></path></svg>
                   <span className="text-white/70 font-helvetica-world text-xl">
-                  pohonhukum.id@gmail.com
+                  corporate@pokum.id
                   </span>
                 </div>
                 <div className="flex items-center gap-4">
@@ -72,7 +72,7 @@ export function Footer() {
                 <div className="flex items-start gap-4">
                   <svg className="w-5 h-5 flex-shrink-0 aspect-square" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.66797 4.16553L7.5013 1.66553L12.5013 4.16553L17.7538 1.91469C17.8172 1.88751 17.8864 1.8765 17.9551 1.88265C18.0238 1.88879 18.0899 1.9119 18.1475 1.9499C18.2051 1.9879 18.2523 2.0396 18.285 2.10036C18.3176 2.16112 18.3347 2.22904 18.3346 2.29803V15.8322L12.5013 18.3322L7.5013 15.8322L2.2488 18.083C2.1854 18.1102 2.11623 18.1212 2.04752 18.1151C1.97881 18.1089 1.9127 18.0858 1.85512 18.0478C1.79755 18.0098 1.75031 17.9581 1.71764 17.8974C1.68498 17.8366 1.66791 17.7687 1.66797 17.6997V4.16553ZM12.5013 16.4689V5.97886L12.4471 6.00219L7.5013 3.52886V14.0189L7.55547 13.9955L12.5013 16.4689Z" fill="white" fill-opacity="0.7"></path></svg>
                   <span className="text-white/70 font-helvetica-world text-xl">
-                  PT Pohon Hukum Indonesia<br></br>Jl. Tawakal Raya 39C,<br></br>Grogol Petamburan, West Jakarta,<br></br>DKI Jakarta, Indonesia.
+                  Jakarta Barat, Indonesia.
                   </span>
                 </div>
               </div>
@@ -170,13 +170,13 @@ export function Footer() {
             {/* Contact Information */}
             <div className="flex flex-col items-center gap-6 w-full max-w-[340px]">
               <div className="text-center text-white/70 font-helvetica-world">
-                pohonhukum.id@gmail.com
+                corporate@pokum.id
               </div>
               <div className="text-center text-white/70 font-helvetica-world">
                 +62 822-8386-3111
               </div>
               <div className="text-center text-white/70 font-helvetica-world">
-                PT Pohon Hukum Indonesia<br></br>Jl. Tawakal Raya 39C,<br></br>Grogol Petamburan, West Jakarta,<br></br>DKI Jakarta, Indonesia.
+                Jakarta Barat, Indonesia.
               </div>
             </div>
 
