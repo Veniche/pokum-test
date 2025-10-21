@@ -60,7 +60,7 @@ const Navbar = () => {
 
   const socialLinks = [
     { name: "Facebook", icon: "facebook.svg", url: "https://www.facebook.com/share/1Baj8So5Tq/" },
-    { name: "Twitter", icon: "twitter.svg", url: "#" },
+    { name: "Twitter", icon: "tiktok.png", url: "https://www.tiktok.com/@pohonhukumindonesia?_t=ZS-90Yo6HcAlvN&_r=1" },
     { name: "Instagram", icon: "instagram.svg", url: "https://www.instagram.com/pokum.id" },
     { name: "LinkedIn", icon: "linkedin.svg", url: "https://www.linkedin.com/company/pokum-id" },
   ];

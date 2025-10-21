@@ -99,8 +99,8 @@ export function Footer() {
                 <a href="https://www.facebook.com/share/1Baj8So5Tq/" className="w-6 h-6 hover:opacity-80 transition-opacity">
                   <img src="/pokum/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
                 </a>
-                <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
-                  <img src="/pokum/icons/twitter.svg" alt="Twitter" className="w-6 h-6" />
+                <a href="https://www.tiktok.com/@pohonhukumindonesia?_t=ZS-90Yo6HcAlvN&_r=1" className="w-6 h-6 hover:opacity-80 transition-opacity">
+                  <img src="/pokum/icons/tiktok.png" alt="Tiktok" className="w-6 h-6" />
                 </a>
                 <a href="https://www.instagram.com/pokum.id" className="w-6 h-6 hover:opacity-80 transition-opacity">
                   <img src="/pokum/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
@@ -156,8 +156,8 @@ export function Footer() {
               <a href="https://www.facebook.com/share/1Baj8So5Tq/" className="w-6 h-6 hover:opacity-80 transition-opacity">
                 <img src="/pokum/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
               </a>
-              <a href="#" className="w-6 h-6 hover:opacity-80 transition-opacity">
-                <img src="/pokum/icons/twitter.svg" alt="Twitter" className="w-6 h-6" />
+              <a href="https://www.tiktok.com/@pohonhukumindonesia?_t=ZS-90Yo6HcAlvN&_r=1" className="w-6 h-6 hover:opacity-80 transition-opacity">
+                <img src="/pokum/icons/tiktok.png" alt="Tiktok" className="w-6 h-6" />
               </a>
               <a href="https://www.instagram.com/pokum.id" className="w-6 h-6 hover:opacity-80 transition-opacity">
                 <img src="/pokum/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
@@ -189,18 +189,6 @@ export function Footer() {
                 </span>
               </div>
             </div>
-            {/* Contact Information */}
-            {/* <div className="flex flex-col items-center gap-6 w-full max-w-[340px]">
-              <div className="text-center text-white/70 font-helvetica-world">
-                corporate@pokum.id
-              </div>
-              <div className="text-center text-white/70 font-helvetica-world">
-                +62 822-8386-3111
-              </div>
-              <div className="text-center text-white/70 font-helvetica-world">
-                Jakarta Barat, Indonesia.
-              </div>
-            </div> */}
 
             {/* Navigation Links */}
             <div className="flex gap-16 pt-8">
