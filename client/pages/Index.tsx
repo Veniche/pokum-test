@@ -573,10 +573,13 @@ export default function Index() {
             {/* Mobile Layout */}
             <div className="lg:hidden">
               <div className="relative">
-                <h2 className="text-4xl font-bold text-black font-helvetica-world tracking-tight">
-                  Our Proven Process
+                <h2 className="text-7xl font-bold text-black font-helvetica-world tracking-tight leading-[0.9] max-w-[90%]">
+                  Our Proven
+                  <div className="relative">
+                    <span>Process</span>
+                    <div className="absolute left-full top-1/2 w-[50vw] sm:w-screen h-[1px] bg-black/40 ml-4 sm:ml-8 left-[256px]"></div>
+                  </div>
                 </h2>
-                <div className="w-full h-px bg-black/30 mt-4 mb-6"></div>
               </div>
             </div>
 

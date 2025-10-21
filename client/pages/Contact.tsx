@@ -301,7 +301,7 @@ export default function Contact() {
                 <img 
                   src="https://api.builder.io/api/v1/image/assets/TEMP/e0728f26d3bdf73e27a4231eca2857954f325cb7?width=1200" 
                   alt="Vintage rotary phone" 
-                  className="w-full h-auto max-w-full"
+                  className="w-full h-auto max-w-full opacity-30 xl:opacity-100"
                 />
               </div>
             </div>
@@ -317,8 +317,8 @@ export default function Contact() {
         <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[120px]">
           <div className="max-w-7xl">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
-            {/* Contact Information */}
-            <div className="space-y-12">
+            {/* Contact Information - Hidden on mobile, visible on lg and up */}
+            <div className="hidden lg:block space-y-12">
               <div className="space-y-5">
                 <h2 className="text-4xl font-bold text-black font-helvetica-world">Contact Information</h2>
                 <p className="text-lg text-gray-500 font-helvetica-world leading-7">
@@ -568,18 +568,18 @@ export default function Contact() {
                   <Button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-5 rounded-xl font-bold text-lg group transition-colors"
+                    className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 rounded-xl font-bold text-xl group transition-all duration-200 transform hover:scale-105"
                   >
                     {isSubmitting ? (
-                      <>
-                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                        Sending...
-                      </>
+                      <div className="flex items-center px-4">
+                        <Loader2 className="mr-3 h-6 w-6 animate-spin" />
+                        <span className="text-xl">Sending...</span>
+                      </div>
                     ) : (
-                      <>
-                        Send Inquiry
-                        <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
-                      </>
+                      <div className="flex items-center px-2">
+                        <span className="text-xl">Send Inquiry</span>
+                        <ArrowRight className="ml-4 h-7 w-7 group-hover:translate-x-2 transition-transform duration-200" />
+                      </div>
                     )}
                   </Button>
                 </div>
