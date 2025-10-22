@@ -709,8 +709,8 @@ export default function Index() {
               </div>
 
               {/* Vertical Line */}
-              <div className="absolute left-3 top-6 bottom-6 w-1 bg-gray-200"></div>
-              <div className="absolute left-3 top-6 w-1 h-12 bg-[#2556BA]"></div>
+              <div className="absolute left-[10px] top-6 bottom-6 w-1 bg-gray-200"></div>
+              <div className="absolute left-[10px] top-6 w-1 h-12 bg-[#2556BA]"></div>
             </div>
           </div>
         </div>
