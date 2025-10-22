@@ -635,13 +635,7 @@ export default function Index() {
                 {/* Step 1 */}
                 <div className="flex items-start space-x-8">
                   <div className="flex-shrink-0">
-                    <div 
-                      className="w-6 h-6 bg-gray-300 rounded-full"
-                      style={{
-                        animation: stepsInView ? 'pulse 1s ease-in-out 0.5s both, fillStep 0.5s ease-in-out 0.5s forwards' : 'none',
-                        backgroundColor: stepsInView ? '#2556BA' : 'rgb(209, 213, 219)'
-                      } as React.CSSProperties}
-                    ></div>
+                    <div className="w-6 h-6 bg-[#2556BA] rounded-full"></div>
                   </div>
                   <div className="flex-1 space-y-3">
                     <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider" 
@@ -671,8 +665,7 @@ export default function Index() {
                 {/* Step 2 */}
                 <div className="flex items-start space-x-8">
                   <div className="flex-shrink-0">
-                    <div 
-                      className="w-6 h-6 bg-gray-300 rounded-full" 
+                    <div className="w-6 h-6 bg-[#2556BA] rounded-full" 
                       style={{
                         '--tw-scale-x': '1',
                         '--tw-scale-y': '1',
@@ -723,7 +716,7 @@ export default function Index() {
                       transform: 'scale(var(--tw-scale-x), var(--tw-scale-y))',
                       transformOrigin: 'center',
                       backgroundColor: 'rgb(209, 213, 219)',
-                      animation: stepsInView ? 'fillStep 0.5s ease-in-out 2.5s forwards' : 'none'
+                      animation: stepsInView ? 'fillStep 0.5s ease-in-out 2.2s forwards' : 'none'
                     } as React.CSSProperties}
                     ></div>
                   </div>
@@ -732,7 +725,7 @@ export default function Index() {
                     style={{
                         color: 'rgba(0, 0, 0, 0.4)',
                         opacity: 1,
-                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 2.5s forwards' : 'none'
+                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 2.2s forwards' : 'none'
                       } as React.CSSProperties}
                     >
                       STEP 3
@@ -740,7 +733,7 @@ export default function Index() {
                     <h4 className="text-2xl font-bold font-helvetica"
                       style={{
                         color: 'rgba(0, 0, 0, 0.6)',
-                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 2.5s forwards' : 'none'
+                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 2.2s forwards' : 'none'
                       } as React.CSSProperties}
                     >
                       AI Marketing & Branding Strategy
@@ -748,7 +741,7 @@ export default function Index() {
                     <p className="text-xl font-helvetica leading-8"
                       style={{
                         color: 'rgba(0, 0, 0, 0.2)',
-                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 2.5s forwards' : 'none'
+                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 2.2s forwards' : 'none'
                       } as React.CSSProperties}
                     >
                       Next, we leverage advanced AI tools to help you develop a
@@ -767,7 +760,7 @@ export default function Index() {
                       transform: 'scale(var(--tw-scale-x), var(--tw-scale-y))',
                       transformOrigin: 'center',
                       backgroundColor: 'rgb(209, 213, 219)',
-                      animation: stepsInView ? 'fillStep 0.5s ease-in-out 3.5s forwards' : 'none'
+                      animation: stepsInView ? 'fillStep 0.5s ease-in-out 3s forwards' : 'none'
                     } as React.CSSProperties}
                     ></div>
                   </div>
@@ -776,7 +769,7 @@ export default function Index() {
                     style={{
                         color: 'rgba(0, 0, 0, 0.4)',
                         opacity: 1,
-                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 3.5s forwards' : 'none'
+                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 3s forwards' : 'none'
                       } as React.CSSProperties}
                     >
                       STEP 4
@@ -784,7 +777,7 @@ export default function Index() {
                     <h4 className="text-2xl font-bold font-helvetica"
                       style={{
                         color: 'rgba(0, 0, 0, 0.6)',
-                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 3.5s forwards' : 'none'
+                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 3s forwards' : 'none'
                       } as React.CSSProperties}
                     >
                       Financial Setup & Tax Planning
@@ -792,7 +785,7 @@ export default function Index() {
                     <p className="text-xl font-helvetica leading-8"
                       style={{
                         color: 'rgba(0, 0, 0, 0.2)',
-                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 3.5s forwards' : 'none'
+                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 3s forwards' : 'none'
                       } as React.CSSProperties}
                     >
                       Ensure your financial stability with our expert guidance
@@ -811,7 +804,7 @@ export default function Index() {
                       transform: 'scale(var(--tw-scale-x), var(--tw-scale-y))',
                       transformOrigin: 'center',
                       backgroundColor: 'rgb(209, 213, 219)',
-                      animation: stepsInView ? 'fillStep 0.5s ease-in-out 4.5s forwards' : 'none'
+                      animation: stepsInView ? 'fillStep 0.5s ease-in-out 3.7s forwards' : 'none'
                     } as React.CSSProperties}
                     ></div>
                   </div>
@@ -820,7 +813,7 @@ export default function Index() {
                     style={{
                         color: 'rgba(0, 0, 0, 0.4)',
                         opacity: 1,
-                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 4.5s forwards' : 'none'
+                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 3.7s forwards' : 'none'
                       } as React.CSSProperties}
                     >
                       STEP 5
@@ -828,7 +821,7 @@ export default function Index() {
                     <h4 className="text-2xl font-bold font-helvetica"
                       style={{
                         color: 'rgba(0, 0, 0, 0.6)',
-                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 4.5s forwards' : 'none'
+                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 3.7s forwards' : 'none'
                       } as React.CSSProperties}
                     >
                       Ongoing Support & Scaling Solutions
@@ -836,7 +829,7 @@ export default function Index() {
                     <p className="text-xl font-helvetica leading-8"
                       style={{
                         color: 'rgba(0, 0, 0, 0.2)',
-                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 4.5s forwards' : 'none'
+                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 3.7s forwards' : 'none'
                       } as React.CSSProperties}
                     >
                       As your business grows, we remain by your side, offering
