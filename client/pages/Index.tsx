@@ -1,8 +1,10 @@
 import { Seo } from "@/components/Seo";
+import { useEffect, useState, useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { CtaBanner } from "@/components/CtaBanner";
 import { FaqSection } from "@/components/FaqSection";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { useOnScreen } from '@/hooks/useOnScreen';
 
 // Structured data for Organization
 const organizationSchema = {
@@ -38,6 +40,21 @@ const webpageSchema = {
 };
 
 export default function Index() {
+  // State and refs for scroll-triggered animations
+  const [stepsInView, setStepsInView] = useState(false);
+  const [setStepsRef, stepsAreInView] = useOnScreen<HTMLDivElement>({
+    threshold: 0.1,
+    rootMargin: '0px',
+    triggerOnce: true
+  });
+  const stepsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (stepsAreInView) {
+      setStepsInView(true);
+    }
+  }, [stepsAreInView]);
+
   return (
     <div className="min-h-screen bg-white overflow-hidden">
       <Seo 
@@ -603,23 +620,47 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="max-w-4xl mt-16">
+          <div 
+            className="max-w-4xl mt-16"
+            ref={el => {
+              if (el) {
+                stepsRef.current = el;
+                setStepsRef(el);
+              }
+            }}
+          >
             <div className="relative">
               {/* Process Steps */}
               <div className="space-y-16">
                 {/* Step 1 */}
                 <div className="flex items-start space-x-8">
                   <div className="flex-shrink-0">
-                    <div className="w-6 h-6 bg-[#2556BA] rounded-full"></div>
+                    <div 
+                      className="w-6 h-6 bg-gray-300 rounded-full"
+                      style={{
+                        animation: stepsInView ? 'pulse 1s ease-in-out 0.5s both, fillStep 0.5s ease-in-out 0.5s forwards' : 'none',
+                        backgroundColor: stepsInView ? '#2556BA' : 'rgb(209, 213, 219)'
+                      } as React.CSSProperties}
+                    ></div>
                   </div>
                   <div className="flex-1 space-y-3">
-                    <div className="text-sm font-bold text-[#2556BA] font-helvetica tracking-wider">
+                    <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider" 
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.4)',
+                        opacity: 1,
+                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 0.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       STEP 1
                     </div>
                     <h4 className="text-2xl font-bold text-black font-helvetica">
                       Initial Consultation & Needs Assessment
                     </h4>
-                    <p className="text-xl text-black/60 font-helvetica leading-8">
+                    <p className="text-xl font-helvetica leading-8"
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.6)'
+                      } as React.CSSProperties}
+                    >
                       We start by thoroughly understanding your goals,
                       challenges, and business needs to ensure our approach is
                       aligned with your objectives.
@@ -630,16 +671,42 @@ export default function Index() {
                 {/* Step 2 */}
                 <div className="flex items-start space-x-8">
                   <div className="flex-shrink-0">
-                    <div className="w-6 h-6 bg-gray-300 rounded-full"></div>
+                    <div 
+                      className="w-6 h-6 bg-gray-300 rounded-full" 
+                      style={{
+                        '--tw-scale-x': '1',
+                        '--tw-scale-y': '1',
+                        transform: 'scale(var(--tw-scale-x), var(--tw-scale-y))',
+                        transformOrigin: 'center',
+                        backgroundColor: 'rgb(209, 213, 219)',
+                        animation: stepsInView ? 'fillStep 0.5s ease-in-out 1.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    ></div>
                   </div>
-                  <div className="flex-1 space-y-3 opacity-60">
-                    <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider">
+                  <div className="flex-1 space-y-3">
+                    <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider" 
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.4)',
+                        opacity: 1,
+                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 1.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       STEP 2
                     </div>
-                    <h4 className="text-2xl font-bold text-black font-helvetica">
+                    <h4 className="text-2xl font-bold font-helvetica"
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.6)',
+                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 1.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       Entity Formation & Legal Setup
                     </h4>
-                    <p className="text-xl text-black/20 font-helvetica leading-8">
+                    <p className="text-xl text-black/20 font-helvetica leading-8"
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.2)',
+                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 1.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       Our legal experts will carefully structure the right
                       business entity to support your operations, protect your
                       interests, and ensure long-term compliance.
@@ -650,16 +717,40 @@ export default function Index() {
                 {/* Step 3 */}
                 <div className="flex items-start space-x-8">
                   <div className="flex-shrink-0">
-                    <div className="w-6 h-6 bg-gray-300 rounded-full"></div>
+                  <div className="w-6 h-6 bg-gray-300 rounded-full" style={{
+                      '--tw-scale-x': 1,
+                      '--tw-scale-y': 1,
+                      transform: 'scale(var(--tw-scale-x), var(--tw-scale-y))',
+                      transformOrigin: 'center',
+                      backgroundColor: 'rgb(209, 213, 219)',
+                      animation: stepsInView ? 'fillStep 0.5s ease-in-out 2.5s forwards' : 'none'
+                    } as React.CSSProperties}
+                    ></div>
                   </div>
-                  <div className="flex-1 space-y-3 opacity-60">
-                    <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider">
+                  <div className="flex-1 space-y-3">
+                    <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider"
+                    style={{
+                        color: 'rgba(0, 0, 0, 0.4)',
+                        opacity: 1,
+                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 2.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       STEP 3
                     </div>
-                    <h4 className="text-2xl font-bold text-black font-helvetica">
+                    <h4 className="text-2xl font-bold font-helvetica"
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.6)',
+                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 2.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       AI Marketing & Branding Strategy
                     </h4>
-                    <p className="text-xl text-black/20 font-helvetica leading-8">
+                    <p className="text-xl font-helvetica leading-8"
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.2)',
+                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 2.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       Next, we leverage advanced AI tools to help you develop a
                       powerful marketing strategy focused on accelerating growth
                       and maximizing impact.
@@ -670,16 +761,40 @@ export default function Index() {
                 {/* Step 4 */}
                 <div className="flex items-start space-x-8">
                   <div className="flex-shrink-0">
-                    <div className="w-6 h-6 bg-gray-300 rounded-full"></div>
+                    <div className="w-6 h-6 bg-gray-300 rounded-full" style={{
+                      '--tw-scale-x': 1,
+                      '--tw-scale-y': 1,
+                      transform: 'scale(var(--tw-scale-x), var(--tw-scale-y))',
+                      transformOrigin: 'center',
+                      backgroundColor: 'rgb(209, 213, 219)',
+                      animation: stepsInView ? 'fillStep 0.5s ease-in-out 3.5s forwards' : 'none'
+                    } as React.CSSProperties}
+                    ></div>
                   </div>
-                  <div className="flex-1 space-y-3 opacity-60">
-                    <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider">
+                  <div className="flex-1 space-y-3">
+                    <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider"
+                    style={{
+                        color: 'rgba(0, 0, 0, 0.4)',
+                        opacity: 1,
+                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 3.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       STEP 4
                     </div>
-                    <h4 className="text-2xl font-bold text-black font-helvetica">
+                    <h4 className="text-2xl font-bold font-helvetica"
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.6)',
+                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 3.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       Financial Setup & Tax Planning
                     </h4>
-                    <p className="text-xl text-black/20 font-helvetica leading-8">
+                    <p className="text-xl font-helvetica leading-8"
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.2)',
+                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 3.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       Ensure your financial stability with our expert guidance
                       in strategic financial planning, efficient tax
                       optimization, and long-term wealth management.
@@ -690,16 +805,40 @@ export default function Index() {
                 {/* Step 5 */}
                 <div className="flex items-start space-x-8">
                   <div className="flex-shrink-0">
-                    <div className="w-6 h-6 bg-gray-300 rounded-full"></div>
+                    <div className="w-6 h-6 bg-gray-300 rounded-full" style={{
+                      '--tw-scale-x': 1,
+                      '--tw-scale-y': 1,
+                      transform: 'scale(var(--tw-scale-x), var(--tw-scale-y))',
+                      transformOrigin: 'center',
+                      backgroundColor: 'rgb(209, 213, 219)',
+                      animation: stepsInView ? 'fillStep 0.5s ease-in-out 4.5s forwards' : 'none'
+                    } as React.CSSProperties}
+                    ></div>
                   </div>
-                  <div className="flex-1 space-y-3 opacity-60">
-                    <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider">
+                  <div className="flex-1 space-y-3">
+                    <div className="text-sm font-normal text-black/40 font-helvetica tracking-wider"
+                    style={{
+                        color: 'rgba(0, 0, 0, 0.4)',
+                        opacity: 1,
+                        animation: stepsInView ? 'textFadeIn 0.5s ease-in-out 4.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       STEP 5
                     </div>
-                    <h4 className="text-2xl font-bold text-black font-helvetica">
+                    <h4 className="text-2xl font-bold font-helvetica"
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.6)',
+                        animation: stepsInView ? 'h4FadeIn 0.5s ease-in-out 4.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       Ongoing Support & Scaling Solutions
                     </h4>
-                    <p className="text-xl text-black/20 font-helvetica leading-8">
+                    <p className="text-xl font-helvetica leading-8"
+                      style={{
+                        color: 'rgba(0, 0, 0, 0.2)',
+                        animation: stepsInView ? 'pFadeIn 0.5s ease-in-out 4.5s forwards' : 'none'
+                      } as React.CSSProperties}
+                    >
                       As your business grows, we remain by your side, offering
                       the tools, insights, and ongoing support needed to ensure
                       long-term, sustainable success.
@@ -709,8 +848,56 @@ export default function Index() {
               </div>
 
               {/* Vertical Line */}
-              <div className="absolute left-[10px] top-6 bottom-6 w-1 bg-gray-200"></div>
-              <div className="absolute left-[10px] top-6 w-1 h-12 bg-[#2556BA]"></div>
+              <div className="absolute left-[10px] top-6 bottom-6 w-1 overflow-hidden" style={{
+                backgroundColor: 'rgb(209, 213, 219)'
+              }}>
+                <div className="absolute top-0 left-0 w-full h-0 bg-[#2556BA] origin-top" style={{
+                  animation: stepsInView ? 'fillProgress 5s ease-in-out forwards' : 'none',
+                }}></div>
+              </div>
+              <style jsx global>{`
+                @keyframes fillProgress {
+                  from {
+                    height: 0%;
+                  }
+                  to {
+                    height: 100%;
+                  }
+                }
+                @keyframes fillStep {
+                  to {
+                    background-color: #2556BA;
+                    transform: scale(1);
+                  }
+                }
+                @keyframes textFadeIn {
+                  from {
+                    opacity: 1;
+                    color: rgba(0, 0, 0, 0.4);
+                  }
+                  to {
+                    opacity: 1;
+                    color: #2556BA;
+                    font-weight: 700;
+                  }
+                }
+                @keyframes h4FadeIn {
+                  from {
+                    color: rgba(0, 0, 0, 0.6);
+                  }
+                  to {
+                    color: rgba(0, 0, 0, 1);
+                  }
+                }
+                @keyframes pFadeIn {
+                  from {
+                    color: rgba(0, 0, 0, 0.2);
+                  }
+                  to {
+                    color: rgba(0, 0, 0, 0.6);
+                  }
+                }
+              `}</style>
             </div>
           </div>
         </div>
