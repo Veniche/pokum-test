@@ -51,7 +51,7 @@ const TestimonialsCarousel: React.FC = () => {
       containScroll: 'keepSnaps',
       dragFree: false,
     },
-    // [Autoplay({ delay: 5000, stopOnInteraction: false })] // Temporarily disabled for debugging
+    [Autoplay({ delay: 5000, stopOnInteraction: false })]
   );
 
   const totalTestimonials = testimonials.length;
@@ -94,13 +94,13 @@ const TestimonialsCarousel: React.FC = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={testimonial.id} 
-              className={`flex-shrink-0 w-full md:w-1/2 px-4 transition-all duration-300 ${
+              className={`flex-shrink-0 w-full md:w-1/2 px-4 transition-all duration-[3000ms] ease-in-out ${
                 index === selectedIndex ? 'z-10' : index === (selectedIndex + 1) % totalTestimonials ? 'z-0' : 'z-0'
               }`}
               data-embla-slide={index}
             >
               <div 
-                className={`bg-white rounded-2xl p-10 shadow-sm relative h-full transition-all duration-300 transform origin-center ${
+                className={`bg-white rounded-2xl p-10 shadow-sm relative h-full transition-all duration-[3000ms] ease-in-out transform origin-center ${
                   index === selectedIndex 
                     ? 'scale-100 opacity-100' 
                     : index === (selectedIndex + 1) % totalTestimonials 
