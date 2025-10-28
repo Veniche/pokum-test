@@ -1,5 +1,7 @@
 import { Seo } from "@/components/Seo";
-import { useEffect, useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 import { Button } from "@/components/ui/button";
 import { CtaBanner } from "@/components/CtaBanner";
 import { FaqSection } from "@/components/FaqSection";
@@ -898,69 +900,16 @@ export default function Index() {
 
       {/* Testimonials Section */}
       <section className="py-20 bg-gradient-to-b from-white via-[#FEFEFE] via-[#FDFDFD] via-[#FCFCFC] via-[#FBFBFB] via-[#FAFAFA] via-[#F9F9F9] via-[#F8F8F8] to-[#F7F7F7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold font-helvetica-world">
               <span className="text-black/50">What they say about</span>{' '}
               <span className="text-black">pokum</span>
             </h2>
           </div>
-
-          <div className="flex flex-col md:flex-row gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-2xl p-10 shadow-sm flex-1 relative">
-              {/* Vertical line that starts below the quote image */}
-              <div className="absolute left-14 top-10 bottom-0 w-0.5 bg-black opacity-10 mt-12 mb-10"></div>
-              
-              <div className="relative">
-                <div className="absolute left-0 top-0 w-8 h-8">
-                  <img 
-                    src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758768482/double-quotes_r5yvtx.png" 
-                    alt="Quote" 
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-2xl font-helvetica leading-[1.5] text-black pl-12">
-                  <span className="font-bold">pokum</span> helped me get my{" "}
-                  <span className="font-bold">business off the ground</span>{" "}
-                  quickly. <span className="font-bold">Their full-cycle service</span> made everything so much easier!
-                </p>
-              </div>
-              <div className="mt-10 pl-12">
-                <div className="font-bold text-2xl font-helvetica">John D.</div>
-                <div className="text-xl text-black/60 font-helvetica">
-                  Entrepreneur
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-2xl p-10 shadow-sm flex-1 relative">
-              {/* Vertical line that starts below the quote image */}
-              <div className="absolute left-14 top-10 bottom-0 w-0.5 bg-black opacity-10 mt-12 mb-10"></div>
-              
-              <div className="relative">
-                <div className="absolute left-0 top-0 w-8 h-8">
-                  <img 
-                    src="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1758768482/double-quotes_r5yvtx.png" 
-                    alt="Quote" 
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-2xl font-helvetica leading-[1.5] text-black pl-12">
-                  From <span className="font-bold">legal</span> setup to{" "}
-                  <span className="font-bold">marketing</span>, the team at{" "}
-                  <span className="font-bold">pokum</span> made sure that we had{" "}
-                  <span className="font-bold">everything in place</span> to thrive.
-                </p>
-              </div>
-              <div className="mt-10 pl-12">
-                <div className="font-bold text-2xl font-helvetica">Sarah L.</div>
-                <div className="text-xl text-black/60 font-helvetica">
-                  Business Owner
-                </div>
-              </div>
-            </div>
+          
+          <div className="relative">
+            <TestimonialsCarousel />
           </div>
         </div>
       </section>
