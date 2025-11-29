@@ -17,7 +17,7 @@ export const articles: Article[] = [
     id: 1,
     image: "https://api.builder.io/api/v1/image/assets/TEMP/b1470b78b193bfa6e77f8b8ddbf308cd52689e0a?width=747",
     category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan PohonHukum.id",
+    title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan pokum.id",
     excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi...",
     height: "h-[507px]",
     imageHeight: "h-[192px] sm:h-[256px] lg:h-[320px]",
@@ -25,14 +25,14 @@ export const articles: Article[] = [
       <div class="prose max-w-4xl mx-auto">
         <p class="text-lg sm:text-xl text-[#757575] leading-8 mb-6">
           Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi semakin mendesak. 
-          PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah.
+          pokum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah.
         </p>
         
         <div class="space-y-10">
           <div>
             <h2 class="text-2xl font-bold text-[#05060C] mb-4">1. Akses Mudah ke Informasi Hukum</h2>
             <p class="text-lg text-[#757575] leading-8">
-              PohonHukum.id menyediakan berbagai informasi hukum yang lengkap dan mudah diakses. 
+              pokum.id menyediakan berbagai informasi hukum yang lengkap dan mudah diakses. 
               Dengan platform yang dirancang untuk kenyamanan pengguna, Anda dapat dengan cepat menemukan jawaban atas 
               pertanyaan hukum yang mungkin Anda miliki, baik itu terkait kontrak, pajak, hak kekayaan intelektual, 
               hingga masalah litigasi.
@@ -42,7 +42,7 @@ export const articles: Article[] = [
           <div>
             <h2 class="text-2xl font-bold text-[#05060C] mb-4">2. Tim Ahli Hukum yang Berpengalaman</h2>
             <p class="text-lg text-[#757575] leading-8">
-              Layanan PohonHukum.id didukung oleh tim ahli hukum yang profesional dan berpengalaman di berbagai bidang. 
+              Layanan pokum.id didukung oleh tim ahli hukum yang profesional dan berpengalaman di berbagai bidang. 
               Dengan keahlian mereka, Anda dapat yakin bahwa setiap saran dan solusi yang diberikan akan sesuai dengan 
               kebutuhan Anda serta mengikuti regulasi terbaru.
             </p>
@@ -51,7 +51,7 @@ export const articles: Article[] = [
           <div>
             <h2 class="text-2xl font-bold text-[#05060C] mb-4">3. Solusi Hukum yang Disesuaikan</h2>
             <p class="text-lg text-[#757575] leading-8">
-              Setiap masalah hukum memiliki keunikan tersendiri. PohonHukum.id memahami hal ini dan menawarkan solusi 
+              Setiap masalah hukum memiliki keunikan tersendiri. pokum.id memahami hal ini dan menawarkan solusi 
               yang dirancang khusus sesuai dengan kebutuhan klien. Baik Anda seorang individu, pelaku bisnis kecil, 
               atau perusahaan besar, kami siap membantu dengan pendekatan yang personal dan tepat sasaran.
             </p>
@@ -61,7 +61,7 @@ export const articles: Article[] = [
             <h2 class="text-2xl font-bold text-[#05060C] mb-4">4. Efisiensi Waktu dan Biaya</h2>
             <p class="text-lg text-[#757575] leading-8">
               Menggunakan layanan hukum konvensional seringkali membutuhkan waktu yang lama dan biaya yang tidak sedikit. 
-              Dengan PohonHukum.id, Anda dapat menghemat waktu dan biaya tanpa mengurangi kualitas layanan. 
+              Dengan pokum.id, Anda dapat menghemat waktu dan biaya tanpa mengurangi kualitas layanan. 
               Proses yang cepat dan transparan menjadi salah satu keunggulan utama platform ini.
             </p>
           </div>
@@ -70,7 +70,7 @@ export const articles: Article[] = [
             <h2 class="text-2xl font-bold text-[#05060C] mb-4">5. Keamanan dan Kerahasiaan Data</h2>
             <p class="text-lg text-[#757575] leading-8">
               Kami memahami betapa pentingnya keamanan dan kerahasiaan data dalam urusan hukum. 
-              PohonHukum.id menggunakan teknologi terkini untuk memastikan bahwa semua informasi Anda aman 
+              pokum.id menggunakan teknologi terkini untuk memastikan bahwa semua informasi Anda aman 
               dan terlindungi dari akses yang tidak sah.
             </p>
           </div>
@@ -80,9 +80,9 @@ export const articles: Article[] = [
               Kesimpulan
             </h2>
             <p class="text-lg sm:text-xl text-[#757575] font-helvetica-world leading-8">
-              PohonHukum.id adalah solusi modern untuk kebutuhan hukum Anda. Dengan berbagai keunggulan yang ditawarkan, 
+              pokum.id adalah solusi modern untuk kebutuhan hukum Anda. Dengan berbagai keunggulan yang ditawarkan, 
               mulai dari akses mudah, tim ahli yang berpengalaman, hingga efisiensi biaya, tidak ada alasan untuk 
-              tidak memanfaatkan layanan ini. Kunjungi PohonHukum.id hari ini dan rasakan sendiri manfaatnya!
+              tidak memanfaatkan layanan ini. Kunjungi pokum.id hari ini dan rasakan sendiri manfaatnya!
             </p>
           </div>
         </div>
@@ -376,7 +376,7 @@ export const articles: Article[] = [
             <p class="text-lg sm:text-xl text-[#757575] font-helvetica-world leading-8">
               Mendirikan PT Pedagang Aset Keuangan Digital di Indonesia memerlukan pemahaman mendalam tentang regulasi, persiapan dokumen legalitas, pengajuan izin, dan infrastruktur teknologi. 
               Dengan mengikuti langkah-langkah ini, Anda dapat menjalankan bisnis secara legal dan memberikan kontribusi positif terhadap ekosistem aset digital di Indonesia. 
-              Jangan biarkan proses yang kompleks ini menjadi penghambat impian Anda. Percayakan kebutuhan Anda kepada <span class="font-bold text-[#05060C]">Pohon Hukum Indonesia</span>, konsultan bisnis terpercaya yang siap membantu Anda mewujudkan rencana bisnis Anda dengan cepat, tepat, dan aman. 
+              Jangan biarkan proses yang kompleks ini menjadi penghambat impian Anda. Percayakan kebutuhan Anda kepada <span class="font-bold text-[#05060C]">Pokum Indonesia</span>, konsultan bisnis terpercaya yang siap membantu Anda mewujudkan rencana bisnis Anda dengan cepat, tepat, dan aman. 
               Hubungi kami sekarang dan mulai perjalanan sukses Anda di dunia aset digital!
             </p>
           </div>
@@ -516,7 +516,7 @@ export const articles: Article[] = [
               Memilih antara PT dan CV bergantung pada kebutuhan dan tujuan bisnis Anda. Jika Anda ingin bisnis yang lebih profesional dan memiliki tanggung jawab terbatas, maka PT adalah pilihan terbaik. Namun, jika Anda ingin struktur bisnis yang lebih fleksibel dan mudah didirikan, CV bisa menjadi pilihan yang lebih praktis.
             </p>
             <p class="text-lg text-[#757575] leading-8">
-              <span class="font-semibold text-[#05060C]">💡 Masih bingung memilih PT atau CV? Konsultasikan dengan kami di PohonHukum.id untuk mendapatkan panduan terbaik sesuai kebutuhan bisnis Anda!</span>
+              <span class="font-semibold text-[#05060C]">💡 Masih bingung memilih PT atau CV? Konsultasikan dengan kami di pokum.id untuk mendapatkan panduan terbaik sesuai kebutuhan bisnis Anda!</span>
             </p>
           </div>
         </div>
@@ -641,7 +641,7 @@ export const articles: Article[] = [
           <div>
             <h2 class="text-2xl font-bold text-[#05060C] mb-4">5. Butuh Bantuan dalam Urusan Pajak UMKM?</h2>
             <p class="text-lg text-[#757575] leading-8">
-              Mengurus pajak bisa menjadi hal yang rumit, terutama bagi pelaku UMKM yang masih baru. Jangan khawatir! <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> siap membantu Anda dalam pengurusan pajak UMKM, mulai dari pendaftaran NPWP, pembayaran pajak, hingga pelaporan SPT Tahunan. Kami menyediakan layanan konsultasi dan pendampingan pajak secara profesional, cepat, dan terpercaya. Hubungi kami sekarang dan pastikan bisnis Anda tetap patuh pajak.
+              Mengurus pajak bisa menjadi hal yang rumit, terutama bagi pelaku UMKM yang masih baru. Jangan khawatir! <span class="font-semibold text-[#05060C]">Pokum Indonesia</span> siap membantu Anda dalam pengurusan pajak UMKM, mulai dari pendaftaran NPWP, pembayaran pajak, hingga pelaporan SPT Tahunan. Kami menyediakan layanan konsultasi dan pendampingan pajak secara profesional, cepat, dan terpercaya. Hubungi kami sekarang dan pastikan bisnis Anda tetap patuh pajak.
             </p>
           </div>
         </div>
@@ -777,7 +777,7 @@ export const articles: Article[] = [
           <div>
             <h2 class="text-2xl font-bold text-[#05060C] mb-4">5. Butuh Bantuan dalam Pendaftaran HAKI?</h2>
             <p class="text-lg text-[#757575] leading-8 mb-2">
-              Mengurus pendaftaran HAKI bisa terasa rumit dan memakan waktu. <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> siap membantu Anda dalam proses pendaftaran merek dagang, hak cipta, paten, dan perlindungan kekayaan intelektual lainnya. Kami menyediakan layanan profesional, cepat, dan terpercaya untuk memastikan brand dan produk Anda aman secara hukum.
+              Mengurus pendaftaran HAKI bisa terasa rumit dan memakan waktu. <span class="font-semibold text-[#05060C]">Pokum Indonesia</span> siap membantu Anda dalam proses pendaftaran merek dagang, hak cipta, paten, dan perlindungan kekayaan intelektual lainnya. Kami menyediakan layanan profesional, cepat, dan terpercaya untuk memastikan brand dan produk Anda aman secara hukum.
             </p>
             <p class="text-lg text-[#757575] leading-8">
               Hubungi kami sekarang dan lindungi aset bisnis Anda sebelum terlambat!
@@ -898,7 +898,7 @@ export const articles: Article[] = [
 
         <div class="space-y-10 mb-4">
           <div>
-            <h2 class="text-2xl font-bold text-[#05060C] mb-4">6. Tidak Menggunakan Jasa Pohon Hukum Indonesia</h2>
+            <h2 class="text-2xl font-bold text-[#05060C] mb-4">6. Tidak Menggunakan Jasa Pokum Indonesia</h2>
             <h3 class="text-xl font-bold text-[#05060C] mb-2">Kesalahan:</h3>
             <p class="text-lg text-[#757575] leading-8">
               Banyak pengusaha mencoba mendirikan PT sendiri tanpa bantuan profesional, yang sering kali menyebabkan kesalahan dalam dokumen, perizinan yang tertunda, atau pemilihan struktur bisnis yang kurang tepat.
@@ -906,7 +906,7 @@ export const articles: Article[] = [
             <h3 class="text-xl font-bold text-[#05060C] mb-2">Cara Menghindari:</h3>
             <ol class="space-y-1 list-disc list-inside ml-5">
               <li class="not-prose">
-                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Gunakan jasa profesional seperti <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> untuk memastikan proses pendirian PT berjalan dengan lancar dan sesuai peraturan.</p>
+                <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Gunakan jasa profesional seperti <span class="font-semibold text-[#05060C]">Pokum Indonesia</span> untuk memastikan proses pendirian PT berjalan dengan lancar dan sesuai peraturan.</p>
               </li>
               <li class="not-prose">
                 <p class="text-lg text-[#757575] leading-7 -mt-6 ml-6">Dapatkan bimbingan hukum yang tepat agar bisnis Anda memiliki pondasi yang kuat.</p>
@@ -922,7 +922,7 @@ export const articles: Article[] = [
               Mendirikan PT memang memerlukan perencanaan yang matang agar tidak terjadi kesalahan yang bisa menghambat operasional bisnis Anda. Dengan menghindari kesalahan-kesalahan di atas, Anda bisa memastikan bahwa perusahaan berdiri dengan legalitas yang kuat dan siap berkembang.
             </p>
             <p class="text-lg text-[#757575] leading-8">
-              Jika Anda ingin mendirikan PT tanpa repot dan memastikan semua proses berjalan dengan benar, <span class="font-semibold text-[#05060C]">Pohon Hukum Indonesia</span> siap membantu! Kami menawarkan layanan pendirian PT mulai dari pembuatan akta, perizinan usaha, hingga konsultasi hukum bisnis. Hubungi kami sekarang dan biarkan kami mengurus semuanya untuk Anda!
+              Jika Anda ingin mendirikan PT tanpa repot dan memastikan semua proses berjalan dengan benar, <span class="font-semibold text-[#05060C]">Pokum Indonesia</span> siap membantu! Kami menawarkan layanan pendirian PT mulai dari pembuatan akta, perizinan usaha, hingga konsultasi hukum bisnis. Hubungi kami sekarang dan biarkan kami mengurus semuanya untuk Anda!
             </p>
           </div>
         </div>
@@ -1050,7 +1050,7 @@ export const articles: Article[] = [
           <div>
             <h2 class="text-2xl font-bold text-[#05060C] mb-4">5. Butuh Bantuan Mengurus NIB?</h2>
             <p class="text-lg text-[#757575] leading-8">
-              Proses pengurusan legalitas usaha bisa membingungkan dan memakan waktu, terutama bagi pelaku usaha yang belum familiar dengan sistem OSS. Jika Anda ingin mengurus <span class="font-semibold text-[#05060C]">NIB dengan cepat dan tanpa ribet, Pohon Hukum Indonesia</span> siap membantu Anda!
+              Proses pengurusan legalitas usaha bisa membingungkan dan memakan waktu, terutama bagi pelaku usaha yang belum familiar dengan sistem OSS. Jika Anda ingin mengurus <span class="font-semibold text-[#05060C]">NIB dengan cepat dan tanpa ribet, Pokum Indonesia</span> siap membantu Anda!
             </p>
             <p class="text-lg text-[#757575] leading-8">
               Kami menyediakan layanan konsultasi dan pengurusan perizinan usaha secara profesional dan terpercaya. Hubungi kami sekarang dan pastikan usaha Anda memiliki legalitas yang lengkap!
@@ -1064,13 +1064,13 @@ export const articles: Article[] = [
     id: 9,
     image: "https://api.builder.io/api/v1/image/assets/TEMP/3ca4fa103d90db564a287bb3684a6dee8c6d2607?width=747",
     category: "TIPS & TRICKS",
-    title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan PohonHukum.id",
-    excerpt: "Temukan alasan mengapa layanan hukum digital dari PohonHukum.id menjadi pilihan utama di era modern.",
+    title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan pokum.id",
+    excerpt: "Temukan alasan mengapa layanan hukum digital dari pokum.id menjadi pilihan utama di era modern.",
     height: "h-[500px]",
     content: `
       <div class="prose max-w-4xl mx-auto">
         <p class="text-lg sm:text-xl text-[#757575] leading-8 mb-6">
-          PohonHukum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. 
+          pokum.id hadir sebagai solusi modern untuk membantu Anda mendapatkan layanan hukum terbaik dengan mudah. 
           Berikut adalah beberapa alasan mengapa Anda harus mempertimbangkannya.
         </p>
         
