@@ -15,7 +15,7 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: 1,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/b1470b78b193bfa6e77f8b8ddbf308cd52689e0a?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432055/5_Alasan_Menggunakan_Pokum_bjhbi4.png",
     category: "TIPS & TRICKS",
     title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan pokum.id",
     excerpt: "Dalam dunia yang semakin digital, kebutuhan akan akses hukum yang cepat, tepat, dan efisien menjadi...",
@@ -202,7 +202,7 @@ export const articles: Article[] = [
   },
   {
     id: 3,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/0e47515af6adb21b1d833adb20a535c8c330caa6?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432085/Pentingnya_Mendirikan_PT_o63zis.png",
     category: "TIPS & TRICKS",
     title: "Cara Mendirikan PT Pedagang Aset Keuangan Digital (PAKD) termasuk Aset Kripto di Indonesia",
     excerpt: "Dalam beberapa tahun terakhir, perdagangan aset keuangan digital, termasuk aset kripto, semakin...",
@@ -386,7 +386,7 @@ export const articles: Article[] = [
   },
   {
     id: 4,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/ff1801e3358315b58032378004e1f8d21bf5cf49?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432090/PT_vs_CV_u511l7.png",
     category: "TIPS & TRICKS",
     title: "PT vs CV: Mana yang Lebih Cocok untuk Bisnis Anda?",
     excerpt: "Saat memulai bisnis di Indonesia, salah satu keputusan penting yang harus...",
@@ -525,7 +525,7 @@ export const articles: Article[] = [
   },
   {
     id: 5,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/d2afa3049c74e7e4c82397aa988ab9e6a8904898?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432084/Pajak_UMKM_2024_baveu2.png",
     category: "TIPS & TRICKS",
     title: "Pajak UMKM 2024: Ketentuan, Tarif, dan Cara Lapor",
     excerpt: "Pajak merupakan kewajiban yang harus dipenuhi oleh setiap pelaku usaha...",
@@ -651,7 +651,7 @@ export const articles: Article[] = [
   },
   {
     id: 6,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/e377661191bbda62fc641546a50428423c654fd6?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432091/HAKI_bkxsnp.png",
     category: "TIPS & TRICKS",
     title: "HAKI (Hak Kekayaan Intelektual): Cara Melindungi Brand dan Produk Anda",
     excerpt: "Dalam dunia bisnis yang kompetitif, melindungi brand dan produk adalah...",
@@ -789,7 +789,7 @@ export const articles: Article[] = [
   },
   {
     id: 7,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/a9420bce7f0334e6f7ed260e4b4ac9c59cec2c71?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432059/6_Kesalahan_Umum_ltqu9g.png",
     category: "TIPS & TRICKS",
     title: "6 Kesalahan Umum Saat Mendirikan PT & Cara Menghindarinya",
     excerpt: "Mendirikan Perseroan Terbatas (PT) adalah langkah besar dalam memulai bisnis yang profesional dan legal di Indonesia. Namun, banyak pengusaha yang melakukan kesalahan saat...",
@@ -931,7 +931,7 @@ export const articles: Article[] = [
   },
   {
     id: 8,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/9a73eae2e299cfdb55e33e46aa4aa0e2316854eb?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432082/Cara_Mengurus_NIB_ix8lpz.png",
     category: "TIPS & TRICKS",
     title: "Cara Mengurus NIB untuk Legalitas Usaha Anda",
     excerpt: "Memiliki legalitas usaha adalah langkah penting dalam menjalankan bisnis...",
@@ -1062,7 +1062,7 @@ export const articles: Article[] = [
   },
   {
     id: 9,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/3ca4fa103d90db564a287bb3684a6dee8c6d2607?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432077/Lancresse_Video_vvrt7d.png",
     category: "TIPS & TRICKS",
     title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan pokum.id",
     excerpt: "Temukan alasan mengapa layanan hukum digital dari pokum.id menjadi pilihan utama di era modern.",
@@ -1084,7 +1084,7 @@ export const articles: Article[] = [
   },
   {
     id: 10,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/7a286e4c49312e452cf758bed406532bca3bcfd4?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432077/Lancresse_Video_vvrt7d.png",
     category: "TIPS & TRICKS",
     title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan Hukum Digital",
     excerpt: "Temukan alasan mengapa layanan hukum digital menjadi pilihan utama di era modern.",
@@ -1106,7 +1106,7 @@ export const articles: Article[] = [
   },
   {
     id: 11,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/781ff4b985077c4e87e1d338afba66f03a88aadb?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432077/Lancresse_Video_vvrt7d.png",
     category: "TIPS & TRICKS",
     title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan Hukum Digital",
     excerpt: "Temukan alasan mengapa layanan hukum digital menjadi pilihan utama di era modern.",
@@ -1128,7 +1128,7 @@ export const articles: Article[] = [
   },
   {
     id: 12,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/d1ccfddd7d1af85a7dc83f49f98aeae57d5d97f9?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432077/Lancresse_Video_vvrt7d.png",
     category: "TIPS & TRICKS",
     title: "5 Alasan Mengapa Anda Harus Memanfaatkan Layanan Hukum Digital",
     excerpt: "Temukan alasan mengapa layanan hukum digital menjadi pilihan utama di era modern.",
