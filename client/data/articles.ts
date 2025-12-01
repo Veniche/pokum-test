@@ -91,7 +91,7 @@ export const articles: Article[] = [
   },
   {
     id: 2,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/5f4e7377f01bb3550599c4c4f6f873698dcc0468?width=747",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432085/Pentingnya_Mendirikan_PT_o63zis.png",
     category: "TIPS & TRICKS",
     title: "Pentingnya Mendirikan PT untuk Bisnis Anda: Persyaratan dan Dasar Hukumnya",
     excerpt: "Mendirikan Perseroan Terbatas (PT) adalah langkah penting bagi Anda yang ingin mengembangkan bisnis secara profesional dan berkelanjutan. PT...",
@@ -202,7 +202,7 @@ export const articles: Article[] = [
   },
   {
     id: 3,
-    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432085/Pentingnya_Mendirikan_PT_o63zis.png",
+    image: "https://res.cloudinary.com/dn8wwzjaj/image/upload/v1764432061/Cara_Mendirikan_PT_PAKD_cu1umd.png",
     category: "TIPS & TRICKS",
     title: "Cara Mendirikan PT Pedagang Aset Keuangan Digital (PAKD) termasuk Aset Kripto di Indonesia",
     excerpt: "Dalam beberapa tahun terakhir, perdagangan aset keuangan digital, termasuk aset kripto, semakin...",
