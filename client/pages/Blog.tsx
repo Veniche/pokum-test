@@ -63,107 +63,42 @@ export default function Blog() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Three Column Masonry Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {/* Column 1 */}
-            <div className="space-y-10">
-              {[articles[0], articles[3], articles[6], articles[9]].map((article) => (
-                <a
-                  key={article.id}
-                  href={`/article/${article.id}`}
-                  className={`bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block ${article.height}`}
-                >
-                  <article className="h-full flex flex-col">
-                    <div className={article.imageHeight ? article.imageHeight : 'h-48 sm:h-64 lg:h-80'}>
-                      <img
-                        src={article.image}
-                        alt={article.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-6 flex-1 flex flex-col">
-                      <div className="mb-3">
-                        <span className="text-[#2556BA] font-bold text-sm font-helvetica-world uppercase tracking-wide">
-                          {article.category}
-                        </span>
-                      </div>
-                      <h2 className="text-2xl font-bold text-[#05060C] font-helvetica-world leading-tight mb-3 line-clamp-2">
-                        {article.title}
-                      </h2>
-                      <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-5 flex items-start">
-                        {article.excerpt}
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              ))}
-            </div>
-
-            {/* Column 2 */}
-            <div className="space-y-10">
-              {[articles[1], articles[4], articles[7], articles[10]].map((article) => (
-                <a
-                  key={article.id}
-                  href={`/article/${article.id}`}
-                  className={`bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block ${article.height}`}
-                >
-                  <article className="h-full flex flex-col">
-                    <div className={article.imageHeight ? article.imageHeight : 'h-48 sm:h-64 lg:h-80'}>
-                      <img
-                        src={article.image}
-                        alt={article.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-6 flex-1 flex flex-col">
-                      <div className="mb-3">
-                        <span className="text-[#2556BA] font-bold text-sm font-helvetica-world uppercase tracking-wide">
-                          {article.category}
-                        </span>
-                      </div>
-                      <h2 className="text-2xl font-bold text-[#05060C] font-helvetica-world leading-tight mb-3 line-clamp-2">
-                        {article.title}
-                      </h2>
-                      <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-5 min-h-[140px] flex items-start">
-                        {article.excerpt}
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              ))}
-            </div>
-
-            {/* Column 3 */}
-            <div className="space-y-10">
-              {[articles[2], articles[5], articles[8], articles[11]].map((article) => (
-                <a
-                  key={article.id}
-                  href={`/article/${article.id}`}
-                  className={`bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block ${article.height}`}
-                >
-                  <article className="h-full flex flex-col">
-                    <div className={article.imageHeight ? article.imageHeight : 'h-48 sm:h-64 lg:h-80'}>
-                      <img
-                        src={article.image}
-                        alt={article.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-6 flex-1 flex flex-col">
-                      <div className="mb-3">
-                        <span className="text-[#2556BA] font-bold text-sm font-helvetica-world uppercase tracking-wide">
-                          {article.category}
-                        </span>
-                      </div>
-                      <h2 className="text-2xl font-bold text-[#05060C] font-helvetica-world leading-tight mb-3 line-clamp-2">
-                        {article.title}
-                      </h2>
-                      <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-5 min-h-[140px] flex items-start">
-                        {article.excerpt}
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              ))}
-            </div>
+            {[0, 1, 2].map((colIndex) => (
+              <div key={colIndex} className="space-y-10">
+                {articles
+                  .filter((_, index) => index % 3 === colIndex)
+                  .map((article) => (
+                    <a
+                      key={article.id}
+                      href={`/article/${article.id}`}
+                      className={`bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block ${article.height || ''}`}
+                    >
+                      <article className="h-full flex flex-col">
+                        <div className={article.imageHeight ? article.imageHeight : 'h-48 sm:h-64 lg:h-80'}>
+                          <img
+                            src={article.image}
+                            alt={article.title}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="p-6 flex-1 flex flex-col">
+                          <div className="mb-3">
+                            <span className="text-[#2556BA] font-bold text-sm font-helvetica-world uppercase tracking-wide">
+                              {article.category}
+                            </span>
+                          </div>
+                          <h2 className="text-2xl font-bold text-[#05060C] font-helvetica-world leading-tight mb-3 line-clamp-2">
+                            {article.title}
+                          </h2>
+                          <p className="text-[#757575] font-helvetica-world text-lg leading-7 line-clamp-5 min-h-[140px] flex items-start">
+                            {article.excerpt}
+                          </p>
+                        </div>
+                      </article>
+                    </a>
+                  ))}
+              </div>
+            ))}
           </div>
         </div>
       </section>
