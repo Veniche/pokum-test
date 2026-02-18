@@ -7,6 +7,7 @@ import { CtaBanner } from "@/components/CtaBanner";
 import { FaqSection } from "@/components/FaqSection";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { useOnScreen } from '@/hooks/useOnScreen';
+import { PopupBanner } from '@/components/PopupBanner';
 
 // Structured data for Organization
 const organizationSchema = {
@@ -59,6 +60,11 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-white overflow-hidden">
+      <PopupBanner
+        imageUrl="https://res.cloudinary.com/dn8wwzjaj/image/upload/v1771399345/WhatsApp_Image_2026-02-17_at_14.21.53_x0yseu.jpg"
+        altText="Special Offer"
+        autoCloseDelay={10000} // 10 seconds
+      />
       <Seo 
         title="Pokum - Full-Cycle Business Incorporation Experts"
         description="Professional business incorporation, legal services, and corporate solutions. Start and grow your business with our expert guidance in Indonesia."
