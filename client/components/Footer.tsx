@@ -95,19 +95,25 @@ export function Footer() {
 
             {/* Right Section - Social Media Icons */}
             <div className="flex justify-end items-start">
-              <div className="flex items-center gap-6">
-                <a href="https://www.facebook.com/share/1Baj8So5Tq/" className="w-6 h-6 hover:opacity-80 transition-opacity">
-                  <img src="/pokum/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
-                </a>
-                <a href="https://www.tiktok.com/@pohonhukumindonesia?_t=ZS-90Yo6HcAlvN&_r=1" className="w-6 h-6 hover:opacity-80 transition-opacity">
-                  <img src="/pokum/icons/tiktok.png" alt="Tiktok" className="w-6 h-6" />
-                </a>
-                <a href="https://www.instagram.com/pokum.id" className="w-6 h-6 hover:opacity-80 transition-opacity">
-                  <img src="/pokum/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
-                </a>
-                <a href="https://www.linkedin.com/company/pokum-id" className="w-6 h-6 hover:opacity-80 transition-opacity">
-                  <img src="/pokum/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
-                </a>
+              <div className="flex flex-col items-end gap-4">
+                <div className="flex items-center gap-6">
+                  <a href="https://www.facebook.com/share/1Baj8So5Tq/" className="w-6 h-6 hover:opacity-80 transition-opacity">
+                    <img src="/pokum/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
+                  </a>
+                  <a href="https://www.tiktok.com/@pohonhukumindonesia?_t=ZS-90Yo6HcAlvN&_r=1" className="w-6 h-6 hover:opacity-80 transition-opacity">
+                    <img src="/pokum/icons/tiktok.png" alt="Tiktok" className="w-6 h-6" />
+                  </a>
+                  <a href="https://www.instagram.com/pokum.id" className="w-6 h-6 hover:opacity-80 transition-opacity">
+                    <img src="/pokum/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/pokum-id" className="w-6 h-6 hover:opacity-80 transition-opacity">
+                    <img src="/pokum/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
+                  </a>
+                </div>
+                <div className="text-white/50 font-helvetica-world text-sm text-right">
+                  <div>Copyright ©️ 2025 Pokum - All Rights Reserved</div>
+                  <div>A Business of PT Pohon Hukum Indonesia</div>
+                </div>
               </div>
             </div>
           </div>
@@ -165,6 +171,12 @@ export function Footer() {
               <a href="https://www.linkedin.com/company/pokum-id" className="w-6 h-6 hover:opacity-80 transition-opacity">
                 <img src="/pokum/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
               </a>
+            </div>
+
+            {/* Copyright */}
+            <div className="text-white/50 font-helvetica-world text-sm text-center">
+              <div>Copyright ©️ 2025 Pokum - All Rights Reserved</div>
+              <div>A Business of PT Pohon Hukum Indonesia</div>
             </div>
 
 
