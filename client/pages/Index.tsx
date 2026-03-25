@@ -109,11 +109,11 @@ export default function Index() {
                   <h1 className="text-7xl sm:text-8xl md:text-[160px] lg:text-[200px] font-helvetica-world font-bold text-black leading-[0.9] tracking-tight">
                     pokum
                   </h1>
-                  <div className="absolute left-0 bottom-0 translate-y-[1em] w-full max-w-3xl pl-[8em]">
+                  <div className="absolute left-0 bottom-0 translate-y-[1em] w-full max-w-5xl pl-[8em]">
                     <div className="relative">
                       <div className="absolute right-full top-1/2 w-[100vw] h-px bg-black/30 -translate-y-1/2 mr-4"></div>
-                      <p className="text-lg xl:text-2xl 2xl:text-3xl font-helvetica-world font-normal text-black opacity-70 leading-snug">
-                        Your Full-Cycle Business Incorporation Experts
+                      <p className="text-lg xl:text-2xl 2xl:text-2xl font-helvetica-world font-normal text-black opacity-70 leading-snug">
+                        Your Legal Partner for Web3, Digital Assets, and AI
                       </p>
                     </div>
                   </div>
@@ -122,9 +122,9 @@ export default function Index() {
 
               <div className="max-w-4xl space-y-6 md:space-y-8 lg:space-y-10">
                 <p className="text-lg sm:text-xl lg:text-2xl font-helvetica-world font-normal leading-relaxed text-black/50">
-                  We guide your business from entity creation to marketing, finance, tax support, and more — combining legal expertise with AI-powered solutions. You can focus on what matters most:{" "}
+                  We guide founders in building Web3, digital asset, and AI ventures from legal structuring to finance, tax support and more - So you can focus on what matters most:{" "}
                   <span className="font-bold text-black">
-                    growing your business
+                    Growing your business
                   </span>
                   <span className="text-black">.</span>
                 </p>
@@ -177,7 +177,7 @@ export default function Index() {
                   <div className="relative">
                     <div className="absolute right-full top-1/2 w-[100vw] h-px bg-black/30 -translate-y-1/2 mr-4"></div>
                     <p className="text-sm font-helvetica-world font-normal text-black opacity-70 leading-snug text-center whitespace-nowrap">
-                      Your Full-Cycle Business Incorporation Experts
+                      Your Legal Partner for Web3, Digital Assets, and AI
                     </p>
                   </div>
                 </div>
@@ -187,13 +187,10 @@ export default function Index() {
               <div className="space-y-10 px-5 pt-8">
                 <p className="text-[15px] font-helvetica-world leading-6 text-center text-black">
                   <span className="opacity-50">
-                    We guide your business from entity creation to marketing,
-                    finance, tax support, and more — combining legal expertise
-                    with AI-powered solutions. You can focus on what matters
-                    most:{" "}
+                    We guide founders in building Web3, digital asset, and AI ventures from legal structuring to finance, tax support and more - So you can focus on what matters most:{" "}
                   </span>
                   <span className="font-bold text-black">
-                    growing your business
+                    Growing your business
                   </span>
                   <span className="text-black">.</span>
                 </p>

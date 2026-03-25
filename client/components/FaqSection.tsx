@@ -80,7 +80,7 @@ export function FaqSection({
 const defaultFaqs: FaqItem[] = [
   {
     question: "How long does the business formation process take?",
-    answer: "Typically, it takes X weeks depending on your business type and location.",
+    answer: "Typically, it takes 1 week depending on your business type and location.",
     isOpen: true
   },
   {

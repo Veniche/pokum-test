@@ -60,7 +60,7 @@ export default function About() {
                 <div className="flex justify-center lg:justify-end">
                   <div className="w-full max-w-2xl lg:pl-16">
                     <p className="text-lg sm:text-xl md:text-2xl text-black/50 font-helvetica leading-relaxed text-center lg:text-left">
-                      At <span className="text-xl sm:text-2xl md:text-3xl font-bold text-black">pokum</span> we are dedicated to empowering entrepreneurs and businesses to thrive by providing seamless, end-to-end business incorporation services.
+                      At <span className="text-xl sm:text-2xl md:text-3xl font-bold text-black">Pokum,</span> we empower founders to build and scale Web3, digital asset, and AI ventures by providing seamless, end-to-end legal, compliance, finance, and tax solutions.
                     </p>
                   </div>
                 </div>
@@ -79,11 +79,11 @@ export default function About() {
               
               <div className="space-y-6">
                 <p className="text-2xl text-black/50 font-helvetica leading-relaxed">
-                  <span className="text-3xl font-bold text-black">pokum</span> is a full-cycle business incorporation service that specializes in providing comprehensive solutions to businesses of all sizes.
+                  <span className="text-3xl font-bold text-black">Pokum</span> is a full-service legal partner for Web3, digital asset, and AI ventures. We specialize in building the right legal, regulatory, and operational foundations including finance and tax to help modern businesses launch and scale with confidence.
                 </p>
                 
                 <p className="text-2xl text-black/50 font-helvetica leading-relaxed">
-                  If you're just starting out or looking to scale your operations, our expert team offers comprehensive legal, marketing, financial, and tax services to ensure your business is set up for success. From entity creation to ongoing support, we guide you through every stage of the process.
+                  From structuring and licensing to ongoing compliance and advisory, we support founders at every stage of their journey.
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function About() {
           <div className="relative z-10 text-center">
             <h2 className="text-4xl font-bold text-black font-helvetica-world mb-6">Our Vision</h2>
             <p className="text-3xl font-helvetica text-black/60 max-w-4xl mx-auto leading-tight">
-              To become the <span className="font-bold text-black/60">leading global partner</span> for entrepreneurs, providing innovative, reliable, and holistic solutions for business formation and growth.
+              To become a <span className="font-bold text-black/60">leading global partner</span> for Web3, digital asset, and AI ventures — delivering trusted legal, compliance, finance, and tax infrastructure for the next generation of businesses.
             </p>
           </div>
         </div>
